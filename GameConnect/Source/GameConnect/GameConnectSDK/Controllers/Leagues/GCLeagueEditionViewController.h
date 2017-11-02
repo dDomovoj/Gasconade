@@ -6,10 +6,11 @@
 //  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
 //
 
-#import <FacebookSDK/FacebookSDK.h>
 #import "GCConnectViewController.h"
 #import "GCLeagueModel.h"
 #import "UICollectionViewGG.h"
+
+@class FBLoginView;
 
 typedef enum
 {
@@ -19,7 +20,7 @@ typedef enum
     eLeagueEditionNone,
 } eLeagueEditionState;
 
-@interface GCLeagueEditionViewController : GCConnectViewController <UITextFieldDelegate, UICollectionViewGGDelegate, FBLoginViewDelegate>
+@interface GCLeagueEditionViewController : GCConnectViewController <UITextFieldDelegate, UICollectionViewGGDelegate>
 
 @property (strong, nonatomic) FBLoginView *bt_fb_login;
 @property (weak, nonatomic) IBOutlet UIScrollView *sv_leagueContent;

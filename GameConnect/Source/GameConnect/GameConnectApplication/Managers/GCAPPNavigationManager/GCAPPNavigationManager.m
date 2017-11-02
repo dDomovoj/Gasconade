@@ -7,10 +7,28 @@
 //
 
 #import "GCAPPNavigationManager.h"
+
 #import "GCAPPGameViewController.h"
 #import "GCAPPPushInfoViewController.h"
+#import "GCAPPLoadingViewController.h"
+#import "GCAPPNavigationController.h"
+#import "GCAPPNavigationPriorityPushManager.h"
+
 #import "Extends+Libs.h"
 //#import "PSGOneApp-Swift.h"
+
+@interface GCAPPNavigationManager()
+{
+  __weak GCProfileEditionViewController *temporaryProfileEdition;
+
+  GCAPPLoadingViewController *loadingViewController;
+  GCAPPNavigationController *navigationControllerAuthentification;
+
+  GCAPPNavigationPriorityPushManager *priorityPushManager;
+
+  UIPopoverController *popover;
+}
+@end
 
 @implementation GCAPPNavigationManager
 

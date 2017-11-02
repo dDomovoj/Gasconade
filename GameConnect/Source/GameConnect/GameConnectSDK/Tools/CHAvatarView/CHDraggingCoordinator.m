@@ -285,7 +285,7 @@
 }
 
 #pragma mark - Management of Inserted simple ViewController
-- (void)_unhidePresentedViewControllerCompletion:(void(^)())completionBlock
+- (void)_unhidePresentedViewControllerCompletion:(void(^)(void))completionBlock
 {
     if (!_presentedViewController)
         return;
@@ -331,7 +331,7 @@
     _presentedViewController = nil;
 }
 
-- (void)_hidePresentedViewControllerCompletion:(void(^)())completionBlock
+- (void)_hidePresentedViewControllerCompletion:(void(^)(void))completionBlock
 {
     if (!_presentedViewController)
         return;
@@ -358,7 +358,7 @@
 
 
 #pragma mark - Management of Inserted NavigationController
-- (void)_unhidePresentedNavigationControllerCompletion:(void(^)())completionBlock
+- (void)_unhidePresentedNavigationControllerCompletion:(void(^)(void))completionBlock
 {
     if (!_presentedNavigationController)
         return;
@@ -398,7 +398,7 @@
     _presentedNavigationController = nil;
 }
 
-- (void)_hidePresentedNavigationControllerCompletion:(void(^)())completionBlock
+- (void)_hidePresentedNavigationControllerCompletion:(void(^)(void))completionBlock
 {
     if (!_presentedNavigationController)
         return;

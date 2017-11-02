@@ -9,6 +9,7 @@
 #import "UICollectionViewGG.h"
 #import "WCDynamicFlowLayout.h"
 #import "Extends+Libs.h"
+#import "WCDynamicFlowLayout.h"
 
 #define EMPTY_HEADER_IDENTIFIER @"Empty_header_identifier"
 

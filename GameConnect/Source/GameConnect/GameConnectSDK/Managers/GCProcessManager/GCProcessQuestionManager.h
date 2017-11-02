@@ -7,6 +7,9 @@
 //
 
 #import "GCProcessManager.h"
+#import "GCInGameViewController.h"
+#import "GCAnswersViewController.h"
+#import "GCMasterViewController.h"
 
 @protocol GCProcessQuestionManagerDelegate <GCProcessManagerDelegate>
 @optional

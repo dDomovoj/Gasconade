@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "CHDraggingCoordinator.h"
+#import <UIKit/UIKit.h>
 #import "GCTrophyModel.h"
 #import "GCQuestionModel.h"
 
-@interface GCNotificationManager : NSObject <CHDraggingCoordinatorDelegate>
+@interface GCNotificationManager : NSObject 
 
 @property (nonatomic, readonly) BOOL bubbleEnabled;
 @property (weak, nonatomic) UIView *viewPanelBubble;

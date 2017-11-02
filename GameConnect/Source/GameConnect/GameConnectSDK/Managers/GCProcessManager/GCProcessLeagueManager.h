@@ -9,6 +9,8 @@
 #import "GCProcessManager.h"
 
 #import "GCAPPMasterViewController.h"
+#import "GCLeaguesViewController.h"
+#import "GCLeagueEditionViewController.h"
 
 /*
  ** GCProcessLeagueManager

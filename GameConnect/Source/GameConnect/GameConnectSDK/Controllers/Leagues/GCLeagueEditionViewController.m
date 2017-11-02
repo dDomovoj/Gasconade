@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
 //
 
+#import <FacebookSDK/FacebookSDK.h>
+
 #import "GCLeagueEditionViewController.h"
 #import "GCProcessLeagueManager.h"
 #import "GCInvitationGroupRender.h"
@@ -15,8 +17,10 @@
 #import "Extends+Libs.h"
 #import "GCAPPDefines.h"
 #import "GCConfManager.h"
+#import "NsSnSignManager.h"
 
 @interface GCLeagueEditionViewController ()
+<FBLoginViewDelegate>
 {
     BOOL hasAlreadyFetchedUserInformation;
 

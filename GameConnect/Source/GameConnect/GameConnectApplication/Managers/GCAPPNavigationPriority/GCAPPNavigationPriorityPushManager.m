@@ -42,8 +42,8 @@
 
 -(BOOL) canIManageNewPendingQuestion:(GCQuestionModel *)questionModel
               inNavigationController:(GCAPPNavigationController *)navigationController
-   callBackPushNewViewController:(void(^)())callbackPushNewViewController
-   andCallBackIfUserShouldBeNotified:(void(^)())callbackUserNotification
+       callBackPushNewViewController:(void(^)(void))callbackPushNewViewController
+   andCallBackIfUserShouldBeNotified:(void(^)(void))callbackUserNotification
 {
     /*
      ** IF the visible view controller is not displaying a pending question (high priority)
@@ -270,24 +270,24 @@
 
 -(BOOL) canIManageNewTrophy:(GCTrophyModel *)trophyModel
      inNavigationController:(GCAPPNavigationController *)navigationController
-   callBackPushNewViewController:(void(^)())callbackPushNewViewController
-    andCallBackIfUserShouldBeNotified:(void(^)())callbackUserNotification
+callBackPushNewViewController:(void(^)(void))callbackPushNewViewController
+andCallBackIfUserShouldBeNotified:(void(^)(void))callbackUserNotification
 {
     return [self canIManagePushInfos:@[trophyModel] inNavigationController:navigationController callBackPushNewViewController:callbackPushNewViewController andCallBackIfUserShouldBeNotified:callbackUserNotification];
 }
 
 -(BOOL) canIManageQuestionResult:(GCQuestionModel *)questionModel
           inNavigationController:(GCAPPNavigationController *)navigationController
-   callBackPushNewViewController:(void(^)())callbackPushNewViewController
-andCallBackIfUserShouldBeNotified:(void(^)())callbackUserNotification
+   callBackPushNewViewController:(void(^)(void))callbackPushNewViewController
+andCallBackIfUserShouldBeNotified:(void(^)(void))callbackUserNotification
 {
     return [self canIManagePushInfos:@[questionModel] inNavigationController:navigationController callBackPushNewViewController:callbackPushNewViewController andCallBackIfUserShouldBeNotified:callbackUserNotification];
 }
 
 -(BOOL) canIManagePushInfos:(NSArray *)pushInfos
           inNavigationController:(GCAPPNavigationController *)navigationController
-   callBackPushNewViewController:(void(^)())callbackPushNewViewController
-andCallBackIfUserShouldBeNotified:(void(^)())callbackUserNotification
+callBackPushNewViewController:(void(^)(void))callbackPushNewViewController
+andCallBackIfUserShouldBeNotified:(void(^)(void))callbackUserNotification
 {
     /*
      ** IF the visible view controller is not displaying a pending question (high priority)

@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+
+#import "GCAPPNavigationPriorityPushManager.h"
 #import "GCProcessAuthentificationManager.h"
 #import "GCProcessEventManager.h"
 #import "GCProcessLeagueManager.h"
@@ -15,14 +17,15 @@
 #import "GCProcessQuestionManager.h"
 #import "GCProcessPushManager.h"
 #import "GCProcessProfileManager.h"
-#import "GCAPPNavigationPriorityPushManager.h"
 #import "GCProcessNotificationManager.h"
 #import "GCProcessLoadingManager.h"
 
 #import "GCAPPNavigationController.h"
 #import "GCAPPLoadingViewController.h"
+#import "GCNotificationManager.h"
 
-@interface GCAPPNavigationManager : NSObject <GCProcessAuthentificationManagerDelegate,
+@interface GCAPPNavigationManager: NSObject
+<GCProcessAuthentificationManagerDelegate,
 GCProcessPushManagerDelegate,
 GCProcessQuestionManagerDelegate,
 GCProcessRankingManagerDelegate,
@@ -35,29 +38,17 @@ UIImagePickerControllerDelegate,
 UIPopoverControllerDelegate,
 UINavigationControllerDelegate>
 {
-    __weak GCProfileEditionViewController *temporaryProfileEdition;
-    
-    GCAPPLoadingViewController *loadingViewController;
-    GCAPPNavigationController *navigationControllerAuthentification;
-    
-    GCAPPNavigationPriorityPushManager *priorityPushManager;
-    
-    UIPopoverController *popover;
 }
 
 @property (nonatomic) GCNotificationManager *notificationManager;
 @property (nonatomic, weak) GCAPPNavigationController *gameConnectNavigationController;
 @property (copy, nonatomic) BOOL(^isWatchingGameConnect)(void);
 
-+(instancetype)getInstance;
-
--(GCAPPNavigationController *) giveMeNavigationViewController;
--(void)shareWithItems:(NSArray *)itemsToShare fromSourceView:(UIView *)sourceView;
-
++ (instancetype)getInstance;
+- (GCAPPNavigationController *)giveMeNavigationViewController;
+- (void)shareWithItems:(NSArray *)itemsToShare fromSourceView:(UIView *)sourceView;
 - (void)openGameConnect;
-
 - (void)reset;
-
 - (void)pushWebViewControllerWithURLString:(NSString *)URLString pinToTopLayoutGuide:(BOOL)pinToTopLayoutGuide;
 
 @end

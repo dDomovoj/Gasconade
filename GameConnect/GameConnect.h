@@ -34,16 +34,47 @@ FOUNDATION_EXPORT const unsigned char GameConnectVersionString[];
 #import <GameConnect/GCFontManager.h>
 #import <GameConnect/GCColorManager.h>
 
+#import <GameConnect/GCAPPNavigationPriorityPushManager.h>
+#import <GameConnect/GCProcessAuthentificationManager.h>
+#import <GameConnect/GCProcessEventManager.h>
+#import <GameConnect/GCProcessLeagueManager.h>
+#import <GameConnect/GCProcessRankingManager.h>
+#import <GameConnect/GCProcessQuestionManager.h>
+#import <GameConnect/GCProcessPushManager.h>
+#import <GameConnect/GCProcessProfileManager.h>
+#import <GameConnect/GCProcessNotificationManager.h>
+#import <GameConnect/GCProcessLoadingManager.h>
+#import <GameConnect/GCNotificationManager.h>
+
 #import <GameConnect/GCAPPNavigationManager.h>
 #import <GameConnect/GCAPPNavigationManageriPhone.h>
 #import <GameConnect/GCAPPNavigationManageriPad.h>
 
-//#import <GameConnect/GCMasterViewController.h>
-//#import <GameConnect/GCConnectViewController.h>
-//#import <GameConnect/GCPushInfoViewController.h>
+#import <GameConnect/GCMasterViewController.h>
+#import <GameConnect/GCConnectViewController.h>
+#import <GameConnect/GCPushInfoViewController.h>
 #import <GameConnect/GCContainerViewController.h>
+#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
+//#import <GameConnect/GCProfileViewController.h>
 
 //#import <GameConnect/GCPushInfoView.h>
 //#import <GameConnect/UIImageViewJA.h>
 //#import <GameConnect/iCarousel.h>
 
+//#import "GCAPPNavigationController.h"
+//#import "GCAPPLoadingViewController.h"
+
+#import <GameConnect/GCNotificationView.h>
+#import <GameConnect/CHDraggableView.h>
+#import <GameConnect/GCView.h>

@@ -29,7 +29,7 @@
 		CE82B5E41FAB2A910087432F /* GCLeagueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D161FAB171C0077CD2F /* GCLeagueModel.m */; };
 		CE82B5E51FAB2A910087432F /* GCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D181FAB171C0077CD2F /* GCModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B5E61FAB2A910087432F /* GCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D191FAB171C0077CD2F /* GCModel.m */; };
-		CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D1B1FAB171C0077CD2F /* GCPushModels.h */; };
+		CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D1B1FAB171C0077CD2F /* GCPushModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B5E81FAB2A910087432F /* GCPushModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D1C1FAB171C0077CD2F /* GCPushModels.m */; };
 		CE82B5E91FAB2A910087432F /* GCQuestionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D1E1FAB171C0077CD2F /* GCQuestionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B5EA1FAB2A910087432F /* GCQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D1F1FAB171C0077CD2F /* GCQuestionModel.m */; };
@@ -131,12 +131,12 @@
 		CE82B64A1FAB2CAB0087432F /* NsSnRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ECB1FAB171C0077CD2F /* NsSnRequester.h */; };
 		CE82B64B1FAB2CAB0087432F /* NsSnRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ECC1FAB171C0077CD2F /* NsSnRequester.m */; };
 		CE82B64C1FAB2CB20087432F /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D5F1FAB171C0077CD2F /* SRWebSocket.h */; };
-		CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D601FAB171C0077CD2F /* SRWebSocket.m */; };
-		CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF61FAB171C0077CD2F /* GCProcessPushManager.h */; };
+		CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D601FAB171C0077CD2F /* SRWebSocket.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF61FAB171C0077CD2F /* GCProcessPushManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B64F1FAB2CC40087432F /* GCProcessPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF71FAB171C0077CD2F /* GCProcessPushManager.m */; };
-		CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF01FAB171C0077CD2F /* GCProcessManager.h */; };
+		CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF01FAB171C0077CD2F /* GCProcessManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6511FAB2D000087432F /* GCProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF11FAB171C0077CD2F /* GCProcessManager.m */; };
-		CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DE91FAB171C0077CD2F /* SingletonManager.h */; };
+		CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DE91FAB171C0077CD2F /* SingletonManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6531FAB2D100087432F /* SingletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DEA1FAB171C0077CD2F /* SingletonManager.m */; };
 		CE82B6551FAB3E3D0087432F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE82B6541FAB3E3D0087432F /* libicucore.tbd */; };
 		CE82B6561FAB410F0087432F /* GCContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BBC1FAB171C0077CD2F /* GCContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -148,6 +148,109 @@
 		CE82B6641FAB49870087432F /* GCAPPNavigationManageriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C531FAB171C0077CD2F /* GCAPPNavigationManageriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6651FAB498A0087432F /* GCAPPNavigationManageriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C541FAB171C0077CD2F /* GCAPPNavigationManageriPad.m */; settings = {COMPILER_FLAGS = "-w"; }; };
 		CE82B6661FAB4B020087432F /* GCWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277BBE1FAB171C0077CD2F /* GCWebViewController.swift */; };
+		CE82B6671FAB4C480087432F /* GCProcessAuthentificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CE81FAB171C0077CD2F /* GCProcessAuthentificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6681FAB4C480087432F /* GCProcessAuthentificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CE91FAB171C0077CD2F /* GCProcessAuthentificationManager.m */; };
+		CE82B6691FAB4C480087432F /* GCProcessEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CEA1FAB171C0077CD2F /* GCProcessEventManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B66A1FAB4C480087432F /* GCProcessEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CEB1FAB171C0077CD2F /* GCProcessEventManager.m */; };
+		CE82B66B1FAB4C480087432F /* GCProcessLeagueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CEC1FAB171C0077CD2F /* GCProcessLeagueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B66C1FAB4C480087432F /* GCProcessLeagueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CED1FAB171C0077CD2F /* GCProcessLeagueManager.m */; };
+		CE82B66D1FAB4C480087432F /* GCProcessLoadingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CEE1FAB171C0077CD2F /* GCProcessLoadingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B66E1FAB4C480087432F /* GCProcessLoadingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CEF1FAB171C0077CD2F /* GCProcessLoadingManager.m */; };
+		CE82B66F1FAB4C480087432F /* GCProcessNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF21FAB171C0077CD2F /* GCProcessNotificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6701FAB4C480087432F /* GCProcessNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF31FAB171C0077CD2F /* GCProcessNotificationManager.m */; };
+		CE82B6711FAB4C480087432F /* GCProcessProfileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF41FAB171C0077CD2F /* GCProcessProfileManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6721FAB4C480087432F /* GCProcessProfileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF51FAB171C0077CD2F /* GCProcessProfileManager.m */; };
+		CE82B6731FAB4C480087432F /* GCProcessQuestionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF81FAB171C0077CD2F /* GCProcessQuestionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6741FAB4C480087432F /* GCProcessQuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF91FAB171C0077CD2F /* GCProcessQuestionManager.m */; };
+		CE82B6751FAB4C480087432F /* GCProcessRankingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CFA1FAB171C0077CD2F /* GCProcessRankingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6761FAB4C480087432F /* GCProcessRankingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CFB1FAB171C0077CD2F /* GCProcessRankingManager.m */; };
+		CE82B6771FAB4D0F0087432F /* GCNotificationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CE51FAB171C0077CD2F /* GCNotificationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6781FAB4D0F0087432F /* GCNotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CE61FAB171C0077CD2F /* GCNotificationManager.m */; };
+		CE82B6791FAB4ED60087432F /* GCAPPNavigationPriorityPushManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C591FAB171C0077CD2F /* GCAPPNavigationPriorityPushManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B67A1FAB4ED90087432F /* GCAPPNavigationPriorityPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C5A1FAB171C0077CD2F /* GCAPPNavigationPriorityPushManager.m */; };
+		CE82B67E1FAB51520087432F /* CHDraggableView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D361FAB171C0077CD2F /* CHDraggableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B67F1FAB51760087432F /* GCNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D771FAB171C0077CD2F /* GCNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6801FAB51760087432F /* GCNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D781FAB171C0077CD2F /* GCNotificationView.m */; };
+		CE82B6811FAB51760087432F /* GCNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D791FAB171C0077CD2F /* GCNotificationView.xib */; };
+		CE82B6821FAB51940087432F /* CHAvatarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D301FAB171C0077CD2F /* CHAvatarView.h */; };
+		CE82B6831FAB51940087432F /* CHAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D311FAB171C0077CD2F /* CHAvatarView.m */; };
+		CE82B6841FAB51940087432F /* CHDraggableView+Avatar.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D321FAB171C0077CD2F /* CHDraggableView+Avatar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6851FAB51940087432F /* CHDraggableView+Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D331FAB171C0077CD2F /* CHDraggableView+Avatar.m */; };
+		CE82B6861FAB51940087432F /* CHDraggableView+Match.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D341FAB171C0077CD2F /* CHDraggableView+Match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6871FAB51940087432F /* CHDraggableView+Match.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D351FAB171C0077CD2F /* CHDraggableView+Match.m */; };
+		CE82B6881FAB51940087432F /* CHDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D371FAB171C0077CD2F /* CHDraggableView.m */; };
+		CE82B6891FAB51940087432F /* CHDraggingCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D381FAB171C0077CD2F /* CHDraggingCoordinator.h */; };
+		CE82B68A1FAB51940087432F /* CHDraggingCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D391FAB171C0077CD2F /* CHDraggingCoordinator.m */; };
+		CE82B68B1FAB51940087432F /* CHMatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D3A1FAB171C0077CD2F /* CHMatchView.h */; };
+		CE82B68C1FAB51940087432F /* CHMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D3B1FAB171C0077CD2F /* CHMatchView.m */; };
+		CE82B68D1FAB51940087432F /* CHMatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D3C1FAB171C0077CD2F /* CHMatchView.xib */; };
+		CE82B68E1FAB519A0087432F /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D3E1FAB171C0077CD2F /* SKBounceAnimation.h */; };
+		CE82B68F1FAB519A0087432F /* SKBounceAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D3F1FAB171C0077CD2F /* SKBounceAnimation.m */; };
+		CE82B6901FAB519E0087432F /* CAAnimation+Blocks.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D2E1FAB171C0077CD2F /* CAAnimation+Blocks.h */; };
+		CE82B6911FAB519E0087432F /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D2F1FAB171C0077CD2F /* CAAnimation+Blocks.m */; };
+		CE82B6921FAB51DD0087432F /* GCAPPNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C0F1FAB171C0077CD2F /* GCAPPNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6931FAB51E10087432F /* GCAPPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C101FAB171C0077CD2F /* GCAPPNavigationController.m */; };
+		CE82B6941FAB526B0087432F /* GCConnectViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C981FAB171C0077CD2F /* GCConnectViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6951FAB526E0087432F /* GCConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C991FAB171C0077CD2F /* GCConnectViewController.m */; };
+		CE82B6961FAB52730087432F /* GCMasterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C9A1FAB171C0077CD2F /* GCMasterViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6971FAB52770087432F /* GCMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C9B1FAB171C0077CD2F /* GCMasterViewController.m */; };
+		CE82B6981FAB52860087432F /* GCEventsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA31FAB171C0077CD2F /* GCEventsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6991FAB52890087432F /* GCEventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CA41FAB171C0077CD2F /* GCEventsViewController.m */; };
+		CE82B69A1FAB52A80087432F /* DefaultCellRenderGG.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D671FAB171C0077CD2F /* DefaultCellRenderGG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B69B1FAB52A80087432F /* DefaultCellRenderGG.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D681FAB171C0077CD2F /* DefaultCellRenderGG.m */; };
+		CE82B69C1FAB52A80087432F /* DefaultCellRenderGG.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D691FAB171C0077CD2F /* DefaultCellRenderGG.xib */; };
+		CE82B69D1FAB52A80087432F /* IDataGG.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D6A1FAB171C0077CD2F /* IDataGG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B69E1FAB52A80087432F /* ILinkerGG.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D6B1FAB171C0077CD2F /* ILinkerGG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B69F1FAB52A80087432F /* IRenderGG.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D6C1FAB171C0077CD2F /* IRenderGG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6A01FAB52A80087432F /* UICollectionViewGG.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D6D1FAB171C0077CD2F /* UICollectionViewGG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6A11FAB52A80087432F /* UICollectionViewGG.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D6E1FAB171C0077CD2F /* UICollectionViewGG.m */; };
+		CE82B6A21FAB52CE0087432F /* WCDynamicFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D411FAB171C0077CD2F /* WCDynamicFlowLayout.h */; };
+		CE82B6A31FAB52CF0087432F /* WCDynamicFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D421FAB171C0077CD2F /* WCDynamicFlowLayout.m */; };
+		CE82B6A41FAB52E70087432F /* GCAPPMasterViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BC21FAB171C0077CD2F /* GCAPPMasterViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6A51FAB52EA0087432F /* GCAPPMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BC31FAB171C0077CD2F /* GCAPPMasterViewController.m */; };
+		CE82B6A61FAB52F10087432F /* GCLeaguesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CAB1FAB171C0077CD2F /* GCLeaguesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6A71FAB52F40087432F /* GCLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CAC1FAB171C0077CD2F /* GCLeaguesViewController.m */; };
+		CE82B6A81FAB53060087432F /* GCLeagueEditionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA91FAB171C0077CD2F /* GCLeagueEditionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6A91FAB53090087432F /* GCLeagueEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CAA1FAB171C0077CD2F /* GCLeagueEditionViewController.m */; };
+		CE82B6AA1FAB54580087432F /* GCInGameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA61FAB171C0077CD2F /* GCInGameViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6AB1FAB545B0087432F /* GCInGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CA71FAB171C0077CD2F /* GCInGameViewController.m */; };
+		CE82B6AC1FAB54660087432F /* GCAnswersViewController_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA11FAB171C0077CD2F /* GCAnswersViewController_Private.h */; };
+		CE82B6AD1FAB54680087432F /* GCAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CA01FAB171C0077CD2F /* GCAnswersViewController.m */; };
+		CE82B6AE1FAB54690087432F /* GCAnswersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C9F1FAB171C0077CD2F /* GCAnswersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6AF1FAB546F0087432F /* GCAnswersViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C9D1FAB171C0077CD2F /* GCAnswersViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6B01FAB546F0087432F /* GCAnswersViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C9E1FAB171C0077CD2F /* GCAnswersViewController+GCUI.m */; };
+		CE82B6B11FAB54F20087432F /* GCAnswerView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D731FAB171C0077CD2F /* GCAnswerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6B21FAB54F20087432F /* GCAnswerView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D741FAB171C0077CD2F /* GCAnswerView.m */; };
+		CE82B6B31FAB54F20087432F /* GCAnswerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D751FAB171C0077CD2F /* GCAnswerView.xib */; };
+		CE82B6B41FAB55040087432F /* GCStatsView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D931FAB171C0077CD2F /* GCStatsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6B51FAB55040087432F /* GCStatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D941FAB171C0077CD2F /* GCStatsView.m */; };
+		CE82B6B61FAB55040087432F /* GCStatsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D951FAB171C0077CD2F /* GCStatsView.xib */; };
+		CE82B6B71FAB551E0087432F /* JWGCircleCounter.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D491FAB171C0077CD2F /* JWGCircleCounter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6B81FAB551E0087432F /* JWGCircleCounter.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D4A1FAB171C0077CD2F /* JWGCircleCounter.m */; };
+		CE82B6B91FAB55280087432F /* OBShapedButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E4B1FAB171C0077CD2F /* OBShapedButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6BA1FAB552B0087432F /* OBShapedButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E4C1FAB171C0077CD2F /* OBShapedButton.m */; };
+		CE82B6BB1FAB55320087432F /* GCPointsView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D7B1FAB171C0077CD2F /* GCPointsView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6BC1FAB55360087432F /* GCPointsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D7C1FAB171C0077CD2F /* GCPointsView.m */; };
+		CE82B6BD1FAB55360087432F /* GCPointsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D7D1FAB171C0077CD2F /* GCPointsView.xib */; };
+		CE82B6BE1FAB56A60087432F /* GCView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D9C1FAB171C0077CD2F /* GCView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6BF1FAB56A90087432F /* GCView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D9D1FAB171C0077CD2F /* GCView.m */; };
+		CE82B6C01FAB56DB0087432F /* GCPushInfoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CBF1FAB171C0077CD2F /* GCPushInfoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6C11FAB56DD0087432F /* GCPushInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CC01FAB171C0077CD2F /* GCPushInfoViewController.m */; };
+		CE82B6C21FAB56E80087432F /* GCProfileViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CBA1FAB171C0077CD2F /* GCProfileViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6C31FAB56EB0087432F /* GCProfileViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CBB1FAB171C0077CD2F /* GCProfileViewController+GCUI.m */; };
+		CE82B6C41FAB56ED0087432F /* GCProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CBC1FAB171C0077CD2F /* GCProfileViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6C51FAB56EF0087432F /* GCProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CBD1FAB171C0077CD2F /* GCProfileViewController.m */; };
+		CE82B6C61FAB57160087432F /* GCProfileHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D7F1FAB171C0077CD2F /* GCProfileHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6C71FAB571A0087432F /* GCProfileHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D801FAB171C0077CD2F /* GCProfileHeader.m */; };
+		CE82B6C81FAB571E0087432F /* GCProfileHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D811FAB171C0077CD2F /* GCProfileHeader.xib */; };
+		CE82B6C91FAB57230087432F /* GCRankingHeaderLargeView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D8B1FAB171C0077CD2F /* GCRankingHeaderLargeView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6CA1FAB57270087432F /* GCRankingHeaderLargeView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D8C1FAB171C0077CD2F /* GCRankingHeaderLargeView.m */; };
+		CE82B6CB1FAB572B0087432F /* GCRankingHeaderLargeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D8D1FAB171C0077CD2F /* GCRankingHeaderLargeView.xib */; };
+		CE82B6CC1FAB57360087432F /* UIImageViewJA.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E3D1FAB171C0077CD2F /* UIImageViewJA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6CD1FAB573A0087432F /* UIImageViewJA.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E3E1FAB171C0077CD2F /* UIImageViewJA.m */; };
+		CE82B6CE1FAB57440087432F /* GCRankingHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D881FAB171C0077CD2F /* GCRankingHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6CF1FAB57490087432F /* GCRankingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D891FAB171C0077CD2F /* GCRankingHeaderView.m */; };
+		CE82B6D01FAB57550087432F /* GCPushInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D831FAB171C0077CD2F /* GCPushInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3174,69 +3277,119 @@
 				CE82B6381FAB2C890087432F /* NsSnPendingTagModel.h in Headers */,
 				CE82B5F71FAB2B070087432F /* GCFontManager.h in Headers */,
 				CE82B6091FAB2BD80087432F /* GCGamerManager.h in Headers */,
+				CE82B6A01FAB52A80087432F /* UICollectionViewGG.h in Headers */,
+				CE82B6961FAB52730087432F /* GCMasterViewController.h in Headers */,
 				CE82B5FF1FAB2BA90087432F /* BridgedLanguageManager.h in Headers */,
+				CE82B67F1FAB51760087432F /* GCNotificationView.h in Headers */,
 				CE82B6221FAB2C730087432F /* CJSONDeserializer.h in Headers */,
 				CE82B6321FAB2C890087432F /* NsSnMessageModel.h in Headers */,
+				CE82B6891FAB51940087432F /* CHDraggingCoordinator.h in Headers */,
 				CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */,
+				CE82B6691FAB4C480087432F /* GCProcessEventManager.h in Headers */,
 				CE82B6051FAB2BCD0087432F /* NSDataManager.h in Headers */,
 				CE82B6481FAB2CA00087432F /* NsSnMediaFormat.h in Headers */,
+				CE82B6C91FAB57230087432F /* GCRankingHeaderLargeView.h in Headers */,
+				CE82B6921FAB51DD0087432F /* GCAPPNavigationController.h in Headers */,
+				CE82B6A81FAB53060087432F /* GCLeagueEditionViewController.h in Headers */,
+				CE82B6A21FAB52CE0087432F /* WCDynamicFlowLayout.h in Headers */,
 				CE82B5DD1FAB2A900087432F /* GCCompetitionModel.h in Headers */,
 				CE82B5E91FAB2A910087432F /* GCQuestionModel.h in Headers */,
+				CE82B6B71FAB551E0087432F /* JWGCircleCounter.h in Headers */,
+				CE82B69F1FAB52A80087432F /* IRenderGG.h in Headers */,
 				CE82B63C1FAB2C890087432F /* NsSnThirdPartyModel.h in Headers */,
 				CE82B6361FAB2C890087432F /* NsSnSignModel.h in Headers */,
 				CE82B6601FAB431A0087432F /* GCAPPNavigationManageriPhone.h in Headers */,
 				CE82B64C1FAB2CB20087432F /* SRWebSocket.h in Headers */,
+				CE82B6B11FAB54F20087432F /* GCAnswerView.h in Headers */,
+				CE82B66F1FAB4C480087432F /* GCProcessNotificationManager.h in Headers */,
 				CE82B5D71FAB29AC0087432F /* GCQuestionManager.h in Headers */,
+				CE82B6791FAB4ED60087432F /* GCAPPNavigationPriorityPushManager.h in Headers */,
 				CE82B6641FAB49870087432F /* GCAPPNavigationManageriPad.h in Headers */,
 				CE82B6401FAB2C890087432F /* NsSnUserModel.h in Headers */,
+				CE82B6C21FAB56E80087432F /* GCProfileViewController+GCUI.h in Headers */,
+				CE82B6BE1FAB56A60087432F /* GCView.h in Headers */,
+				CE82B66B1FAB4C480087432F /* GCProcessLeagueManager.h in Headers */,
+				CE82B6841FAB51940087432F /* CHDraggableView+Avatar.h in Headers */,
 				CE82B6281FAB2C890087432F /* NsSnCommentModel.h in Headers */,
 				CE82B5FD1FAB2B9F0087432F /* NsSnAvatarModel.h in Headers */,
+				CE82B6861FAB51940087432F /* CHDraggableView+Match.h in Headers */,
 				CE82B5E51FAB2A910087432F /* GCModel.h in Headers */,
 				CE82B5DF1FAB2A900087432F /* GCEventModel.h in Headers */,
 				CE82B5EF1FAB2A910087432F /* GCTrophyModel.h in Headers */,
 				CE82B6421FAB2C890087432F /* NsSnSubscribeModel.h in Headers */,
 				CE82B61C1FAB2C350087432F /* GCFayeWorker.h in Headers */,
 				CE82B5EB1FAB2A910087432F /* GCRankingModel.h in Headers */,
+				CE82B6A41FAB52E70087432F /* GCAPPMasterViewController.h in Headers */,
 				CE82B6031FAB2BC00087432F /* NsSnModel.h in Headers */,
 				CE82B6141FAB2C350087432F /* FayeMessage.h in Headers */,
 				CE82B6121FAB2C350087432F /* FayeClient.h in Headers */,
 				CE82B5E11FAB2A900087432F /* GCGamerModel.h in Headers */,
 				CE82B5FA1FAB2B120087432F /* GCColorManager.h in Headers */,
+				CE82B66D1FAB4C480087432F /* GCProcessLoadingManager.h in Headers */,
+				CE82B69A1FAB52A80087432F /* DefaultCellRenderGG.h in Headers */,
+				CE82B6671FAB4C480087432F /* GCProcessAuthentificationManager.h in Headers */,
+				CE82B6821FAB51940087432F /* CHAvatarView.h in Headers */,
+				CE82B6AE1FAB54690087432F /* GCAnswersViewController.h in Headers */,
 				CE82B62E1FAB2C890087432F /* NsSnLikeModel.h in Headers */,
 				CE82B5F31FAB2AD90087432F /* GCConfManager.h in Headers */,
+				CE82B6AF1FAB546F0087432F /* GCAnswersViewController+GCUI.h in Headers */,
 				CE82B6241FAB2C730087432F /* CJSONScanner.h in Headers */,
 				CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */,
+				CE82B6771FAB4D0F0087432F /* GCNotificationManager.h in Headers */,
+				CE82B68E1FAB519A0087432F /* SKBounceAnimation.h in Headers */,
 				CE82B6261FAB2C730087432F /* CJSONSerializer.h in Headers */,
 				CE82B62C1FAB2C890087432F /* NsSnFriendModel.h in Headers */,
 				CE82B5E31FAB2A910087432F /* GCLeagueModel.h in Headers */,
 				CE82B6101FAB2C2D0087432F /* NsSnUserManager.h in Headers */,
+				CE82B6B41FAB55040087432F /* GCStatsView.h in Headers */,
 				CE82B6161FAB2C350087432F /* NSObject+PropertySupport.h in Headers */,
 				CE82B6301FAB2C890087432F /* NsSnMediaModel.h in Headers */,
+				CE82B6AA1FAB54580087432F /* GCInGameViewController.h in Headers */,
+				CE82B6731FAB4C480087432F /* GCProcessQuestionManager.h in Headers */,
 				CE82B63A1FAB2C890087432F /* NsSnTagModel.h in Headers */,
 				CE82B5FB1FAB2B970087432F /* NsSnConfManager.h in Headers */,
 				CE82B60D1FAB2C0D0087432F /* NSNetcoRequest.h in Headers */,
 				CE82B6071FAB2BCD0087432F /* NSData+NSData_Tool.h in Headers */,
+				CE82B6C61FAB57160087432F /* GCProfileHeader.h in Headers */,
 				CE82B6201FAB2C730087432F /* CJSONSerializedData.h in Headers */,
 				CE82B60E1FAB2C2D0087432F /* NsSnSignManager.h in Headers */,
+				CE82B6A61FAB52F10087432F /* GCLeaguesViewController.h in Headers */,
 				CE82B62A1FAB2C890087432F /* NsSnFeedModel.h in Headers */,
+				CE82B69E1FAB52A80087432F /* ILinkerGG.h in Headers */,
 				CE82B5F51FAB2AEC0087432F /* GCPlatformConnection.h in Headers */,
+				CE82B6D01FAB57550087432F /* GCPushInfoView.h in Headers */,
 				CE82B6011FAB2BB10087432F /* GCRequester.h in Headers */,
 				CE82B61E1FAB2C730087432F /* CJSONSerialization.h in Headers */,
+				CE82B6751FAB4C480087432F /* GCProcessRankingManager.h in Headers */,
+				CE82B6CC1FAB57360087432F /* UIImageViewJA.h in Headers */,
 				CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */,
 				CE82B6341FAB2C890087432F /* NsSnTicketModel.h in Headers */,
 				CE82B5ED1FAB2A910087432F /* GCTeamModel.h in Headers */,
 				CE82B61A1FAB2C350087432F /* NSString+InflectionSupport.h in Headers */,
+				CE82B6981FAB52860087432F /* GCEventsViewController.h in Headers */,
+				CE82B68B1FAB51940087432F /* CHMatchView.h in Headers */,
+				CE82B6711FAB4C480087432F /* GCProcessProfileManager.h in Headers */,
 				CE82B6181FAB2C350087432F /* NSObject+Serialize.h in Headers */,
 				CE82B5F11FAB2AA80087432F /* GCExternalContent.h in Headers */,
 				CE82B63E1FAB2C890087432F /* NsSnMetadataModel.h in Headers */,
+				CE82B6B91FAB55280087432F /* OBShapedButton.h in Headers */,
+				CE82B6AC1FAB54660087432F /* GCAnswersViewController_Private.h in Headers */,
+				CE82B69D1FAB52A80087432F /* IDataGG.h in Headers */,
+				CE82B6BB1FAB55320087432F /* GCPointsView.h in Headers */,
 				CE82B6561FAB410F0087432F /* GCContainerViewController.h in Headers */,
+				CE82B6941FAB526B0087432F /* GCConnectViewController.h in Headers */,
+				CE82B6C01FAB56DB0087432F /* GCPushInfoViewController.h in Headers */,
+				CE82B6901FAB519E0087432F /* CAAnimation+Blocks.h in Headers */,
 				CE82B64A1FAB2CAB0087432F /* NsSnRequester.h in Headers */,
 				CE82B5DB1FAB2A900087432F /* GCAnswerModel.h in Headers */,
 				CE82B6621FAB49730087432F /* GCAPPNavigationManager.h in Headers */,
+				CE82B67E1FAB51520087432F /* CHDraggableView.h in Headers */,
 				CE82B6461FAB2C950087432F /* CDataScanner_Extensions.h in Headers */,
+				CE82B6C41FAB56ED0087432F /* GCProfileViewController.h in Headers */,
 				CE277BB11FAB16570077CD2F /* GameConnect.h in Headers */,
 				CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */,
 				CE82B6441FAB2C950087432F /* CDataScanner.h in Headers */,
+				CE82B6CE1FAB57440087432F /* GCRankingHeaderView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3329,6 +3482,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B6CB1FAB572B0087432F /* GCRankingHeaderLargeView.xib in Resources */,
+				CE82B69C1FAB52A80087432F /* DefaultCellRenderGG.xib in Resources */,
+				CE82B6C81FAB571E0087432F /* GCProfileHeader.xib in Resources */,
+				CE82B6811FAB51760087432F /* GCNotificationView.xib in Resources */,
+				CE82B6B61FAB55040087432F /* GCStatsView.xib in Resources */,
+				CE82B6BD1FAB55360087432F /* GCPointsView.xib in Resources */,
+				CE82B6B31FAB54F20087432F /* GCAnswerView.xib in Resources */,
+				CE82B68D1FAB51940087432F /* CHMatchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3385,23 +3546,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B6A51FAB52EA0087432F /* GCAPPMasterViewController.m in Sources */,
+				CE82B6971FAB52770087432F /* GCMasterViewController.m in Sources */,
+				CE82B6881FAB51940087432F /* CHDraggableView.m in Sources */,
 				CE82B6371FAB2C890087432F /* NsSnSignModel.m in Sources */,
 				CE82B5E21FAB2A910087432F /* GCGamerModel.m in Sources */,
+				CE82B6CA1FAB57270087432F /* GCRankingHeaderLargeView.m in Sources */,
 				CE82B6231FAB2C730087432F /* CJSONDeserializer.m in Sources */,
 				CE82B6251FAB2C730087432F /* CJSONScanner.m in Sources */,
 				CE82B6391FAB2C890087432F /* NsSnPendingTagModel.m in Sources */,
 				CE82B6061FAB2BCD0087432F /* NSDataManager.m in Sources */,
+				CE82B6991FAB52890087432F /* GCEventsViewController.m in Sources */,
 				CE82B6571FAB41130087432F /* GCContainerViewController.m in Sources */,
 				CE82B5EA1FAB2A910087432F /* GCQuestionModel.m in Sources */,
 				CE82B6491FAB2CA00087432F /* NsSnMediaFormat.m in Sources */,
 				CE82B5D81FAB29AC0087432F /* GCQuestionManager.m in Sources */,
+				CE82B6781FAB4D0F0087432F /* GCNotificationManager.m in Sources */,
 				CE82B61F1FAB2C730087432F /* CJSONSerialization.m in Sources */,
 				CE82B6111FAB2C2D0087432F /* NsSnUserManager.m in Sources */,
 				CE82B5F41FAB2AD90087432F /* GCConfManager.m in Sources */,
 				CE82B6171FAB2C350087432F /* NSObject+PropertySupport.m in Sources */,
+				CE82B6AD1FAB54680087432F /* GCAnswersViewController.m in Sources */,
+				CE82B6761FAB4C480087432F /* GCProcessRankingManager.m in Sources */,
 				CE82B6311FAB2C890087432F /* NsSnMediaModel.m in Sources */,
 				CE82B5DC1FAB2A900087432F /* GCAnswerModel.m in Sources */,
 				CE82B64B1FAB2CAB0087432F /* NsSnRequester.m in Sources */,
+				CE82B68F1FAB519A0087432F /* SKBounceAnimation.m in Sources */,
+				CE82B6741FAB4C480087432F /* GCProcessQuestionManager.m in Sources */,
 				CE82B6451FAB2C950087432F /* CDataScanner.m in Sources */,
 				CE82B6511FAB2D000087432F /* GCProcessManager.m in Sources */,
 				CE82B60C1FAB2C0B0087432F /* NSNetcoRequest.m in Sources */,
@@ -3409,47 +3580,82 @@
 				CE82B63D1FAB2C890087432F /* NsSnThirdPartyModel.m in Sources */,
 				CE82B5E01FAB2A900087432F /* GCEventModel.m in Sources */,
 				CE82B64F1FAB2CC40087432F /* GCProcessPushManager.m in Sources */,
+				CE82B6801FAB51760087432F /* GCNotificationView.m in Sources */,
+				CE82B6B01FAB546F0087432F /* GCAnswersViewController+GCUI.m in Sources */,
+				CE82B67A1FAB4ED90087432F /* GCAPPNavigationPriorityPushManager.m in Sources */,
 				CE82B6021FAB2BB10087432F /* GCRequester.m in Sources */,
 				CE82B5F81FAB2B0B0087432F /* GCFontManager.m in Sources */,
+				CE82B68C1FAB51940087432F /* CHMatchView.m in Sources */,
 				CE82B6431FAB2C890087432F /* NsSnSubscribeModel.m in Sources */,
 				CE82B6651FAB498A0087432F /* GCAPPNavigationManageriPad.m in Sources */,
+				CE82B6A11FAB52A80087432F /* UICollectionViewGG.m in Sources */,
 				CE82B61B1FAB2C350087432F /* NSString+InflectionSupport.m in Sources */,
 				CE82B5F61FAB2AEF0087432F /* GCPlatformConnection.m in Sources */,
 				CE82B6331FAB2C890087432F /* NsSnMessageModel.m in Sources */,
 				CE82B60A1FAB2BD80087432F /* GCGamerManager.m in Sources */,
+				CE82B6CF1FAB57490087432F /* GCRankingHeaderView.m in Sources */,
 				CE82B62D1FAB2C890087432F /* NsSnFriendModel.m in Sources */,
+				CE82B6C51FAB56EF0087432F /* GCProfileViewController.m in Sources */,
+				CE82B6AB1FAB545B0087432F /* GCInGameViewController.m in Sources */,
+				CE82B6931FAB51E10087432F /* GCAPPNavigationController.m in Sources */,
 				CE82B5F21FAB2AAD0087432F /* GCExternalContent.m in Sources */,
 				CE82B5E41FAB2A910087432F /* GCLeagueModel.m in Sources */,
 				CE82B63B1FAB2C890087432F /* NsSnTagModel.m in Sources */,
 				CE82B6151FAB2C350087432F /* FayeMessage.m in Sources */,
 				CE82B6081FAB2BCD0087432F /* NSData+NSData_Tool.m in Sources */,
+				CE82B6A71FAB52F40087432F /* GCLeaguesViewController.m in Sources */,
+				CE82B6BC1FAB55360087432F /* GCPointsView.m in Sources */,
 				CE82B6611FAB431A0087432F /* GCAPPNavigationManageriPhone.m in Sources */,
 				CE82B61D1FAB2C350087432F /* GCFayeWorker.m in Sources */,
+				CE82B66A1FAB4C480087432F /* GCProcessEventManager.m in Sources */,
+				CE82B6951FAB526E0087432F /* GCConnectViewController.m in Sources */,
 				CE82B5F91FAB2B100087432F /* GCColorManager.m in Sources */,
 				CE82B6211FAB2C730087432F /* CJSONSerializedData.m in Sources */,
+				CE82B6831FAB51940087432F /* CHAvatarView.m in Sources */,
+				CE82B6C71FAB571A0087432F /* GCProfileHeader.m in Sources */,
+				CE82B6A31FAB52CF0087432F /* WCDynamicFlowLayout.m in Sources */,
+				CE82B6BF1FAB56A90087432F /* GCView.m in Sources */,
 				CE82B6631FAB49780087432F /* GCAPPNavigationManager.m in Sources */,
+				CE82B66C1FAB4C480087432F /* GCProcessLeagueManager.m in Sources */,
+				CE82B68A1FAB51940087432F /* CHDraggingCoordinator.m in Sources */,
 				CE82B6351FAB2C890087432F /* NsSnTicketModel.m in Sources */,
 				CE82B62B1FAB2C890087432F /* NsSnFeedModel.m in Sources */,
 				CE82B60F1FAB2C2D0087432F /* NsSnSignManager.m in Sources */,
+				CE82B66E1FAB4C480087432F /* GCProcessLoadingManager.m in Sources */,
+				CE82B6851FAB51940087432F /* CHDraggableView+Avatar.m in Sources */,
 				CE82B62F1FAB2C890087432F /* NsSnLikeModel.m in Sources */,
+				CE82B6871FAB51940087432F /* CHDraggableView+Match.m in Sources */,
+				CE82B6701FAB4C480087432F /* GCProcessNotificationManager.m in Sources */,
+				CE82B6C31FAB56EB0087432F /* GCProfileViewController+GCUI.m in Sources */,
 				CE82B6661FAB4B020087432F /* GCWebViewController.swift in Sources */,
 				CE82B6471FAB2C950087432F /* CDataScanner_Extensions.m in Sources */,
 				CE82B6291FAB2C890087432F /* NsSnCommentModel.m in Sources */,
 				CE82B5EE1FAB2A910087432F /* GCTeamModel.m in Sources */,
+				CE82B6B81FAB551E0087432F /* JWGCircleCounter.m in Sources */,
 				CE82B5FE1FAB2B9F0087432F /* NsSnAvatarModel.m in Sources */,
 				CE82B5F01FAB2A910087432F /* GCTrophyModel.m in Sources */,
+				CE82B6B21FAB54F20087432F /* GCAnswerView.m in Sources */,
+				CE82B6721FAB4C480087432F /* GCProcessProfileManager.m in Sources */,
 				CE82B5E61FAB2A910087432F /* GCModel.m in Sources */,
 				CE82B5DE1FAB2A900087432F /* GCCompetitionModel.m in Sources */,
 				CE82B63F1FAB2C890087432F /* NsSnMetadataModel.m in Sources */,
+				CE82B6681FAB4C480087432F /* GCProcessAuthentificationManager.m in Sources */,
 				CE82B6191FAB2C350087432F /* NSObject+Serialize.m in Sources */,
 				CE82B5FC1FAB2B970087432F /* NsSnConfManager.m in Sources */,
+				CE82B6911FAB519E0087432F /* CAAnimation+Blocks.m in Sources */,
 				CE82B5EC1FAB2A910087432F /* GCRankingModel.m in Sources */,
 				CE82B5E81FAB2A910087432F /* GCPushModels.m in Sources */,
 				CE82B6411FAB2C890087432F /* NsSnUserModel.m in Sources */,
+				CE82B6B51FAB55040087432F /* GCStatsView.m in Sources */,
 				CE82B6531FAB2D100087432F /* SingletonManager.m in Sources */,
 				CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */,
+				CE82B6A91FAB53090087432F /* GCLeagueEditionViewController.m in Sources */,
+				CE82B6BA1FAB552B0087432F /* OBShapedButton.m in Sources */,
 				CE82B6271FAB2C730087432F /* CJSONSerializer.m in Sources */,
+				CE82B6CD1FAB573A0087432F /* UIImageViewJA.m in Sources */,
+				CE82B69B1FAB52A80087432F /* DefaultCellRenderGG.m in Sources */,
 				CE82B6131FAB2C350087432F /* FayeClient.m in Sources */,
+				CE82B6C11FAB56DD0087432F /* GCPushInfoViewController.m in Sources */,
 				CE82B6001FAB2BA90087432F /* BridgedLanguageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3640,6 +3846,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.GameConnect;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3666,6 +3873,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.GameConnect;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

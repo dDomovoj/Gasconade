@@ -7,6 +7,8 @@
 //
 
 #import "GCProcessManager.h"
+#import "GCConnectViewController.h"
+#import "GCMasterViewController.h"
 
 /*
  ** GCProcessRankingManager

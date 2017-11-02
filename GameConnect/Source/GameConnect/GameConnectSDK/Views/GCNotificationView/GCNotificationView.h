@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
 //
 
-#import "GCView.h"
 #import "GCQuestionModel.h"
 #import "GCTrophyModel.h"
 #import "CHDraggableView.h"

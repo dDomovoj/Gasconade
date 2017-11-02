@@ -7,6 +7,7 @@
 //
 
 #import "GCProcessManager.h"
+#import "GCEventsViewController.h"
 
 @protocol GCProcessEventManagerDelegate <GCProcessManagerDelegate>
 @optional

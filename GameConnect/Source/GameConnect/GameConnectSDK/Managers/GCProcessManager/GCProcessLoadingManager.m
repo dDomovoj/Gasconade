@@ -7,6 +7,7 @@
 //
 
 #import "GCProcessLoadingManager.h"
+#import "GCMasterViewController.h"
 
 @implementation GCProcessLoadingManager
 CREATE_INSTANCE

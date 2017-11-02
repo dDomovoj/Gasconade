@@ -10,6 +10,7 @@
 #import "GCNotificationView.h"
 #import "GCAPPDefines.h"
 #import "GCConfManager.h"
+#import "GCView.h"
 
 @interface GCNotificationView()
 {

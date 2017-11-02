@@ -7,6 +7,7 @@
 //
 
 #import "Extends+Libs.h"
+#import "CHDraggingCoordinator.h"
 #import "CHDraggableView.h"
 #import "CHDraggableView+Match.h"
 
@@ -16,11 +17,16 @@
 #import "GCNotificationView.h"
 #import "GCInGameViewController.h"
 #import "GCProcessNotificationManager.h"
+
+#import "GCConfManager.h"
+#import "GCAPPDefines.h"
+
 //#import "PSGOneApp-Swift.h"
 #warning ADD GC USER DEFAULTS
 //#import "UserDefaultsStorageManager.h"
 
 @interface GCNotificationManager()
+<CHDraggingCoordinatorDelegate>
 {
     // Limitation on Y for bubbles
     CGFloat minY;

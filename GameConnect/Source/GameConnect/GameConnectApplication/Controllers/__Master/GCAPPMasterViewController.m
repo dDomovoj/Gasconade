@@ -9,6 +9,7 @@
 #import "GCAPPMasterViewController.h"
 #import "GCBluredImageSingleton.h"
 #import "Extends+Libs.h"
+#import "GCAPPDefines.h"
 //#import "GCLoggerManager.h"
 
 #warning ADD GC IMAGES

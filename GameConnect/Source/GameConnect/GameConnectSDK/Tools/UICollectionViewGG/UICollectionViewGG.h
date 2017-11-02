@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WCDynamicFlowLayout.h"
 #import "ILinkerGG.h"
 #import "IRenderGG.h"
 #import "IDataGG.h"

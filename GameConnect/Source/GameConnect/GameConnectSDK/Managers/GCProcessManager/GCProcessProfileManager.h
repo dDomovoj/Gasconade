@@ -7,6 +7,9 @@
 //
 
 #import "GCProcessManager.h"
+#import "GCProfileViewController.h"
+#import "GCPushInfoViewController.h"
+#import "GCProfileEditionViewController.h"
 
 @protocol GCProcessProfileManagerDelegate <GCProcessManagerDelegate>
 @optional

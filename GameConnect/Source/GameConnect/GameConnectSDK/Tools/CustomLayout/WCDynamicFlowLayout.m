@@ -85,8 +85,8 @@
             springBehaviour.frequency = 1.5f;
 
             if (!CGPointEqualToPoint(CGPointZero, touchLocation)) {
-                CGFloat yDistanceFromTouch = fabsf(touchLocation.y - springBehaviour.anchorPoint.y);
-                CGFloat xDistanceFromTouch = fabsf(touchLocation.x - springBehaviour.anchorPoint.x);
+              CGFloat yDistanceFromTouch = fabs(touchLocation.y - springBehaviour.anchorPoint.y);
+              CGFloat xDistanceFromTouch = fabs(touchLocation.x - springBehaviour.anchorPoint.x);
                 CGFloat scrollResistance = (yDistanceFromTouch + xDistanceFromTouch) / self.spring_resistance;
 
                 if (self.latestDelta < 0) {
@@ -246,8 +246,8 @@
         CGPoint touchLocation = [self.collectionView.panGestureRecognizer locationInView:self.collectionView];
 
         [self.dynamicAnimator.behaviors enumerateObjectsUsingBlock:^(UIAttachmentBehavior *springBehaviour, NSUInteger idx, BOOL *stop) {
-            CGFloat yDistanceFromTouch = fabsf(touchLocation.y - springBehaviour.anchorPoint.y);
-            CGFloat xDistanceFromTouch = fabsf(touchLocation.x - springBehaviour.anchorPoint.x);
+          CGFloat yDistanceFromTouch = fabs(touchLocation.y - springBehaviour.anchorPoint.y);
+          CGFloat xDistanceFromTouch = fabs(touchLocation.x - springBehaviour.anchorPoint.x);
             CGFloat scrollResistance = (yDistanceFromTouch + xDistanceFromTouch) / self.spring_resistance;
 
             UICollectionViewLayoutAttributes *item = springBehaviour.items.firstObject;

@@ -7,18 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "GCConnectViewController.h"
-#import "GCLoginNSAPIViewController.h"
-#import "GCEventsViewController.h"
-#import "GCProfileViewController.h"
-#import "GCProfileEditionViewController.h"
-#import "GCLeaguesViewController.h"
-#import "GCProfileEditionViewController.h"
-#import "GCLeagueEditionViewController.h"
-#import "GCRankingsViewController.h"
-#import "GCInGameViewController.h"
-#import "GCAnswersViewController.h"
-#import "GCPushInfoViewController.h"
 #import "SingletonManager.h"
 
 #import "GCTrophyModel.h"

@@ -7,6 +7,7 @@
 //
 
 #import "GCProcessNotificationManager.h"
+#import "GCNotificationView.h"
 #import "Extends+Libs.h"
 
 @implementation GCProcessNotificationManager
