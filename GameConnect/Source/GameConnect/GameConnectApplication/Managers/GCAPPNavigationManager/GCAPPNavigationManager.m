@@ -42,7 +42,8 @@
     if (self.isWatchingGameConnect && self.isWatchingGameConnect()) {
         return;
     }
-    [[AppDelegate shared] openGameConnect];
+#warning TODO: Add callback
+//    [[AppDelegate shared] openGameConnect];
 }
 
 -(GCAPPNavigationController *) giveMeNavigationViewController

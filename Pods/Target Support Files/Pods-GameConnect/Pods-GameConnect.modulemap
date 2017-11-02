@@ -1,0 +1,6 @@
+framework module Pods_GameConnect {
+  umbrella header "Pods-GameConnect-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -13,6 +13,7 @@
 #import "GCQuestionManager.h"
 #import "GCFayeWorker.h"
 #import "Extends+Libs.h"
+#import "GCConfManager.h"
 
 @implementation GCProcessPushManager
 CREATE_INSTANCE

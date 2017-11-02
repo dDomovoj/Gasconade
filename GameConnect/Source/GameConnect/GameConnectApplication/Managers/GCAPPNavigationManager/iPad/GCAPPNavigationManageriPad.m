@@ -20,6 +20,8 @@
 #import "GCAPPProfileEditionViewController.h"
 #import "GCAPPPushInfoViewControlleriPad.h"
 #import "GCAPPHomeViewControlleriPad.h"
+#import "GCConfManager.h"
+#import "GCAPPDefines.h"
 
 #import "GCGamerManager.h"
 #import "GCCompetitionManager.h"

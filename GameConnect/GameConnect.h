@@ -33,13 +33,17 @@ FOUNDATION_EXPORT const unsigned char GameConnectVersionString[];
 #import <GameConnect/GCPlatformConnection.h>
 #import <GameConnect/GCFontManager.h>
 #import <GameConnect/GCColorManager.h>
-//#import <GameConnect/ >
 
-#import <GameConnect/GCMasterViewController.h>
-#import <GameConnect/GCConnectViewController.h>
-#import <GameConnect/GCPushInfoViewController.h>
+#import <GameConnect/GCAPPNavigationManager.h>
+#import <GameConnect/GCAPPNavigationManageriPhone.h>
+#import <GameConnect/GCAPPNavigationManageriPad.h>
+
+//#import <GameConnect/GCMasterViewController.h>
+//#import <GameConnect/GCConnectViewController.h>
+//#import <GameConnect/GCPushInfoViewController.h>
 #import <GameConnect/GCContainerViewController.h>
 
-#import <GameConnect/GCPushInfoView.h>
-#import <GameConnect/UIImageViewJA.h>
-#import <GameConnect/iCarousel.h>
+//#import <GameConnect/GCPushInfoView.h>
+//#import <GameConnect/UIImageViewJA.h>
+//#import <GameConnect/iCarousel.h>
+

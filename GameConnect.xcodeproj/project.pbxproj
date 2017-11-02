@@ -7,10 +7,161 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A8EE387587D96B43AB964A4 /* Pods_GameConnect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1326BB556DE2F309DDBA95D /* Pods_GameConnect.framework */; };
 		CE277BB11FAB16570077CD2F /* GameConnect.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BAF1FAB16570077CD2F /* GameConnect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE277F021FAB1A090077CD2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277F011FAB1A090077CD2F /* AppDelegate.swift */; };
+		CE277F041FAB1A090077CD2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277F031FAB1A090077CD2F /* ViewController.swift */; };
+		CE277F071FAB1A090077CD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE277F051FAB1A090077CD2F /* Main.storyboard */; };
+		CE277F091FAB1A090077CD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE277F081FAB1A090077CD2F /* Assets.xcassets */; };
+		CE277F0C1FAB1A090077CD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE277F0A1FAB1A090077CD2F /* LaunchScreen.storyboard */; };
+		CE82B5D41FAB28A10087432F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82B5D31FAB28A10087432F /* Question.swift */; };
+		CE82B5D71FAB29AC0087432F /* GCQuestionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CFD1FAB171C0077CD2F /* GCQuestionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5D81FAB29AC0087432F /* GCQuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CFE1FAB171C0077CD2F /* GCQuestionManager.m */; };
+		CE82B5DB1FAB2A900087432F /* GCAnswerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D061FAB171C0077CD2F /* GCAnswerModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5DC1FAB2A900087432F /* GCAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D071FAB171C0077CD2F /* GCAnswerModel.m */; };
+		CE82B5DD1FAB2A900087432F /* GCCompetitionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D091FAB171C0077CD2F /* GCCompetitionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5DE1FAB2A900087432F /* GCCompetitionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D0A1FAB171C0077CD2F /* GCCompetitionModel.m */; };
+		CE82B5DF1FAB2A900087432F /* GCEventModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D0C1FAB171C0077CD2F /* GCEventModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5E01FAB2A900087432F /* GCEventModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D0D1FAB171C0077CD2F /* GCEventModel.m */; };
+		CE82B5E11FAB2A900087432F /* GCGamerModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D121FAB171C0077CD2F /* GCGamerModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5E21FAB2A910087432F /* GCGamerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D131FAB171C0077CD2F /* GCGamerModel.m */; };
+		CE82B5E31FAB2A910087432F /* GCLeagueModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D151FAB171C0077CD2F /* GCLeagueModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5E41FAB2A910087432F /* GCLeagueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D161FAB171C0077CD2F /* GCLeagueModel.m */; };
+		CE82B5E51FAB2A910087432F /* GCModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D181FAB171C0077CD2F /* GCModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5E61FAB2A910087432F /* GCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D191FAB171C0077CD2F /* GCModel.m */; };
+		CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D1B1FAB171C0077CD2F /* GCPushModels.h */; };
+		CE82B5E81FAB2A910087432F /* GCPushModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D1C1FAB171C0077CD2F /* GCPushModels.m */; };
+		CE82B5E91FAB2A910087432F /* GCQuestionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D1E1FAB171C0077CD2F /* GCQuestionModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5EA1FAB2A910087432F /* GCQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D1F1FAB171C0077CD2F /* GCQuestionModel.m */; };
+		CE82B5EB1FAB2A910087432F /* GCRankingModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D211FAB171C0077CD2F /* GCRankingModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5EC1FAB2A910087432F /* GCRankingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D221FAB171C0077CD2F /* GCRankingModel.m */; };
+		CE82B5ED1FAB2A910087432F /* GCTeamModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D241FAB171C0077CD2F /* GCTeamModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5EE1FAB2A910087432F /* GCTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D251FAB171C0077CD2F /* GCTeamModel.m */; };
+		CE82B5EF1FAB2A910087432F /* GCTrophyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D271FAB171C0077CD2F /* GCTrophyModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5F01FAB2A910087432F /* GCTrophyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D281FAB171C0077CD2F /* GCTrophyModel.m */; };
+		CE82B5F11FAB2AA80087432F /* GCExternalContent.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D0F1FAB171C0077CD2F /* GCExternalContent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5F21FAB2AAD0087432F /* GCExternalContent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D101FAB171C0077CD2F /* GCExternalContent.m */; };
+		CE82B5F31FAB2AD90087432F /* GCConfManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C901FAB171C0077CD2F /* GCConfManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5F41FAB2AD90087432F /* GCConfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C911FAB171C0077CD2F /* GCConfManager.m */; };
+		CE82B5F51FAB2AEC0087432F /* GCPlatformConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C941FAB171C0077CD2F /* GCPlatformConnection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5F61FAB2AEF0087432F /* GCPlatformConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C951FAB171C0077CD2F /* GCPlatformConnection.m */; };
+		CE82B5F71FAB2B070087432F /* GCFontManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C921FAB171C0077CD2F /* GCFontManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5F81FAB2B0B0087432F /* GCFontManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C931FAB171C0077CD2F /* GCFontManager.m */; };
+		CE82B5F91FAB2B100087432F /* GCColorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C8E1FAB171C0077CD2F /* GCColorManager.m */; };
+		CE82B5FA1FAB2B120087432F /* GCColorManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C8D1FAB171C0077CD2F /* GCColorManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B5FB1FAB2B970087432F /* NsSnConfManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EA71FAB171C0077CD2F /* NsSnConfManager.h */; };
+		CE82B5FC1FAB2B970087432F /* NsSnConfManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EA81FAB171C0077CD2F /* NsSnConfManager.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B5FD1FAB2B9F0087432F /* NsSnAvatarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EE51FAB171C0077CD2F /* NsSnAvatarModel.h */; };
+		CE82B5FE1FAB2B9F0087432F /* NsSnAvatarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EE61FAB171C0077CD2F /* NsSnAvatarModel.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B5FF1FAB2BA90087432F /* BridgedLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BB81FAB171C0077CD2F /* BridgedLanguageManager.h */; };
+		CE82B6001FAB2BA90087432F /* BridgedLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BB91FAB171C0077CD2F /* BridgedLanguageManager.m */; };
+		CE82B6011FAB2BB10087432F /* GCRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D591FAB171C0077CD2F /* GCRequester.h */; };
+		CE82B6021FAB2BB10087432F /* GCRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D5A1FAB171C0077CD2F /* GCRequester.m */; };
+		CE82B6031FAB2BC00087432F /* NsSnModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EC91FAB171C0077CD2F /* NsSnModel.h */; };
+		CE82B6041FAB2BC00087432F /* NsSnModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ECA1FAB171C0077CD2F /* NsSnModel.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6051FAB2BCD0087432F /* NSDataManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DF11FAB171C0077CD2F /* NSDataManager.h */; };
+		CE82B6061FAB2BCD0087432F /* NSDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DF21FAB171C0077CD2F /* NSDataManager.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6071FAB2BCD0087432F /* NSData+NSData_Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E001FAB171C0077CD2F /* NSData+NSData_Tool.h */; };
+		CE82B6081FAB2BCD0087432F /* NSData+NSData_Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E011FAB171C0077CD2F /* NSData+NSData_Tool.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6091FAB2BD80087432F /* GCGamerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D001FAB171C0077CD2F /* GCGamerManager.h */; };
+		CE82B60A1FAB2BD80087432F /* GCGamerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D011FAB171C0077CD2F /* GCGamerManager.m */; };
+		CE82B60B1FAB2BF90087432F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE277E281FAB171C0077CD2F /* FacebookSDK.framework */; };
+		CE82B60C1FAB2C0B0087432F /* NSNetcoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DF51FAB171C0077CD2F /* NSNetcoRequest.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B60D1FAB2C0D0087432F /* NSNetcoRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DF41FAB171C0077CD2F /* NSNetcoRequest.h */; };
+		CE82B60E1FAB2C2D0087432F /* NsSnSignManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ED31FAB171C0077CD2F /* NsSnSignManager.h */; };
+		CE82B60F1FAB2C2D0087432F /* NsSnSignManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ED41FAB171C0077CD2F /* NsSnSignManager.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6101FAB2C2D0087432F /* NsSnUserManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EEA1FAB171C0077CD2F /* NsSnUserManager.h */; };
+		CE82B6111FAB2C2D0087432F /* NsSnUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EEB1FAB171C0077CD2F /* NsSnUserManager.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6121FAB2C350087432F /* FayeClient.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D4D1FAB171C0077CD2F /* FayeClient.h */; };
+		CE82B6131FAB2C350087432F /* FayeClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D4E1FAB171C0077CD2F /* FayeClient.m */; };
+		CE82B6141FAB2C350087432F /* FayeMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D4F1FAB171C0077CD2F /* FayeMessage.h */; };
+		CE82B6151FAB2C350087432F /* FayeMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D501FAB171C0077CD2F /* FayeMessage.m */; };
+		CE82B6161FAB2C350087432F /* NSObject+PropertySupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D511FAB171C0077CD2F /* NSObject+PropertySupport.h */; };
+		CE82B6171FAB2C350087432F /* NSObject+PropertySupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D521FAB171C0077CD2F /* NSObject+PropertySupport.m */; };
+		CE82B6181FAB2C350087432F /* NSObject+Serialize.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D531FAB171C0077CD2F /* NSObject+Serialize.h */; };
+		CE82B6191FAB2C350087432F /* NSObject+Serialize.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D541FAB171C0077CD2F /* NSObject+Serialize.m */; };
+		CE82B61A1FAB2C350087432F /* NSString+InflectionSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D551FAB171C0077CD2F /* NSString+InflectionSupport.h */; };
+		CE82B61B1FAB2C350087432F /* NSString+InflectionSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D561FAB171C0077CD2F /* NSString+InflectionSupport.m */; };
+		CE82B61C1FAB2C350087432F /* GCFayeWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D571FAB171C0077CD2F /* GCFayeWorker.h */; };
+		CE82B61D1FAB2C350087432F /* GCFayeWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D581FAB171C0077CD2F /* GCFayeWorker.m */; };
+		CE82B61E1FAB2C730087432F /* CJSONSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E5F1FAB171C0077CD2F /* CJSONSerialization.h */; };
+		CE82B61F1FAB2C730087432F /* CJSONSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E601FAB171C0077CD2F /* CJSONSerialization.m */; };
+		CE82B6201FAB2C730087432F /* CJSONSerializedData.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E611FAB171C0077CD2F /* CJSONSerializedData.h */; };
+		CE82B6211FAB2C730087432F /* CJSONSerializedData.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E621FAB171C0077CD2F /* CJSONSerializedData.m */; };
+		CE82B6221FAB2C730087432F /* CJSONDeserializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E691FAB171C0077CD2F /* CJSONDeserializer.h */; };
+		CE82B6231FAB2C730087432F /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E6A1FAB171C0077CD2F /* CJSONDeserializer.m */; };
+		CE82B6241FAB2C730087432F /* CJSONScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E6B1FAB171C0077CD2F /* CJSONScanner.h */; };
+		CE82B6251FAB2C730087432F /* CJSONScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E6C1FAB171C0077CD2F /* CJSONScanner.m */; };
+		CE82B6261FAB2C730087432F /* CJSONSerializer.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E6D1FAB171C0077CD2F /* CJSONSerializer.h */; };
+		CE82B6271FAB2C730087432F /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E6E1FAB171C0077CD2F /* CJSONSerializer.m */; };
+		CE82B6281FAB2C890087432F /* NsSnCommentModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EA41FAB171C0077CD2F /* NsSnCommentModel.h */; };
+		CE82B6291FAB2C890087432F /* NsSnCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EA51FAB171C0077CD2F /* NsSnCommentModel.m */; };
+		CE82B62A1FAB2C890087432F /* NsSnFeedModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EAC1FAB171C0077CD2F /* NsSnFeedModel.h */; };
+		CE82B62B1FAB2C890087432F /* NsSnFeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EAD1FAB171C0077CD2F /* NsSnFeedModel.m */; };
+		CE82B62C1FAB2C890087432F /* NsSnFriendModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EAF1FAB171C0077CD2F /* NsSnFriendModel.h */; };
+		CE82B62D1FAB2C890087432F /* NsSnFriendModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EB01FAB171C0077CD2F /* NsSnFriendModel.m */; };
+		CE82B62E1FAB2C890087432F /* NsSnLikeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EB71FAB171C0077CD2F /* NsSnLikeModel.h */; };
+		CE82B62F1FAB2C890087432F /* NsSnLikeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EB81FAB171C0077CD2F /* NsSnLikeModel.m */; };
+		CE82B6301FAB2C890087432F /* NsSnMediaModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EBE1FAB171C0077CD2F /* NsSnMediaModel.h */; };
+		CE82B6311FAB2C890087432F /* NsSnMediaModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EBF1FAB171C0077CD2F /* NsSnMediaModel.m */; };
+		CE82B6321FAB2C890087432F /* NsSnMessageModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EC31FAB171C0077CD2F /* NsSnMessageModel.h */; };
+		CE82B6331FAB2C890087432F /* NsSnMessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EC41FAB171C0077CD2F /* NsSnMessageModel.m */; };
+		CE82B6341FAB2C890087432F /* NsSnTicketModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ED01FAB171C0077CD2F /* NsSnTicketModel.h */; };
+		CE82B6351FAB2C890087432F /* NsSnTicketModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ED11FAB171C0077CD2F /* NsSnTicketModel.m */; };
+		CE82B6361FAB2C890087432F /* NsSnSignModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ED51FAB171C0077CD2F /* NsSnSignModel.h */; };
+		CE82B6371FAB2C890087432F /* NsSnSignModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ED61FAB171C0077CD2F /* NsSnSignModel.m */; };
+		CE82B6381FAB2C890087432F /* NsSnPendingTagModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ED81FAB171C0077CD2F /* NsSnPendingTagModel.h */; };
+		CE82B6391FAB2C890087432F /* NsSnPendingTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ED91FAB171C0077CD2F /* NsSnPendingTagModel.m */; };
+		CE82B63A1FAB2C890087432F /* NsSnTagModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EDC1FAB171C0077CD2F /* NsSnTagModel.h */; };
+		CE82B63B1FAB2C890087432F /* NsSnTagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EDD1FAB171C0077CD2F /* NsSnTagModel.m */; };
+		CE82B63C1FAB2C890087432F /* NsSnThirdPartyModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EDF1FAB171C0077CD2F /* NsSnThirdPartyModel.h */; };
+		CE82B63D1FAB2C890087432F /* NsSnThirdPartyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EE01FAB171C0077CD2F /* NsSnThirdPartyModel.m */; };
+		CE82B63E1FAB2C890087432F /* NsSnMetadataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EE81FAB171C0077CD2F /* NsSnMetadataModel.h */; };
+		CE82B63F1FAB2C890087432F /* NsSnMetadataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EE91FAB171C0077CD2F /* NsSnMetadataModel.m */; };
+		CE82B6401FAB2C890087432F /* NsSnUserModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EEC1FAB171C0077CD2F /* NsSnUserModel.h */; };
+		CE82B6411FAB2C890087432F /* NsSnUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EED1FAB171C0077CD2F /* NsSnUserModel.m */; };
+		CE82B6421FAB2C890087432F /* NsSnSubscribeModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EEF1FAB171C0077CD2F /* NsSnSubscribeModel.h */; };
+		CE82B6431FAB2C890087432F /* NsSnSubscribeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF01FAB171C0077CD2F /* NsSnSubscribeModel.m */; };
+		CE82B6441FAB2C950087432F /* CDataScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E5A1FAB171C0077CD2F /* CDataScanner.h */; };
+		CE82B6451FAB2C950087432F /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E5B1FAB171C0077CD2F /* CDataScanner.m */; };
+		CE82B6461FAB2C950087432F /* CDataScanner_Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E641FAB171C0077CD2F /* CDataScanner_Extensions.h */; };
+		CE82B6471FAB2C950087432F /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E651FAB171C0077CD2F /* CDataScanner_Extensions.m */; };
+		CE82B6481FAB2CA00087432F /* NsSnMediaFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EBA1FAB171C0077CD2F /* NsSnMediaFormat.h */; };
+		CE82B6491FAB2CA00087432F /* NsSnMediaFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EBB1FAB171C0077CD2F /* NsSnMediaFormat.m */; };
+		CE82B64A1FAB2CAB0087432F /* NsSnRequester.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277ECB1FAB171C0077CD2F /* NsSnRequester.h */; };
+		CE82B64B1FAB2CAB0087432F /* NsSnRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277ECC1FAB171C0077CD2F /* NsSnRequester.m */; };
+		CE82B64C1FAB2CB20087432F /* SRWebSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D5F1FAB171C0077CD2F /* SRWebSocket.h */; };
+		CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D601FAB171C0077CD2F /* SRWebSocket.m */; };
+		CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF61FAB171C0077CD2F /* GCProcessPushManager.h */; };
+		CE82B64F1FAB2CC40087432F /* GCProcessPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF71FAB171C0077CD2F /* GCProcessPushManager.m */; };
+		CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CF01FAB171C0077CD2F /* GCProcessManager.h */; };
+		CE82B6511FAB2D000087432F /* GCProcessManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CF11FAB171C0077CD2F /* GCProcessManager.m */; };
+		CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DE91FAB171C0077CD2F /* SingletonManager.h */; };
+		CE82B6531FAB2D100087432F /* SingletonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DEA1FAB171C0077CD2F /* SingletonManager.m */; };
+		CE82B6551FAB3E3D0087432F /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = CE82B6541FAB3E3D0087432F /* libicucore.tbd */; };
+		CE82B6561FAB410F0087432F /* GCContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BBC1FAB171C0077CD2F /* GCContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6571FAB41130087432F /* GCContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BBD1FAB171C0077CD2F /* GCContainerViewController.m */; };
+		CE82B6601FAB431A0087432F /* GCAPPNavigationManageriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C561FAB171C0077CD2F /* GCAPPNavigationManageriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6611FAB431A0087432F /* GCAPPNavigationManageriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C571FAB171C0077CD2F /* GCAPPNavigationManageriPhone.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6621FAB49730087432F /* GCAPPNavigationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C501FAB171C0077CD2F /* GCAPPNavigationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6631FAB49780087432F /* GCAPPNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C511FAB171C0077CD2F /* GCAPPNavigationManager.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6641FAB49870087432F /* GCAPPNavigationManageriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C531FAB171C0077CD2F /* GCAPPNavigationManageriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6651FAB498A0087432F /* GCAPPNavigationManageriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C541FAB171C0077CD2F /* GCAPPNavigationManageriPad.m */; settings = {COMPILER_FLAGS = "-w"; }; };
+		CE82B6661FAB4B020087432F /* GCWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277BBE1FAB171C0077CD2F /* GCWebViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		CE82B5D91FAB2A0D0087432F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE277BA31FAB16570077CD2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE277BAB1FAB16570077CD2F;
+			remoteInfo = GameConnect;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		B5081E1539D53CA90ABC0310 /* Pods-GameConnect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameConnect.release.xcconfig"; path = "Pods/Target Support Files/Pods-GameConnect/Pods-GameConnect.release.xcconfig"; sourceTree = "<group>"; };
 		CE277BAC1FAB16570077CD2F /* GameConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GameConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE277BAF1FAB16570077CD2F /* GameConnect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameConnect.h; sourceTree = "<group>"; };
 		CE277BB01FAB16570077CD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -643,10 +794,31 @@
 		CE277EF81FAB171C0077CD2F /* UIGeometry+CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGeometry+CircularProgressBar.swift"; sourceTree = "<group>"; };
 		CE277EF91FAB171C0077CD2F /* GCBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GCBaseView.swift; sourceTree = "<group>"; };
 		CE277EFA1FAB171C0077CD2F /* Updateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Updateable.swift; sourceTree = "<group>"; };
+		CE277EFF1FAB1A090077CD2F /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE277F011FAB1A090077CD2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE277F031FAB1A090077CD2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CE277F061FAB1A090077CD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE277F081FAB1A090077CD2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE277F0B1FAB1A090077CD2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE277F0D1FAB1A090077CD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE82B5D31FAB28A10087432F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		CE82B6541FAB3E3D0087432F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D42BD31A36C885C5B135853D /* Pods-GameConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameConnect/Pods-GameConnect.debug.xcconfig"; sourceTree = "<group>"; };
+		F1326BB556DE2F309DDBA95D /* Pods_GameConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CE277BA81FAB16570077CD2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE82B6551FAB3E3D0087432F /* libicucore.tbd in Frameworks */,
+				CE82B60B1FAB2BF90087432F /* FacebookSDK.framework in Frameworks */,
+				2A8EE387587D96B43AB964A4 /* Pods_GameConnect.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE277EFC1FAB1A090077CD2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -656,18 +828,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33B019D7EA5353776410E568 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D42BD31A36C885C5B135853D /* Pods-GameConnect.debug.xcconfig */,
+				B5081E1539D53CA90ABC0310 /* Pods-GameConnect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		698DA40E57B978500691D54B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE82B6541FAB3E3D0087432F /* libicucore.tbd */,
+				F1326BB556DE2F309DDBA95D /* Pods_GameConnect.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE277BA21FAB16570077CD2F = {
 			isa = PBXGroup;
 			children = (
 				CE277BAE1FAB16570077CD2F /* GameConnect */,
+				CE277F001FAB1A090077CD2F /* Test */,
 				CE277BAD1FAB16570077CD2F /* Products */,
+				33B019D7EA5353776410E568 /* Pods */,
+				698DA40E57B978500691D54B /* Frameworks */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		CE277BAD1FAB16570077CD2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				CE277BAC1FAB16570077CD2F /* GameConnect.framework */,
+				CE277EFF1FAB1A090077CD2F /* Test.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -2954,6 +3150,20 @@
 			path = Subclasses;
 			sourceTree = "<group>";
 		};
+		CE277F001FAB1A090077CD2F /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				CE277F011FAB1A090077CD2F /* AppDelegate.swift */,
+				CE82B5D31FAB28A10087432F /* Question.swift */,
+				CE277F031FAB1A090077CD2F /* ViewController.swift */,
+				CE277F051FAB1A090077CD2F /* Main.storyboard */,
+				CE277F081FAB1A090077CD2F /* Assets.xcassets */,
+				CE277F0A1FAB1A090077CD2F /* LaunchScreen.storyboard */,
+				CE277F0D1FAB1A090077CD2F /* Info.plist */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -2961,7 +3171,72 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B6381FAB2C890087432F /* NsSnPendingTagModel.h in Headers */,
+				CE82B5F71FAB2B070087432F /* GCFontManager.h in Headers */,
+				CE82B6091FAB2BD80087432F /* GCGamerManager.h in Headers */,
+				CE82B5FF1FAB2BA90087432F /* BridgedLanguageManager.h in Headers */,
+				CE82B6221FAB2C730087432F /* CJSONDeserializer.h in Headers */,
+				CE82B6321FAB2C890087432F /* NsSnMessageModel.h in Headers */,
+				CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */,
+				CE82B6051FAB2BCD0087432F /* NSDataManager.h in Headers */,
+				CE82B6481FAB2CA00087432F /* NsSnMediaFormat.h in Headers */,
+				CE82B5DD1FAB2A900087432F /* GCCompetitionModel.h in Headers */,
+				CE82B5E91FAB2A910087432F /* GCQuestionModel.h in Headers */,
+				CE82B63C1FAB2C890087432F /* NsSnThirdPartyModel.h in Headers */,
+				CE82B6361FAB2C890087432F /* NsSnSignModel.h in Headers */,
+				CE82B6601FAB431A0087432F /* GCAPPNavigationManageriPhone.h in Headers */,
+				CE82B64C1FAB2CB20087432F /* SRWebSocket.h in Headers */,
+				CE82B5D71FAB29AC0087432F /* GCQuestionManager.h in Headers */,
+				CE82B6641FAB49870087432F /* GCAPPNavigationManageriPad.h in Headers */,
+				CE82B6401FAB2C890087432F /* NsSnUserModel.h in Headers */,
+				CE82B6281FAB2C890087432F /* NsSnCommentModel.h in Headers */,
+				CE82B5FD1FAB2B9F0087432F /* NsSnAvatarModel.h in Headers */,
+				CE82B5E51FAB2A910087432F /* GCModel.h in Headers */,
+				CE82B5DF1FAB2A900087432F /* GCEventModel.h in Headers */,
+				CE82B5EF1FAB2A910087432F /* GCTrophyModel.h in Headers */,
+				CE82B6421FAB2C890087432F /* NsSnSubscribeModel.h in Headers */,
+				CE82B61C1FAB2C350087432F /* GCFayeWorker.h in Headers */,
+				CE82B5EB1FAB2A910087432F /* GCRankingModel.h in Headers */,
+				CE82B6031FAB2BC00087432F /* NsSnModel.h in Headers */,
+				CE82B6141FAB2C350087432F /* FayeMessage.h in Headers */,
+				CE82B6121FAB2C350087432F /* FayeClient.h in Headers */,
+				CE82B5E11FAB2A900087432F /* GCGamerModel.h in Headers */,
+				CE82B5FA1FAB2B120087432F /* GCColorManager.h in Headers */,
+				CE82B62E1FAB2C890087432F /* NsSnLikeModel.h in Headers */,
+				CE82B5F31FAB2AD90087432F /* GCConfManager.h in Headers */,
+				CE82B6241FAB2C730087432F /* CJSONScanner.h in Headers */,
+				CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */,
+				CE82B6261FAB2C730087432F /* CJSONSerializer.h in Headers */,
+				CE82B62C1FAB2C890087432F /* NsSnFriendModel.h in Headers */,
+				CE82B5E31FAB2A910087432F /* GCLeagueModel.h in Headers */,
+				CE82B6101FAB2C2D0087432F /* NsSnUserManager.h in Headers */,
+				CE82B6161FAB2C350087432F /* NSObject+PropertySupport.h in Headers */,
+				CE82B6301FAB2C890087432F /* NsSnMediaModel.h in Headers */,
+				CE82B63A1FAB2C890087432F /* NsSnTagModel.h in Headers */,
+				CE82B5FB1FAB2B970087432F /* NsSnConfManager.h in Headers */,
+				CE82B60D1FAB2C0D0087432F /* NSNetcoRequest.h in Headers */,
+				CE82B6071FAB2BCD0087432F /* NSData+NSData_Tool.h in Headers */,
+				CE82B6201FAB2C730087432F /* CJSONSerializedData.h in Headers */,
+				CE82B60E1FAB2C2D0087432F /* NsSnSignManager.h in Headers */,
+				CE82B62A1FAB2C890087432F /* NsSnFeedModel.h in Headers */,
+				CE82B5F51FAB2AEC0087432F /* GCPlatformConnection.h in Headers */,
+				CE82B6011FAB2BB10087432F /* GCRequester.h in Headers */,
+				CE82B61E1FAB2C730087432F /* CJSONSerialization.h in Headers */,
+				CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */,
+				CE82B6341FAB2C890087432F /* NsSnTicketModel.h in Headers */,
+				CE82B5ED1FAB2A910087432F /* GCTeamModel.h in Headers */,
+				CE82B61A1FAB2C350087432F /* NSString+InflectionSupport.h in Headers */,
+				CE82B6181FAB2C350087432F /* NSObject+Serialize.h in Headers */,
+				CE82B5F11FAB2AA80087432F /* GCExternalContent.h in Headers */,
+				CE82B63E1FAB2C890087432F /* NsSnMetadataModel.h in Headers */,
+				CE82B6561FAB410F0087432F /* GCContainerViewController.h in Headers */,
+				CE82B64A1FAB2CAB0087432F /* NsSnRequester.h in Headers */,
+				CE82B5DB1FAB2A900087432F /* GCAnswerModel.h in Headers */,
+				CE82B6621FAB49730087432F /* GCAPPNavigationManager.h in Headers */,
+				CE82B6461FAB2C950087432F /* CDataScanner_Extensions.h in Headers */,
 				CE277BB11FAB16570077CD2F /* GameConnect.h in Headers */,
+				CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */,
+				CE82B6441FAB2C950087432F /* CDataScanner.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2972,10 +3247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE277BB41FAB16570077CD2F /* Build configuration list for PBXNativeTarget "GameConnect" */;
 			buildPhases = (
+				8E68A955D7D3D7747E8937D7 /* [CP] Check Pods Manifest.lock */,
 				CE277BA71FAB16570077CD2F /* Sources */,
 				CE277BA81FAB16570077CD2F /* Frameworks */,
 				CE277BA91FAB16570077CD2F /* Headers */,
 				CE277BAA1FAB16570077CD2F /* Resources */,
+				7C42DC2D57B37FF0436D99F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -2986,16 +3263,39 @@
 			productReference = CE277BAC1FAB16570077CD2F /* GameConnect.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		CE277EFE1FAB1A090077CD2F /* Test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE277F0E1FAB1A090077CD2F /* Build configuration list for PBXNativeTarget "Test" */;
+			buildPhases = (
+				CE277EFB1FAB1A090077CD2F /* Sources */,
+				CE277EFC1FAB1A090077CD2F /* Frameworks */,
+				CE277EFD1FAB1A090077CD2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE82B5DA1FAB2A0D0087432F /* PBXTargetDependency */,
+			);
+			name = Test;
+			productName = Test;
+			productReference = CE277EFF1FAB1A090077CD2F /* Test.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CE277BA31FAB16570077CD2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = NetcoSports;
 				TargetAttributes = {
 					CE277BAB1FAB16570077CD2F = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					CE277EFE1FAB1A090077CD2F = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -3011,6 +3311,7 @@
 				es,
 				fr,
 				pt,
+				Base,
 			);
 			mainGroup = CE277BA21FAB16570077CD2F;
 			productRefGroup = CE277BAD1FAB16570077CD2F /* Products */;
@@ -3018,6 +3319,7 @@
 			projectRoot = "";
 			targets = (
 				CE277BAB1FAB16570077CD2F /* GameConnect */,
+				CE277EFE1FAB1A090077CD2F /* Test */,
 			);
 		};
 /* End PBXProject section */
@@ -3030,17 +3332,147 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE277EFD1FAB1A090077CD2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE277F0C1FAB1A090077CD2F /* LaunchScreen.storyboard in Resources */,
+				CE277F091FAB1A090077CD2F /* Assets.xcassets in Resources */,
+				CE277F071FAB1A090077CD2F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7C42DC2D57B37FF0436D99F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GameConnect/Pods-GameConnect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E68A955D7D3D7747E8937D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GameConnect-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE277BA71FAB16570077CD2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B6371FAB2C890087432F /* NsSnSignModel.m in Sources */,
+				CE82B5E21FAB2A910087432F /* GCGamerModel.m in Sources */,
+				CE82B6231FAB2C730087432F /* CJSONDeserializer.m in Sources */,
+				CE82B6251FAB2C730087432F /* CJSONScanner.m in Sources */,
+				CE82B6391FAB2C890087432F /* NsSnPendingTagModel.m in Sources */,
+				CE82B6061FAB2BCD0087432F /* NSDataManager.m in Sources */,
+				CE82B6571FAB41130087432F /* GCContainerViewController.m in Sources */,
+				CE82B5EA1FAB2A910087432F /* GCQuestionModel.m in Sources */,
+				CE82B6491FAB2CA00087432F /* NsSnMediaFormat.m in Sources */,
+				CE82B5D81FAB29AC0087432F /* GCQuestionManager.m in Sources */,
+				CE82B61F1FAB2C730087432F /* CJSONSerialization.m in Sources */,
+				CE82B6111FAB2C2D0087432F /* NsSnUserManager.m in Sources */,
+				CE82B5F41FAB2AD90087432F /* GCConfManager.m in Sources */,
+				CE82B6171FAB2C350087432F /* NSObject+PropertySupport.m in Sources */,
+				CE82B6311FAB2C890087432F /* NsSnMediaModel.m in Sources */,
+				CE82B5DC1FAB2A900087432F /* GCAnswerModel.m in Sources */,
+				CE82B64B1FAB2CAB0087432F /* NsSnRequester.m in Sources */,
+				CE82B6451FAB2C950087432F /* CDataScanner.m in Sources */,
+				CE82B6511FAB2D000087432F /* GCProcessManager.m in Sources */,
+				CE82B60C1FAB2C0B0087432F /* NSNetcoRequest.m in Sources */,
+				CE82B6041FAB2BC00087432F /* NsSnModel.m in Sources */,
+				CE82B63D1FAB2C890087432F /* NsSnThirdPartyModel.m in Sources */,
+				CE82B5E01FAB2A900087432F /* GCEventModel.m in Sources */,
+				CE82B64F1FAB2CC40087432F /* GCProcessPushManager.m in Sources */,
+				CE82B6021FAB2BB10087432F /* GCRequester.m in Sources */,
+				CE82B5F81FAB2B0B0087432F /* GCFontManager.m in Sources */,
+				CE82B6431FAB2C890087432F /* NsSnSubscribeModel.m in Sources */,
+				CE82B6651FAB498A0087432F /* GCAPPNavigationManageriPad.m in Sources */,
+				CE82B61B1FAB2C350087432F /* NSString+InflectionSupport.m in Sources */,
+				CE82B5F61FAB2AEF0087432F /* GCPlatformConnection.m in Sources */,
+				CE82B6331FAB2C890087432F /* NsSnMessageModel.m in Sources */,
+				CE82B60A1FAB2BD80087432F /* GCGamerManager.m in Sources */,
+				CE82B62D1FAB2C890087432F /* NsSnFriendModel.m in Sources */,
+				CE82B5F21FAB2AAD0087432F /* GCExternalContent.m in Sources */,
+				CE82B5E41FAB2A910087432F /* GCLeagueModel.m in Sources */,
+				CE82B63B1FAB2C890087432F /* NsSnTagModel.m in Sources */,
+				CE82B6151FAB2C350087432F /* FayeMessage.m in Sources */,
+				CE82B6081FAB2BCD0087432F /* NSData+NSData_Tool.m in Sources */,
+				CE82B6611FAB431A0087432F /* GCAPPNavigationManageriPhone.m in Sources */,
+				CE82B61D1FAB2C350087432F /* GCFayeWorker.m in Sources */,
+				CE82B5F91FAB2B100087432F /* GCColorManager.m in Sources */,
+				CE82B6211FAB2C730087432F /* CJSONSerializedData.m in Sources */,
+				CE82B6631FAB49780087432F /* GCAPPNavigationManager.m in Sources */,
+				CE82B6351FAB2C890087432F /* NsSnTicketModel.m in Sources */,
+				CE82B62B1FAB2C890087432F /* NsSnFeedModel.m in Sources */,
+				CE82B60F1FAB2C2D0087432F /* NsSnSignManager.m in Sources */,
+				CE82B62F1FAB2C890087432F /* NsSnLikeModel.m in Sources */,
+				CE82B6661FAB4B020087432F /* GCWebViewController.swift in Sources */,
+				CE82B6471FAB2C950087432F /* CDataScanner_Extensions.m in Sources */,
+				CE82B6291FAB2C890087432F /* NsSnCommentModel.m in Sources */,
+				CE82B5EE1FAB2A910087432F /* GCTeamModel.m in Sources */,
+				CE82B5FE1FAB2B9F0087432F /* NsSnAvatarModel.m in Sources */,
+				CE82B5F01FAB2A910087432F /* GCTrophyModel.m in Sources */,
+				CE82B5E61FAB2A910087432F /* GCModel.m in Sources */,
+				CE82B5DE1FAB2A900087432F /* GCCompetitionModel.m in Sources */,
+				CE82B63F1FAB2C890087432F /* NsSnMetadataModel.m in Sources */,
+				CE82B6191FAB2C350087432F /* NSObject+Serialize.m in Sources */,
+				CE82B5FC1FAB2B970087432F /* NsSnConfManager.m in Sources */,
+				CE82B5EC1FAB2A910087432F /* GCRankingModel.m in Sources */,
+				CE82B5E81FAB2A910087432F /* GCPushModels.m in Sources */,
+				CE82B6411FAB2C890087432F /* NsSnUserModel.m in Sources */,
+				CE82B6531FAB2D100087432F /* SingletonManager.m in Sources */,
+				CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */,
+				CE82B6271FAB2C730087432F /* CJSONSerializer.m in Sources */,
+				CE82B6131FAB2C350087432F /* FayeClient.m in Sources */,
+				CE82B6001FAB2BA90087432F /* BridgedLanguageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE277EFB1FAB1A090077CD2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE82B5D41FAB28A10087432F /* Question.swift in Sources */,
+				CE277F041FAB1A090077CD2F /* ViewController.swift in Sources */,
+				CE277F021FAB1A090077CD2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE82B5DA1FAB2A0D0087432F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE277BAB1FAB16570077CD2F /* GameConnect */;
+			targetProxy = CE82B5D91FAB2A0D0087432F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CE277CD01FAB171C0077CD2F /* Localizable.strings */ = {
@@ -3053,6 +3485,22 @@
 				CE277CD61FAB171C0077CD2F /* pt */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		CE277F051FAB1A090077CD2F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE277F061FAB1A090077CD2F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE277F0A1FAB1A090077CD2F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE277F0B1FAB1A090077CD2F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -3173,6 +3621,7 @@
 		};
 		CE277BB51FAB16570077CD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D42BD31A36C885C5B135853D /* Pods-GameConnect.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3180,6 +3629,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameConnect/Source/Libs/Framework/FacebookSDK",
+				);
 				INFOPLIST_FILE = GameConnect/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3194,6 +3647,7 @@
 		};
 		CE277BB61FAB16570077CD2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5081E1539D53CA90ABC0310 /* Pods-GameConnect.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -3201,6 +3655,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GameConnect/Source/Libs/Framework/FacebookSDK",
+				);
 				INFOPLIST_FILE = GameConnect/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -3208,6 +3666,36 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dev.GameConnect;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE277F0F1FAB1A090077CD2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE277F101FAB1A090077CD2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dev.Test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -3230,6 +3718,15 @@
 			buildConfigurations = (
 				CE277BB51FAB16570077CD2F /* Debug */,
 				CE277BB61FAB16570077CD2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE277F0E1FAB1A090077CD2F /* Build configuration list for PBXNativeTarget "Test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE277F0F1FAB1A090077CD2F /* Debug */,
+				CE277F101FAB1A090077CD2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

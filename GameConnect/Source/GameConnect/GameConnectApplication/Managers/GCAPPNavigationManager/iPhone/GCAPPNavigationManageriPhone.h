@@ -10,6 +10,6 @@
 
 @interface GCAPPNavigationManageriPhone : GCAPPNavigationManager<UINavigationControllerDelegate>
 
--(void) initProcessDelegate;
+- (void)initProcessDelegate;
 
 @end

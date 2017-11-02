@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 #ifndef DEFAULT_COLOR
 #define DEFAULT_COLOR @"ffffffff"
@@ -14,8 +15,8 @@
 
 @interface GCColorManager : NSObject
 
-+(GCColorManager *) getInstance;
--(UIColor *) getColorForKey:(NSString *)key;
--(void)setColorForKey:(NSString *)key toObject:(id)obj;
++ (GCColorManager *) getInstance;
+- (UIColor *) getColorForKey:(NSString *)key;
+- (void)setColorForKey:(NSString *)key toObject:(id)obj;
 
 @end
