@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="KpB-yl-AIV">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controlleri Phone-->
+        <scene sceneID="mS4-E5-zFF">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPHomeViewControlleriPhone" autoresizesArchivedViewToFullSize="NO" id="4Vy-oc-JvY" customClass="GCAPPHomeViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vHX-Pf-6Vn"/>
+                        <viewControllerLayoutGuide type="bottom" id="oFV-7D-wo8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wlj-sG-RUP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uXo-ge-njk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="503"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sVU-IP-TeK">
+                                <rect key="frame" x="0.0" y="468" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oFV-7D-wo8" firstAttribute="top" secondItem="uXo-ge-njk" secondAttribute="bottom" constant="100" id="13d-qp-9tA"/>
+                            <constraint firstAttribute="trailing" secondItem="uXo-ge-njk" secondAttribute="trailing" id="62h-YE-LIN"/>
+                            <constraint firstItem="uXo-ge-njk" firstAttribute="top" secondItem="vHX-Pf-6Vn" secondAttribute="bottom" id="NbY-BG-6Pk"/>
+                            <constraint firstItem="uXo-ge-njk" firstAttribute="leading" secondItem="Wlj-sG-RUP" secondAttribute="leading" id="tE6-sj-2oR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="88P-4K-ByX"/>
+                    <connections>
+                        <outlet property="v_containerEvents" destination="uXo-ge-njk" id="67d-Q7-yAK"/>
+                        <outlet property="v_containerProfile" destination="sVU-IP-TeK" id="fll-Ao-sak"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ekn-U6-dqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="-417"/>
+        </scene>
+        <!--Rankings View Controlleri Phone-->
+        <scene sceneID="o58-wr-neo">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPRankingsViewControlleriPhone" id="kQS-D9-FLL" customClass="GCAPPRankingsViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mjN-km-GFa"/>
+                        <viewControllerLayoutGuide type="bottom" id="6zl-Zg-VYc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i6H-CM-0Xg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHr-Q5-Tql">
+                                <rect key="frame" x="0.0" y="20" width="375" height="100"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="9v7-9h-jSo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sEo-vb-8ie">
+                                <rect key="frame" x="0.0" y="120" width="375" height="547"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sEo-vb-8ie" secondAttribute="trailing" id="1Ql-Em-SC6"/>
+                            <constraint firstItem="QHr-Q5-Tql" firstAttribute="leading" secondItem="i6H-CM-0Xg" secondAttribute="leading" id="6wj-kx-T9u"/>
+                            <constraint firstItem="QHr-Q5-Tql" firstAttribute="top" secondItem="mjN-km-GFa" secondAttribute="bottom" id="Eof-oT-ORg"/>
+                            <constraint firstItem="sEo-vb-8ie" firstAttribute="top" secondItem="QHr-Q5-Tql" secondAttribute="bottom" id="GC8-PV-okR"/>
+                            <constraint firstItem="6zl-Zg-VYc" firstAttribute="top" secondItem="sEo-vb-8ie" secondAttribute="bottom" id="IAJ-O4-ORq"/>
+                            <constraint firstItem="sEo-vb-8ie" firstAttribute="top" secondItem="QHr-Q5-Tql" secondAttribute="bottom" id="J8S-PW-Vhp"/>
+                            <constraint firstItem="sEo-vb-8ie" firstAttribute="leading" secondItem="i6H-CM-0Xg" secondAttribute="leading" id="Tho-F3-Irk"/>
+                            <constraint firstAttribute="trailing" secondItem="QHr-Q5-Tql" secondAttribute="trailing" id="d7f-Ds-h8V"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerHeaderProfileRank" destination="QHr-Q5-Tql" id="dkm-IT-kLo"/>
+                        <outlet property="v_containerRankingsList" destination="sEo-vb-8ie" id="D3s-dP-p4i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UCZ-hk-1HS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="336"/>
+        </scene>
+        <!--Leagues View Controlleri Phone-->
+        <scene sceneID="9Ge-9i-7Lf">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLeaguesViewControlleriPhone" id="S7l-Tj-er5" customClass="GCAPPLeaguesViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZA-dm-vaz"/>
+                        <viewControllerLayoutGuide type="bottom" id="uah-rJ-KaR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="taI-b4-EWJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tpm-GL-QZA">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerLeaguesList" destination="tpm-GL-QZA" id="o4i-qf-YX9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjC-Ub-aIA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296" y="336"/>
+        </scene>
+        <!--League Edition View Controlleri Phone-->
+        <scene sceneID="hAX-V3-4eD">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLeagueEditionViewControlleriPhone" id="qap-6s-mWb" customClass="GCAPPLeagueEditionViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZvR-3g-e3V"/>
+                        <viewControllerLayoutGuide type="bottom" id="gZb-ny-UlK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MTY-GW-qqQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="live_gaming_logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="pen-Bc-r2T">
+                                <rect key="frame" x="0.0" y="64" width="320" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FRj-l4-8C5">
+                                <rect key="frame" x="0.0" y="124" width="320" height="444"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="pen-Bc-r2T" id="xi4-kc-egT"/>
+                        <outlet property="v_containerLeagueEdition" destination="FRj-l4-8C5" id="RHS-tG-Hrd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NSs-Nz-SOn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="906" y="1012"/>
+        </scene>
+        <!--Profile View Controlleri Phone-->
+        <scene sceneID="tOz-Pz-h6d">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPProfileViewControlleriPhone" id="86x-Fv-Mkw" customClass="GCAPPProfileViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xsd-dB-gBy"/>
+                        <viewControllerLayoutGuide type="bottom" id="75v-xX-PIP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Af4-wg-o8V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZF-9I-Ecd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CZF-9I-Ecd" firstAttribute="leading" secondItem="Af4-wg-o8V" secondAttribute="leading" id="3O6-pN-tnc"/>
+                            <constraint firstItem="CZF-9I-Ecd" firstAttribute="top" secondItem="xsd-dB-gBy" secondAttribute="bottom" id="AE9-Pf-xpT"/>
+                            <constraint firstItem="75v-xX-PIP" firstAttribute="top" secondItem="CZF-9I-Ecd" secondAttribute="bottom" id="bas-ME-FBI"/>
+                            <constraint firstAttribute="trailing" secondItem="CZF-9I-Ecd" secondAttribute="trailing" id="zn1-9b-JaI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerProfile" destination="CZF-9I-Ecd" id="iqB-Ne-ZuT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fgh-aj-Vbj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="1716"/>
+        </scene>
+        <!--Answers View Controlleri Phone-->
+        <scene sceneID="IFS-mi-5jc">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPAnswersViewControlleriPhone" id="PBI-3z-fNJ" customClass="GCAPPAnswersViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xkI-B2-N22"/>
+                        <viewControllerLayoutGuide type="bottom" id="ffO-VG-cij"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CZp-mP-j95">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KO3-eg-d39">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KO3-eg-d39" firstAttribute="leading" secondItem="CZp-mP-j95" secondAttribute="leading" id="3FN-dw-FSI"/>
+                            <constraint firstItem="ffO-VG-cij" firstAttribute="top" secondItem="KO3-eg-d39" secondAttribute="bottom" id="5XO-WJ-4tX"/>
+                            <constraint firstItem="KO3-eg-d39" firstAttribute="top" secondItem="xkI-B2-N22" secondAttribute="bottom" id="XVh-DG-XfL"/>
+                            <constraint firstAttribute="trailing" secondItem="KO3-eg-d39" secondAttribute="trailing" id="pJy-1I-zbg"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="v_containerAnswers" destination="KO3-eg-d39" id="xIZ-aQ-jZq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i1E-4b-m1h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="929" y="2455"/>
+        </scene>
+        <!--Push Info View Controlleri Phone-->
+        <scene sceneID="VqH-Wh-w6O">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPPushInfoViewControlleriPhone" id="D2k-Ae-fRE" customClass="GCAPPPushInfoViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TjJ-ym-c43"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ny6-RJ-SYX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3Wv-u7-0GA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldX-XI-xRf">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ldX-XI-xRf" firstAttribute="leading" secondItem="3Wv-u7-0GA" secondAttribute="leading" id="8AY-GV-MTy"/>
+                            <constraint firstItem="Ny6-RJ-SYX" firstAttribute="top" secondItem="ldX-XI-xRf" secondAttribute="bottom" id="OwR-RG-KYb"/>
+                            <constraint firstItem="ldX-XI-xRf" firstAttribute="top" secondItem="TjJ-ym-c43" secondAttribute="bottom" constant="44" id="b85-qL-DxF"/>
+                            <constraint firstAttribute="trailing" secondItem="ldX-XI-xRf" secondAttribute="trailing" id="d7s-GU-eNv"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="v_containerPushInfo" destination="ldX-XI-xRf" id="8TM-mo-1ET"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6q-dw-AJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="2455"/>
+        </scene>
+        <!--Login View Controlleri Phone-->
+        <scene sceneID="cjY-uh-XnE">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLoginViewControlleriPhone" id="FRo-YC-sdY" customClass="GCAPPLoginViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D2r-Tr-Bfe"/>
+                        <viewControllerLayoutGuide type="bottom" id="of5-Is-D9p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IS8-Qe-bEe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4UU-SW-mBJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="of5-Is-D9p" firstAttribute="top" secondItem="4UU-SW-mBJ" secondAttribute="bottom" id="8Vr-0H-wuQ"/>
+                            <constraint firstItem="4UU-SW-mBJ" firstAttribute="top" secondItem="IS8-Qe-bEe" secondAttribute="top" id="HkZ-zy-oni"/>
+                            <constraint firstAttribute="trailing" secondItem="4UU-SW-mBJ" secondAttribute="trailing" id="UdI-81-I8M"/>
+                            <constraint firstItem="4UU-SW-mBJ" firstAttribute="leading" secondItem="IS8-Qe-bEe" secondAttribute="leading" id="mzG-vF-4yk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerLogin" destination="4UU-SW-mBJ" id="QGA-hz-5l4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAx-gz-UiA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1703" y="-417"/>
+        </scene>
+        <!--Subscribe View Controlleri Phone-->
+        <scene sceneID="Qu0-ax-gVG">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPSubscribeViewControlleriPhone" id="lBO-HW-azx" customClass="GCAPPSubscribeViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K7K-jQ-Lgb"/>
+                        <viewControllerLayoutGuide type="bottom" id="U6l-UW-Zur"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IFV-wy-h3R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJz-q1-Lcq">
+                                <rect key="frame" x="0.0" y="65" width="320" height="503"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.69052573100000003" green="0.85769786010000004" blue="0.83191184169999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerSubscribe" destination="LJz-q1-Lcq" id="fzs-32-Jqd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ao9-es-zI5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2075" y="-417"/>
+        </scene>
+        <!--Profile Edition View Controlleri Phone-->
+        <scene sceneID="Ajf-Oq-47c">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPProfileEditionViewControlleriPhone" id="Lwi-Cg-BW4" customClass="GCAPPProfileEditionViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZXt-fA-JT9"/>
+                        <viewControllerLayoutGuide type="bottom" id="LDh-LD-ld6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VfO-U1-PmW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSl-U0-3jS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="1716"/>
+        </scene>
+        <!--League Rankings View Controller-->
+        <scene sceneID="pwH-fi-npo">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLeagueRankingsViewController" id="9F9-wj-7W7" customClass="GCAPPLeagueRankingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cdt-xd-ErF"/>
+                        <viewControllerLayoutGuide type="bottom" id="2uk-xq-am9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xGZ-B4-sc2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UUa-oF-dk1">
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerLeagueRanking" destination="UUa-oF-dk1" id="iHX-2E-onl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxS-E2-BCI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="1012"/>
+        </scene>
+        <!--Game View Controlleri Phone-->
+        <scene sceneID="f9d-JI-5Yb">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPGameViewControlleriPhone" autoresizesArchivedViewToFullSize="NO" id="7rr-e0-hzE" customClass="GCAPPGameViewControlleriPhone" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wQj-2u-LF9"/>
+                        <viewControllerLayoutGuide type="bottom" id="dI6-pS-adV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AB4-lo-dUT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q38-u8-m8k">
+                                <rect key="frame" x="0.0" y="20" width="375" height="497"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ado-jM-j9p">
+                                <rect key="frame" x="0.0" y="418" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WHE-vu-gup">
+                                <rect key="frame" x="0.0" y="20" width="375" height="0.0"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="ppo-dx-g0U"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gly-Cs-Oas">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.094117647058823528" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SmM-fg-j1v"/>
+                                </constraints>
+                                <state key="normal" image="gc_questions_sponsors"/>
+                                <connections>
+                                    <action selector="onTapSponsors:" destination="7rr-e0-hzE" eventType="touchUpInside" id="rwt-Ew-BKo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dI6-pS-adV" firstAttribute="top" secondItem="Gly-Cs-Oas" secondAttribute="bottom" id="8O2-8S-ipR"/>
+                            <constraint firstAttribute="trailing" secondItem="q38-u8-m8k" secondAttribute="trailing" id="IwP-Ts-UbA"/>
+                            <constraint firstItem="WHE-vu-gup" firstAttribute="leading" secondItem="AB4-lo-dUT" secondAttribute="leading" id="Jq6-Uq-qKt"/>
+                            <constraint firstItem="q38-u8-m8k" firstAttribute="top" secondItem="WHE-vu-gup" secondAttribute="bottom" id="OjH-Mg-Bf5"/>
+                            <constraint firstAttribute="trailing" secondItem="WHE-vu-gup" secondAttribute="trailing" id="cI6-YH-mlg"/>
+                            <constraint firstItem="WHE-vu-gup" firstAttribute="top" secondItem="wQj-2u-LF9" secondAttribute="bottom" id="cLs-KY-S4z"/>
+                            <constraint firstAttribute="trailing" secondItem="Gly-Cs-Oas" secondAttribute="trailing" id="cdb-Th-NSQ"/>
+                            <constraint firstItem="q38-u8-m8k" firstAttribute="leading" secondItem="AB4-lo-dUT" secondAttribute="leading" id="k55-DI-X1n"/>
+                            <constraint firstItem="Gly-Cs-Oas" firstAttribute="top" secondItem="q38-u8-m8k" secondAttribute="bottom" constant="100" id="kGc-sx-2bE"/>
+                            <constraint firstItem="Gly-Cs-Oas" firstAttribute="leading" secondItem="AB4-lo-dUT" secondAttribute="leading" id="p0y-r3-nI9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="sponsorsButton" destination="Gly-Cs-Oas" id="fVr-ri-0rj"/>
+                        <outlet property="v_containerEvent" destination="WHE-vu-gup" id="zwj-76-qB1"/>
+                        <outlet property="v_containerQuestions" destination="q38-u8-m8k" id="mSc-8g-YzD"/>
+                        <outlet property="v_containerRanking" destination="ado-jM-j9p" id="fzy-cf-Lrn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XSb-oT-Y2l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1283" y="-417"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BR9-Vh-uCD">
+            <objects>
+                <navigationController storyboardIdentifier="GCAPPNavigationController" autoresizesArchivedViewToFullSize="NO" id="KpB-yl-AIV" customClass="GCAPPNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rus-yF-Cf3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4Vy-oc-JvY" kind="relationship" relationship="rootViewController" id="11F-Ps-wca"/>
+                    </connections>
+                </navigationController>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gc_main_background" id="J4H-hQ-zhX">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcW-HW-phg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="380" y="-417"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="OX9-H7-4ro">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLoadingViewController" id="J7d-Fa-AVq" customClass="GCAPPLoadingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d8G-4H-h40"/>
+                        <viewControllerLayoutGuide type="bottom" id="ycW-5C-YYo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="A1W-Pd-6EX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-bX-FWo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cvJ-bX-FWo" secondAttribute="trailing" id="D0o-vD-bll"/>
+                            <constraint firstItem="cvJ-bX-FWo" firstAttribute="leading" secondItem="A1W-Pd-6EX" secondAttribute="leading" id="ae2-W1-X4i"/>
+                            <constraint firstItem="ycW-5C-YYo" firstAttribute="top" secondItem="cvJ-bX-FWo" secondAttribute="bottom" id="hts-p2-GYz"/>
+                            <constraint firstItem="cvJ-bX-FWo" firstAttribute="top" secondItem="A1W-Pd-6EX" secondAttribute="top" id="o1r-Be-DHP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="v_containerLoading" destination="cvJ-bX-FWo" id="gif-UW-cC9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7YS-YK-aev" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gc_main_background" width="375" height="667"/>
+        <image name="gc_questions_sponsors" width="194" height="30"/>
+        <image name="live_gaming_logo.png" width="392" height="56"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

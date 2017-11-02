@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="Duc-rQ-YAz">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controlleri Pad-->
+        <scene sceneID="0Tg-y3-rHX">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPHomeViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="rlp-to-7Sk" customClass="GCAPPHomeViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9a8-kz-LtE">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Mmg-ql-fGk">
+                                <rect key="frame" x="103" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="eaM-zM-DCu">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="eZ5-va-xiP">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="372"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wPg-cp-z7v">
+                                        <rect key="frame" x="20" y="530" width="360" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickOnRankings:" destination="rlp-to-7Sk" eventType="touchUpInside" id="njH-nN-XPI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zrL-S4-vYb">
+                                        <rect key="frame" x="20" y="460" width="360" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickOnMyLeagues:" destination="rlp-to-7Sk" eventType="touchUpInside" id="mVC-uv-JVJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="X0F-rt-nus">
+                                <rect key="frame" x="523" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="Yh8-Ot-ERj">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="v41-h6-0bG"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bt_leagues" destination="zrL-S4-vYb" id="m7r-tY-DMN"/>
+                        <outlet property="bt_rankings" destination="wPg-cp-z7v" id="d89-3L-HXO"/>
+                        <outlet property="v_containerEvents" destination="eZ5-va-xiP" id="Mw6-YW-Sad"/>
+                        <outlet property="v_containerProfile" destination="X0F-rt-nus" id="r6C-MB-PHQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f45-Ev-djj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="16"/>
+        </scene>
+        <!--Game View Controlleri Pad-->
+        <scene sceneID="Y7K-CL-3Xz">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPGameViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="OO8-Iu-Eg2" customClass="GCAPPGameViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DbQ-DU-zlm">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="fgg-Y9-bCg">
+                                <rect key="frame" x="103" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="GlE-0l-Fpz">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="Abe-v1-FoF">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="59n-aU-KqN">
+                                        <rect key="frame" x="0.0" y="140" width="400" height="460"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="Dnw-z7-als">
+                                <rect key="frame" x="523" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="ICy-4K-PqO">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WyO-hY-fIo"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="GlE-0l-Fpz" id="Iij-xS-Kmo"/>
+                        <outlet property="v_containerEvent" destination="Abe-v1-FoF" id="Brx-V8-nhU"/>
+                        <outlet property="v_containerQuestions" destination="59n-aU-KqN" id="Uyf-43-Ewj"/>
+                        <outlet property="v_containerRanking" destination="Dnw-z7-als" id="3Vl-ka-0iB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikC-mB-hKt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="16"/>
+        </scene>
+        <!--Leagues View Controlleri Pad-->
+        <scene sceneID="ZeB-tG-xMS">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLeaguesViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="urf-X7-IK3" customClass="GCAPPLeaguesViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5zg-X5-Tua">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="K0Y-Sj-DKx">
+                                <rect key="frame" x="103" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="5wn-Zk-98j">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="9zh-eM-Shw">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LEAGUES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PXf-kb-zFb">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="RwS-dY-mGI">
+                                        <rect key="frame" x="0.0" y="118" width="400" height="382"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="gRe-va-Stj">
+                                        <rect key="frame" x="20" y="520" width="360" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" image="add_league_icon.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickOnAddLeague:" destination="urf-X7-IK3" eventType="touchUpInside" id="Wxm-8l-cUm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" id="rdG-uF-2K5">
+                                <rect key="frame" x="523" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="eyG-Ba-ZqX">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" id="nLU-yc-nPM">
+                                                <rect key="frame" x="0.0" y="10" width="126" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="add_league_poeple_icon.png"/>
+                                                <connections>
+                                                    <action selector="clickOnAddPeople:" destination="urf-X7-IK3" eventType="touchUpInside" id="fna-q6-hcq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" id="O9Y-Of-gjw">
+                                                <rect key="frame" x="137" y="10" width="126" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="modify_league_icon.png"/>
+                                                <connections>
+                                                    <action selector="clickOnEdition:" destination="urf-X7-IK3" eventType="touchUpInside" id="jWf-48-A5X"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="wordWrap" id="KdE-rd-jaW">
+                                                <rect key="frame" x="137" y="10" width="126" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="15"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="modify_league_icon.png"/>
+                                                <connections>
+                                                    <action selector="clickOnQuit:" destination="urf-X7-IK3" eventType="touchUpInside" id="Tmc-rY-56l"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="Dxz-Al-vub">
+                                                <rect key="frame" x="274" y="10" width="126" height="60"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" image="delete_league.png">
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="clickOnDelete:" destination="urf-X7-IK3" eventType="touchUpInside" id="eBk-aZ-ycD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="dki-oG-NaC">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RANKING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cx5-mI-RFq">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="38"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" id="kmo-UB-KFB">
+                                        <rect key="frame" x="0.0" y="118" width="400" height="482"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="iBu-Qw-1a6">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gTj-ez-FBz"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="bt_leagueAddition" destination="gRe-va-Stj" id="Wgi-qb-HSe"/>
+                        <outlet property="bt_leagueDeletion" destination="Dxz-Al-vub" id="8t5-O7-dI2"/>
+                        <outlet property="bt_leagueEdition" destination="O9Y-Of-gjw" id="p0d-0g-QfI"/>
+                        <outlet property="bt_leagueInvitation" destination="nLU-yc-nPM" id="fii-3L-QGX"/>
+                        <outlet property="bt_quit" destination="KdE-rd-jaW" id="6JB-15-v67"/>
+                        <outlet property="iv_brandLogo" destination="5wn-Zk-98j" id="6Qx-Rk-TAy"/>
+                        <outlet property="lb_headerLeaguesList" destination="PXf-kb-zFb" id="Md5-UY-yau"/>
+                        <outlet property="lb_headerRanking" destination="cx5-mI-RFq" id="Lwq-TP-Gfu"/>
+                        <outlet property="v_containerLeagueControls" destination="eyG-Ba-ZqX" id="ubm-Ri-Eml"/>
+                        <outlet property="v_containerLeagueRanking" destination="kmo-UB-KFB" id="xGO-9J-UhD"/>
+                        <outlet property="v_containerLeaguesList" destination="RwS-dY-mGI" id="Aaf-2m-KvT"/>
+                        <outlet property="v_headerLeagueList" destination="9zh-eM-Shw" id="WIW-1g-NHz"/>
+                        <outlet property="v_headerRanking" destination="dki-oG-NaC" id="GWb-pb-0VT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YgX-q1-CNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368" y="940"/>
+        </scene>
+        <!--Profile View Controlleri Pad-->
+        <scene sceneID="b2V-2I-je8">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPProfileViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="YnI-27-agk" customClass="GCAPPProfileViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I4c-PR-jAt">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dPt-tp-Hfn">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="DT5-I2-jAd">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="KH8-eE-HLq">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="crm-7g-6jQ">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sST-80-EXG"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="DT5-I2-jAd" id="dHk-Dv-m9X"/>
+                        <outlet property="v_containerProfile" destination="KH8-eE-HLq" id="7Il-md-ZkS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ylK-4b-dBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Rankings View Controlleri Pad-->
+        <scene sceneID="s88-AZ-EAz">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPRankingsViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="6fM-4v-LZ9" customClass="GCAPPRankingsViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QWn-1g-xhc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="XuZ-U4-ukY">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="3yp-VK-6Mb">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="SAD-VV-jB7">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="3dy-w9-KDN">
+                                                <rect key="frame" x="0.0" y="0.0" width="400" height="100"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" id="mLf-lk-Gvh">
+                                                <rect key="frame" x="0.0" y="100" width="400" height="420"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="NCM-3o-AZH">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0RH-aN-PPX"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="3yp-VK-6Mb" id="dcU-oJ-dMO"/>
+                        <outlet property="v_containerHeaderProfileRank" destination="3dy-w9-KDN" id="irz-dm-7Vg"/>
+                        <outlet property="v_containerRankingsList" destination="mLf-lk-Gvh" id="paA-iZ-dkx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjL-w2-P2G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Login View Controlleri Pad-->
+        <scene sceneID="P77-TE-k1d">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLoginViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="E8e-97-ZwJ" customClass="GCAPPLoginViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qBf-If-gKB">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="AAR-mg-Dr2">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="NO5-ZY-5ga">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="ECA-tT-8F3">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="r1P-3R-Peh">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eQt-XB-NGY"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="NO5-ZY-5ga" id="fmq-s3-3OH"/>
+                        <outlet property="v_containerLogin" destination="ECA-tT-8F3" id="cRZ-fc-YG3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taf-Qh-zrf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Subscribe View Controlleri Pad-->
+        <scene sceneID="SvW-KY-W7y">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPSubscribeViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="Czz-Oe-Bv8" customClass="GCAPPSubscribeViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kwW-yx-fci">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="qKn-XE-gvM">
+                                <rect key="frame" x="312" y="74" width="400" height="660"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="eYZ-NE-qTv">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="ksk-I9-9F8">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="560"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="cSq-yK-7EA">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ez1-ra-moy"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="eYZ-NE-qTv" id="p87-c6-MpJ"/>
+                        <outlet property="v_containerSubscribe" destination="ksk-I9-9F8" id="wv9-2m-Tpy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r04-1g-FcW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Answers View Controlleri Pad-->
+        <scene sceneID="xDw-mZ-TVz">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPAnswersViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="Zsw-jm-1dn" customClass="GCAPPAnswersViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qAc-SD-3AH">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="owW-kb-KKK">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="RIE-vk-6Dt">
+                                        <rect key="frame" x="0.0" y="540" width="400" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="f4q-m8-meq">
+                                        <rect key="frame" x="0.0" y="55" width="400" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="hAS-6B-uuo">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NgP-cd-6ws"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="RIE-vk-6Dt" id="Ah6-p2-M5w"/>
+                        <outlet property="v_containerAnswers" destination="f4q-m8-meq" id="Ipb-0Y-CaG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WVS-t8-dRw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Push Info View Controlleri Pad-->
+        <scene sceneID="cnn-ZY-KPl">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPPushInfoViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="KGN-wG-Jnd" customClass="GCAPPPushInfoViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jFL-Nb-1Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="Z06-A8-5te">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="IFb-EF-Cho">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="fkd-jY-5co">
+                                        <rect key="frame" x="0.0" y="520" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="n2c-tD-bWq">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oIi-fy-lWS"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="v_containerPushInfo" destination="IFb-EF-Cho" id="U6M-bc-oIL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nBt-QC-Ph2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Profile Edition View Controlleri Pad-->
+        <scene sceneID="HZf-8u-oGa">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPProfileEditionViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="Tal-td-yEF" customClass="GCAPPProfileEditionViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9C0-Yp-FqT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="nXy-Nj-2b9">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="5Ni-ba-Dlk">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="kyh-Gf-4zR">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="juC-85-7f6">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="m3O-MQ-9uE"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="5Ni-ba-Dlk" id="TNv-e8-DyA"/>
+                        <outlet property="v_containerProfileEdition" destination="kyh-Gf-4zR" id="WTM-0Z-NLG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EyG-X8-IGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--League Edition View Controlleri Pad-->
+        <scene sceneID="WnI-Ql-WgC">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLeagueEditionViewControlleriPad" automaticallyAdjustsScrollViewInsets="NO" id="pSm-qK-QAA" customClass="GCAPPLeagueEditionViewControlleriPad" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GZ6-cl-wlc">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="lLj-WS-Fpm">
+                                <rect key="frame" x="312" y="114" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_gaming_logo.png" id="lid-6x-8gp">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="2ng-Xe-7f7">
+                                        <rect key="frame" x="0.0" y="80" width="400" height="520"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="enS-TC-Eup">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RIa-Ch-Zap"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="iv_brandLogo" destination="lid-6x-8gp" id="pw3-h4-gXb"/>
+                        <outlet property="v_containerLeagueEdition" destination="2ng-Xe-7f7" id="waO-HU-gNb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SoP-v6-ePc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="940"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4OX-sv-Hya">
+            <objects>
+                <navigationController storyboardIdentifier="GCAPPNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Duc-rQ-YAz" customClass="GCAPPNavigationController" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eUt-rq-mE8">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rlp-to-7Sk" kind="relationship" relationship="rootViewController" id="7XS-YB-M9Z"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Sx-OC-GB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="394" y="16"/>
+        </scene>
+        <!--Loading View Controller-->
+        <scene sceneID="Y9l-xq-7bN">
+            <objects>
+                <viewController storyboardIdentifier="GCAPPLoadingViewController" id="wdC-0d-fLB" customClass="GCAPPLoadingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FCL-zj-Rnz">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="jSF-Ao-RGg">
+                                <rect key="frame" x="312" y="84" width="400" height="600"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="game_connect_logo_large.png" id="cTU-ZW-CmZ">
+                                <rect key="frame" x="658" y="731" width="353" height="24"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="v_containerLoading" destination="jSF-Ao-RGg" id="q9P-1X-Eoy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3g-pw-3qY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="1330"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add_league_icon.png" width="20" height="20"/>
+        <image name="add_league_poeple_icon.png" width="27" height="28"/>
+        <image name="delete_league.png" width="29" height="27"/>
+        <image name="game_connect_logo_large.png" width="353" height="24"/>
+        <image name="live_gaming_logo.png" width="392" height="57"/>
+        <image name="modify_league_icon.png" width="27" height="28"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,166 @@
+//
+//  GCConfManager.m
+//  GameConnectV2
+//
+//  Created by Guillaume Derivery on 3/24/14.
+//  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
+//
+
+#import <BugSense-iOS/BugSenseController.h>
+#import <NewRelicAgent/NewRelicAgent.h>
+#import "Extends+Libs.h"
+#import "GCConfManager.h"
+#import "GCFayeWorker.h"
+
+@implementation GCConfManager
+
+#pragma Singleton
++(GCConfManager *) getInstance
+{
+    static GCConfManager *confManager = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        confManager = [[self alloc] init];
+    });
+    return confManager;
+}
+
+-(void)initialize
+{
+    self.TRACKING_GA_ID = GC_GOOGLE_TAG;
+    
+    [[GCPlatformConnection getInstance] initialize];
+//    [[GCFayeWorker getInstance] initialize];
+    [NewRelicAgent startWithApplicationToken:GC_NEW_RELIC_KEY];
+    [BugSenseController sharedControllerWithBugSenseAPIKey:GC_BUG_SENSE_KEY];
+}
+
+-(id)getValue:(GCConfigValue)value
+{    
+    switch (value)
+    {
+        case GCConfigValueImageTTL:
+            return @(20*60);
+            break;
+            
+        case GCConfigValueWebsocketDelayAutoReconnection:
+            return @(2);
+            
+        case GCConfigValueColorJSONFile:
+            return @"GCColors";
+            break;
+            
+        case GCConfigDefaultBackgroundImage:
+            return SWF(@"%@%@", @"background_live_gaming", [UIDevice isIPAD] ? @"_ipad" : @"_iphone");
+            break;
+            
+        case GCConfigAutorefreshEvents:
+            return @(30);
+            break;
+            
+        case GCConfigAutorefreshQuestions:
+            return @(30);
+            break;
+            
+        case GCConfigValueTimeAutoDismissController:
+            return @(7.0f);
+            break;
+            
+        case GCConfigValueTimeAutoDismissFlashMessage:
+            return @(3);
+            break;
+            
+        case GCConfigGoogleTag:
+            return self.TRACKING_GA_ID;
+            break;
+        
+        default:
+            break;
+    }
+}
+
++(void) notImplementedYetAlert
+{
+    [[[UIAlertView alloc] initWithTitle:@"Warning" message:@"This section has not been implemented yet. Waiting for new content on the server side... " delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil] show];
+}
+
+#pragma URLS
++(NSString*)getURL:(GCConfigURLType)urlType
+{
+    return [[GCPlatformConnection getInstance] getURL:urlType];
+}
+
+#pragma Tools - UseFull Methods
+
++(NSString *) getSuffixPosition:(NSString *)string_
+{
+    if (string_ && [string_ length] > 0)
+    {
+        char last = [string_ characterAtIndex:([string_ length]-1)];
+        
+        if ([string_ length] > 1)
+        {
+            char beforelast = [string_ characterAtIndex:([string_ length]-2)];
+            if ((beforelast == '1' && last == '1') ||
+                (beforelast == '1' && last == '2') ||
+                (beforelast == '1' && last == '3'))
+                return NSLocalizedString(@"gc_th", @"");
+        }
+        if (last == '1')
+            return NSLocalizedString(@"gc_st", @"");
+        
+        else if (last == '2')
+            return NSLocalizedString(@"gc_nd", @"");
+        
+        else if (last == '3')
+            return NSLocalizedString(@"gc_rd", @"");
+        
+        else if (last == '0' && [string_ length] == 1)
+            return @"";
+        
+        else
+            return NSLocalizedString(@"gc_th", @"");
+    }
+    return string_;
+}
+
++(NSString *)getFormatedStringForRemainingSeconds:(NSInteger)totalsecondsRemaining
+{
+    NSInteger hoursRemaining = totalsecondsRemaining / 3600;
+    NSInteger remainder = totalsecondsRemaining % 3600;
+    
+    NSInteger minutesRemaining = remainder / 60;
+    NSInteger secondsRemaining = remainder % 60;
+    
+    if (hoursRemaining != 0)
+        return [NSString stringWithFormat:@"%ld%@", (long)hoursRemaining, NSLocalizedString(@"gc_hour_abbrev", @"")];
+    
+    else if (minutesRemaining != 0)
+        return [NSString stringWithFormat:@"%ld\' %02ld\"", (long)minutesRemaining, (long)secondsRemaining];
+    
+    else
+        return [NSString stringWithFormat:@"%02ld\"", (long)totalsecondsRemaining];
+}
+
++(NSDate *) ISO8601StringToNSDate:(NSString *)dateTimeZFormat
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // 2013-11-18T23:00:00.324Z
+    [formatter setTimeZone:[NSTimeZone localTimeZone]];
+    formatter.locale = [NSLocale systemLocale];
+    [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
+    return [formatter dateFromString:dateTimeZFormat];
+}
+
++(NSString *) NSDateToISO8601String:(NSDate *)dateTime
+{
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    // 2013-11-18T23:00:00.324Z
+    formatter.locale = [NSLocale systemLocale];
+    [formatter setTimeZone:[NSTimeZone localTimeZone]];
+    [formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss.SSSZZZZZ"];
+    return [formatter stringFromDate:dateTime];
+}
+
+
+@end

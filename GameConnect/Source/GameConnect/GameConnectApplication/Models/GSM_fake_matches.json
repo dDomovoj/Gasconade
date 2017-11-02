@@ -1,0 +1,55 @@
+{
+  "flux": [
+    {
+      "id": "227141",
+      "rndgp_id": "718",
+      "fk_status_id": "2",
+      "fk_place_id": null,
+      "eventday": "1116979200",
+      "datetime_utc": null,
+      "is_live": false,
+      "part_a1_name": "Milan",
+      "part_b1_name": "Liverpool",
+      "part_a1_abbrev_name": "MIL",
+      "part_b1_abbrev_name": "LIV",
+      "part_a1_id": "161",
+      "part_b1_id": "236",
+      "gameweek": null,
+      "full_score_a": "3",
+      "full_score_b": "0",
+      "winner_id": null,
+      "halftime_score_a": null,
+      "halftime_score_b": null,
+      "winner_status": null,
+      "a1_has_pic": true,
+      "b1_has_pic": true,
+      "event_period": null,
+      "minutes": null,
+      "minutes_extra": null,
+      "exttime_score": 0,
+      "place_area_id": null,
+      "place_name": null,
+      "place_city_name": null,
+      "place_area_name": null,
+      "place_geo_lat": null,
+      "place_geo_lon": null,
+      "cid": "53",
+      "comp_name": "UEFA Champions League",
+      "rnd_name": "Final",
+      "grp_name": null,
+      "a1_match_history": [
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "b1_match_history": [
+        "W",
+        "W",
+        "D",
+        "D"
+      ]
+    }
+  ],
+  "Iphone": null
+}

@@ -1,0 +1,17 @@
+{ "tagName" : {
+    "GCAPPHomeViewControlleriPhone" : "GCAPPHomeViewControlleriPhone",
+    "GCAPPProfileEditionViewControlleriPhone" : "GCAPPProfileEditionViewControlleriPhone",
+    "GCAPPGameViewControlleriPhone" : "GCAPPGameViewControlleriPhone",
+    "GCAPPAnswersViewControlleriPhone" : "GCAPPAnswersViewControlleriPhone",
+    "GCAPPLeaguesViewControlleriPhone" : "GCAPPLeaguesViewControlleriPhone",
+    "GCAPPRankingsViewControlleriPhone" : "GCAPPRankingsViewControlleriPhone",
+    "GCAPPLeagueEditionViewControlleriPhone" : "GCAPPLeagueEditionViewControlleriPhone",
+    "GCAPPProfileViewControlleriPhone" : "GCAPPProfileViewControlleriPhone",
+    "GCAPPHomeViewControlleriPad" : "GCAPPHomeViewControlleriPad",
+    "GCAPPGameViewControlleriPad" : "GCAPPGameViewControlleriPad",
+    "GCAPPAnswersViewControlleriPad" : "GCAPPAnswersViewControlleriPad",
+    "GCAPPLeaguesViewControlleriPad" : "GCAPPLeaguesViewControlleriPad",
+    "GCAPPLeagueEditionViewControlleriPad" : "GCAPPLeagueEditionViewControlleriPad",
+    "GCAPPLeaguesViewControlleriPad" : "GCAPPLeaguesViewControlleriPad"
+    }
+}

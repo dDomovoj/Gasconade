@@ -1,0 +1,119 @@
+{ "colors" : {
+    "tab_title_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "gc_connexion_status_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "activity_loaders" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "validate_bt" : {"color" : "ae0c1a", "alpha" : "1"},
+    "tab_bg" : {"color" : "ffffffff", "alpha" : "0.4"},
+    "tab_bl" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "question_status_lb" : {"color" : "000000", "alpha" : "1"},
+
+    "question_render_title_lb" : {"color" : "000000", "alpha" : "1"},
+    "question_points_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "question_points_bg" : {"color" : "5492da", "alpha" : "1"},
+    
+    "header_profile_bg" : {"color" : "000000", "alpha" : "0.50"},
+    "profile_bg" : {"color" : "000000", "alpha" : "0"},
+    "profile_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "profile_status_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "avatar_border_bg" : {"color" : "4a5b68", "alpha" : "1"},
+    "avatar_bg" : {"color" : "a0b69c", "alpha" : "1"},
+    "profile_gaming_duration_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "profile_ranking_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "profile_ranking_position_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "profile_edition_bt" : {"color" : "ffffffff", "alpha" : "1"},
+    "profile_edition_bg" : {"color" : "ffffffff", "alpha" : "0.0"},
+    "profile_edition_modify_avatar_bt" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "title_form_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "title_form_field_placeholder" : {"color" : "ffffffff", "alpha" : "1"},
+    "title_form_field_tf" : {"color" : "ffffffff", "alpha" : "1"},
+    "login_or_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "signup_title_button_cgu" : {"color" : "ffffff", "alpha" : "1"},
+    
+    "trophy_cell_bg" : {"color" : "000000", "alpha" : "0"},
+    "trophy_picto_bg" : {"color" : "ffffffff", "alpha" : "0.2"},
+    "trophy_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "trophy_desc_lb" : {"color" : "ffffffff", "alpha" : "0.5"},
+
+    "ranking_cell_bg" : {"color" : "000000", "alpha" : "0.3"},
+    "ranking_cell_supplementary_tint_bg" : {"color" : "ffffffff", "alpha" : "0.1"},
+    "ranking_player_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_player_position_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_player_points_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "league_selection_bg" : {"color" : "000000", "alpha" : "0.15"},
+    "league_cell_bg" : {"color" : "000000", "alpha" : "0.3"},
+    "league_cell_supplementary_tint_bg" : {"color" : "ffffffff", "alpha" : "0.1"},
+    "league_cell_selected_bg" : {"color" : "ffffffff", "alpha" : "0.4"},
+    "league_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "league_members_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "question_cell_bg" : {"color" : "ffffffff", "alpha" : "1"},
+    "question_cell_supplementary_tint_bg" : {"color" : "ffffffff", "alpha" : "1"},
+    "question_title_lb" : {"color" : "000000", "alpha" : "1"},
+    "question_myanswer_lb" : {"color" : "000000", "alpha" : "1"},
+    "question_clock_late_countdown_tint" : {"color" : "bd2523", "alpha" : "1"},
+    "question_clock_early_countdown_tint" : {"color" : "000000", "alpha" : "1"},
+    
+    "points_available_bg" : {"color" : "5492da", "alpha" : "1"},
+    "points_lost_bg" : {"color" : "E01021", "alpha" : "1"},
+    "points_won_bg" : {"color" : "10508C", "alpha" : "1"},
+    "points_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "ranking_event_separator_bg" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_event_column_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_header_rate_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_small_header_points_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "ranking_large_header_points_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "question_type_bg" : {"color" : "ffffffff", "alpha" : "0.2"},
+    "question_type_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "question_answers_bloc_bg" : {"color" : "526472", "alpha" : "0"},
+
+    "answers_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "countdown_progress_bg" : {"color" : "000000", "alpha" : "0.7"},
+    "countdown_progress_tint" : {"color" : "f94040", "alpha" : "0.7"},
+
+    "countdown_bg" : {"color" : "ffffffff", "alpha" : "1"},
+    "countdown_lb" : {"color" : "000000", "alpha" : "1"},
+    
+    "stats_bar_my_answer_bg" : {"color" : "71de83", "alpha" : "1"},
+    "stats_bar_answer_bg" : {"color" : "629cde", "alpha" : "1"},
+    
+    "stats_answers_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "answers_selected_bt" : {"color" : "c40917", "alpha" : "1"},
+    
+    "friends_name_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "friends_invite_bg" : {"color" : "53d769", "alpha" : "1"},
+    "friends_invite_bt" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "push_info_main_title_lb" : {"color" : "000000", "alpha" : "1"},
+    "push_info_previous_lb" : {"color" : "000000", "alpha" : "1"},
+    "push_info_result_answer_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "push_info_right_answer_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "push_info_description_lb" : {"color" : "ffffffff", "alpha" : "1"},
+
+    "push_info_title_bg" : {"color" : "ffffff", "alpha" : "1"},
+    "push_info_description_bg" : {"color" : "53d769", "alpha" : "1"},
+    "push_info_bad_answer_bg" : {"color" : "bd2623", "alpha" : "1"},
+    "push_info_good_answer_bg" : {"color" : "53d769", "alpha" : "1"},
+    
+    "close_button_bg" : {"color" : "000000", "alpha" : "0.4"},
+    "log_out_bg" : {"color" : "000000", "alpha" : "0"},
+    "no_data_list_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "loading_text_lb"  : {"color" : "ffffffff", "alpha" : "1"},
+    "loading_bg"  : {"color" : "000000", "alpha" : "0.5"},
+    
+    "notification_nb_bg" : {"color" : "ff0000", "alpha" : "1"},
+    "notification_nb_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "answers_selected_lb" : {"color" : "ffffffff", "alpha" : "1"},
+    "external_panel_header_bg" : {"color" : "103d6e", "alpha" : "1"},
+    "external_panel_header_bt" : {"color" : "ffffffff", "alpha" : "1"},
+    
+    "external_panel_message_lb" : {"color" : "ffffffff", "alpha" : "1"},
+}
+}

@@ -1,0 +1,77 @@
+{"Sharing Kit":
+    {
+        "app":"Sharing Library",
+        "networks":
+        [
+         {
+         "networkId":"facebook",
+         "name":"Facebook",
+         "logo":"GSDropboxActivityIcon"
+         },
+         {
+         "networkId":"twitter",
+         "name":"Twitter",
+         "logo":"GSDropboxActivityIcon"
+         },
+         {
+         "networkId":"mail",
+         "name":"Mail",
+         "logo":"GSDrotpboxActivityIcon"
+         }
+         ],
+        "items":
+        {
+            "defaultItem":
+            {
+                "type":[""],
+                "title":"%{title}%",
+                "author":"%{author}%",
+                "desc":"%{desc}%",
+                "url":"%{url}%",
+                "app":"%{app}%",
+                "recipient":"%{recipient}%",
+                "image_url":"%{image_url}%"
+            },
+            "typeItems":
+            [
+             {
+             "type":["noAuthorNoApp"],
+             "author":"",
+             "app":""
+             },
+             {
+             "type":["noRecipientNoAuthorNoApp"],
+             "author":"",
+             "app":"",
+             "recipient":""
+             },
+             {
+             "type":["onlyDescriptionAndUrl"],
+             "title":"",
+             "author":"",
+             "app":"",
+             "image_url":"",
+             "recipient":""
+             },
+             {
+             "type":["news","photo"],
+             "desc":"%{desc}%",
+             "app": "",
+             "author":"",
+             "recipient": "",
+             "networks":["facebook"]
+			 },
+			 {
+			 "type":["news","photo"],
+			 "desc":"%{desc}%",
+			 "networks":[ "mail"]
+			 },
+             {
+			 "type":["news","photo"],
+			 "desc":"%{title}%",
+			 "networks":[ "twitter"]
+			 }
+             ]
+        }
+    }
+}
