@@ -18,6 +18,7 @@
 #import "GCAPPMatchManager.h"
 #import "GCAPPNavigationManager.h"
 #import "GCConfManager.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPHomeViewControlleriPad ()
 {

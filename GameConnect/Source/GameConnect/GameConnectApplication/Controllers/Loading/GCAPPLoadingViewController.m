@@ -10,6 +10,7 @@
 #import "GCAPPLoadingViewController.h"
 #import "GCBluredImageSingleton.h"
 #warning ADD GC IMAGES
+#import "GCConfManager.h"
 //#import "UIImage+AppImages.h"
 
 @interface GCAPPLoadingViewController ()

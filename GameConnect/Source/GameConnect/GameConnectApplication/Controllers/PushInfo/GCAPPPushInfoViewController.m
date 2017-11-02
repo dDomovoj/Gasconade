@@ -9,6 +9,8 @@
 #import "Extends+Libs.h"
 #import "GCAPPPushInfoViewController.h"
 #import "GCBluredImageSingleton.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @interface GCAPPPushInfoViewController ()
 {

@@ -9,6 +9,7 @@
 #import "GCAPPNavigationController.h"
 #import "Extends+Libs.h"
 //#import "PSGOneApp-Swift.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPNavigationController ()
 {
@@ -74,7 +75,8 @@
 
 - (void)onClose
 {
-    [[AppDelegate shared] closeGameConnect];
+#warning UARENA
+//    [[AppDelegate shared] closeGameConnect];
 }
 
 - (BOOL)prefersStatusBarHidden

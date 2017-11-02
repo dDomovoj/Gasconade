@@ -172,7 +172,7 @@
 		CE82B67F1FAB51760087432F /* GCNotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D771FAB171C0077CD2F /* GCNotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6801FAB51760087432F /* GCNotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D781FAB171C0077CD2F /* GCNotificationView.m */; };
 		CE82B6811FAB51760087432F /* GCNotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D791FAB171C0077CD2F /* GCNotificationView.xib */; };
-		CE82B6821FAB51940087432F /* CHAvatarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D301FAB171C0077CD2F /* CHAvatarView.h */; };
+		CE82B6821FAB51940087432F /* CHAvatarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D301FAB171C0077CD2F /* CHAvatarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6831FAB51940087432F /* CHAvatarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D311FAB171C0077CD2F /* CHAvatarView.m */; };
 		CE82B6841FAB51940087432F /* CHDraggableView+Avatar.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D321FAB171C0077CD2F /* CHDraggableView+Avatar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6851FAB51940087432F /* CHDraggableView+Avatar.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D331FAB171C0077CD2F /* CHDraggableView+Avatar.m */; };
@@ -181,7 +181,7 @@
 		CE82B6881FAB51940087432F /* CHDraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D371FAB171C0077CD2F /* CHDraggableView.m */; };
 		CE82B6891FAB51940087432F /* CHDraggingCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D381FAB171C0077CD2F /* CHDraggingCoordinator.h */; };
 		CE82B68A1FAB51940087432F /* CHDraggingCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D391FAB171C0077CD2F /* CHDraggingCoordinator.m */; };
-		CE82B68B1FAB51940087432F /* CHMatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D3A1FAB171C0077CD2F /* CHMatchView.h */; };
+		CE82B68B1FAB51940087432F /* CHMatchView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D3A1FAB171C0077CD2F /* CHMatchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B68C1FAB51940087432F /* CHMatchView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D3B1FAB171C0077CD2F /* CHMatchView.m */; };
 		CE82B68D1FAB51940087432F /* CHMatchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D3C1FAB171C0077CD2F /* CHMatchView.xib */; };
 		CE82B68E1FAB519A0087432F /* SKBounceAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D3E1FAB171C0077CD2F /* SKBounceAnimation.h */; };
@@ -214,7 +214,7 @@
 		CE82B6A91FAB53090087432F /* GCLeagueEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CAA1FAB171C0077CD2F /* GCLeagueEditionViewController.m */; };
 		CE82B6AA1FAB54580087432F /* GCInGameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA61FAB171C0077CD2F /* GCInGameViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6AB1FAB545B0087432F /* GCInGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CA71FAB171C0077CD2F /* GCInGameViewController.m */; };
-		CE82B6AC1FAB54660087432F /* GCAnswersViewController_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA11FAB171C0077CD2F /* GCAnswersViewController_Private.h */; };
+		CE82B6AC1FAB54660087432F /* GCAnswersViewController_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CA11FAB171C0077CD2F /* GCAnswersViewController_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6AD1FAB54680087432F /* GCAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CA01FAB171C0077CD2F /* GCAnswersViewController.m */; };
 		CE82B6AE1FAB54690087432F /* GCAnswersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C9F1FAB171C0077CD2F /* GCAnswersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6AF1FAB546F0087432F /* GCAnswersViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C9D1FAB171C0077CD2F /* GCAnswersViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -251,6 +251,209 @@
 		CE82B6CE1FAB57440087432F /* GCRankingHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D881FAB171C0077CD2F /* GCRankingHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B6CF1FAB57490087432F /* GCRankingHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D891FAB171C0077CD2F /* GCRankingHeaderView.m */; };
 		CE82B6D01FAB57550087432F /* GCPushInfoView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D831FAB171C0077CD2F /* GCPushInfoView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B6D11FAB57900087432F /* GCLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CAF1FAB171C0077CD2F /* GCLoadingViewController.m */; };
+		CE82B6D21FAB57900087432F /* GCLoginNSAPIViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CB21FAB171C0077CD2F /* GCLoginNSAPIViewController+GCUI.m */; };
+		CE82B6D31FAB57900087432F /* GCLoginNSAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CB41FAB171C0077CD2F /* GCLoginNSAPIViewController.m */; };
+		CE82B6D41FAB57900087432F /* GCProfileEditionViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CB71FAB171C0077CD2F /* GCProfileEditionViewController+GCUI.m */; };
+		CE82B6D51FAB57900087432F /* GCProfileEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CB91FAB171C0077CD2F /* GCProfileEditionViewController.m */; };
+		CE82B6D61FAB57900087432F /* GCRankingsEventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CC41FAB171C0077CD2F /* GCRankingsEventViewController.m */; };
+		CE82B6D71FAB57900087432F /* GCRankingsViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CC71FAB171C0077CD2F /* GCRankingsViewController+GCUI.m */; };
+		CE82B6D81FAB57900087432F /* GCRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CC91FAB171C0077CD2F /* GCRankingsViewController.m */; };
+		CE82B6D91FAB57900087432F /* GCSubscribeNSAPIViewController+GCUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CCC1FAB171C0077CD2F /* GCSubscribeNSAPIViewController+GCUI.m */; };
+		CE82B6DA1FAB57900087432F /* GCSubscribeNSAPIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CCE1FAB171C0077CD2F /* GCSubscribeNSAPIViewController.m */; };
+		CE82B6DB1FAB57900087432F /* GCPushInfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D841FAB171C0077CD2F /* GCPushInfoView.m */; };
+		CE82B6DC1FAB57900087432F /* GCStatsBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D911FAB171C0077CD2F /* GCStatsBarView.m */; };
+		CE82B6DD1FAB57900087432F /* GCTimeCountdownView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D991FAB171C0077CD2F /* GCTimeCountdownView.m */; };
+		CE82B6DE1FAB57900087432F /* GCMasterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DA91FAB171C0077CD2F /* GCMasterCollectionViewCell.m */; };
+		CE82B6DF1FAB57900087432F /* UIView+UIView_Tool.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E231FAB171C0077CD2F /* UIView+UIView_Tool.m */; };
+		CE82B6E01FAB57900087432F /* UIViewController+iPhone_iPad_Xib.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E251FAB171C0077CD2F /* UIViewController+iPhone_iPad_Xib.m */; };
+		CE82B6E11FAB57900087432F /* OLGhostAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E331FAB171C0077CD2F /* OLGhostAlertView.m */; };
+		CE82B6E21FAB57900087432F /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E481FAB171C0077CD2F /* LoadingView.m */; };
+		CE82B6E31FAB57900087432F /* UINotificationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E4F1FAB171C0077CD2F /* UINotificationView.m */; };
+		CE82B6E41FAB57900087432F /* UIItemViewSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E531FAB171C0077CD2F /* UIItemViewSlide.m */; };
+		CE82B6E51FAB57900087432F /* UITableViewCellSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E551FAB171C0077CD2F /* UITableViewCellSlide.m */; };
+		CE82B6E61FAB57900087432F /* ViewSlide.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E571FAB171C0077CD2F /* ViewSlide.m */; };
+		CE82B6E71FAB57900087432F /* FacebookComposeBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E7F1FAB171C0077CD2F /* FacebookComposeBackgroundView.m */; };
+		CE82B6E81FAB57900087432F /* FacebookComposeSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E811FAB171C0077CD2F /* FacebookComposeSheetView.m */; };
+		CE82B6E91FAB57900087432F /* FacebookComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E831FAB171C0077CD2F /* FacebookComposeViewController.m */; };
+		CE82B6EA1FAB57AD0087432F /* GCAPPAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BC61FAB171C0077CD2F /* GCAPPAnswersViewController.m */; };
+		CE82B6EB1FAB57AD0087432F /* GCAPPAnswersViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BC91FAB171C0077CD2F /* GCAPPAnswersViewControlleriPad.m */; };
+		CE82B6EC1FAB57AD0087432F /* GCAPPAnswersViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BCC1FAB171C0077CD2F /* GCAPPAnswersViewControlleriPhone.m */; };
+		CE82B6ED1FAB57AD0087432F /* GCAPPExternalAnswersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BCF1FAB171C0077CD2F /* GCAPPExternalAnswersViewController.m */; };
+		CE82B6EE1FAB57AD0087432F /* GCAPPGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BD31FAB171C0077CD2F /* GCAPPGameViewController.m */; };
+		CE82B6EF1FAB57AD0087432F /* GCAPPGameViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BD61FAB171C0077CD2F /* GCAPPGameViewControlleriPad.m */; };
+		CE82B6F01FAB57AD0087432F /* GCAPPGameViewControlleriPhone+GCAPPUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BD91FAB171C0077CD2F /* GCAPPGameViewControlleriPhone+GCAPPUI.m */; };
+		CE82B6F11FAB57AD0087432F /* GCAPPGameViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BDB1FAB171C0077CD2F /* GCAPPGameViewControlleriPhone.m */; };
+		CE82B6F21FAB57AD0087432F /* GCAPPHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BE41FAB171C0077CD2F /* GCAPPHomeViewController.m */; };
+		CE82B6F31FAB57AD0087432F /* GCAPPHomeViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BE71FAB171C0077CD2F /* GCAPPHomeViewControlleriPad.m */; };
+		CE82B6F41FAB57AD0087432F /* GCAPPHomeViewControlleriPhone+GCAPPUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BEA1FAB171C0077CD2F /* GCAPPHomeViewControlleriPhone+GCAPPUI.m */; };
+		CE82B6F51FAB57AD0087432F /* GCAPPHomeViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BEC1FAB171C0077CD2F /* GCAPPHomeViewControlleriPhone.m */; };
+		CE82B6F61FAB57AD0087432F /* GCAPPLeagueEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BF01FAB171C0077CD2F /* GCAPPLeagueEditionViewController.m */; };
+		CE82B6F71FAB57AD0087432F /* GCAPPLeagueEditionViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BF31FAB171C0077CD2F /* GCAPPLeagueEditionViewControlleriPad.m */; };
+		CE82B6F81FAB57AD0087432F /* GCAPPLeagueEditionViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BF61FAB171C0077CD2F /* GCAPPLeagueEditionViewControlleriPhone.m */; };
+		CE82B6F91FAB57AD0087432F /* GCAPPLeaguesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BF91FAB171C0077CD2F /* GCAPPLeaguesViewController.m */; };
+		CE82B6FA1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BFC1FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.m */; };
+		CE82B6FB1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BFE1FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPad.m */; };
+		CE82B6FC1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C011FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPhone.m */; };
+		CE82B6FD1FAB57AD0087432F /* GCAPPLoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C041FAB171C0077CD2F /* GCAPPLoadingViewController.m */; };
+		CE82B6FE1FAB57AD0087432F /* GCAPPLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C071FAB171C0077CD2F /* GCAPPLoginViewController.m */; };
+		CE82B6FF1FAB57AD0087432F /* GCAPPLoginViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C0A1FAB171C0077CD2F /* GCAPPLoginViewControlleriPad.m */; };
+		CE82B7001FAB57AD0087432F /* GCAPPLoginViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C0D1FAB171C0077CD2F /* GCAPPLoginViewControlleriPhone.m */; };
+		CE82B7011FAB57AD0087432F /* GCAPPProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C131FAB171C0077CD2F /* GCAPPProfileViewController.m */; };
+		CE82B7021FAB57AD0087432F /* GCAPPProfileViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C161FAB171C0077CD2F /* GCAPPProfileViewControlleriPad.m */; };
+		CE82B7031FAB57AD0087432F /* GCAPPProfileViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C191FAB171C0077CD2F /* GCAPPProfileViewControlleriPhone.m */; };
+		CE82B7041FAB57AD0087432F /* GCAPPProfileEditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C1C1FAB171C0077CD2F /* GCAPPProfileEditionViewController.m */; };
+		CE82B7051FAB57AD0087432F /* GCAPPProfileEditionViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C1F1FAB171C0077CD2F /* GCAPPProfileEditionViewControlleriPad.m */; };
+		CE82B7061FAB57AD0087432F /* GCAPPProfileEditionViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C221FAB171C0077CD2F /* GCAPPProfileEditionViewControlleriPhone.m */; };
+		CE82B7071FAB57AD0087432F /* GCAPPPushInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C251FAB171C0077CD2F /* GCAPPPushInfoViewController.m */; };
+		CE82B7081FAB57AD0087432F /* GCAPPPushInfoViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C281FAB171C0077CD2F /* GCAPPPushInfoViewControlleriPad.m */; };
+		CE82B7091FAB57AD0087432F /* GCAPPPushInfoViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C2B1FAB171C0077CD2F /* GCAPPPushInfoViewControlleriPhone.m */; };
+		CE82B70A1FAB57AD0087432F /* GCAPPLeagueRankingsViewController+GCAPPUI.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C2F1FAB171C0077CD2F /* GCAPPLeagueRankingsViewController+GCAPPUI.m */; };
+		CE82B70B1FAB57AD0087432F /* GCAPPLeagueRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C311FAB171C0077CD2F /* GCAPPLeagueRankingsViewController.m */; };
+		CE82B70C1FAB57AD0087432F /* GCAPPRankingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C341FAB171C0077CD2F /* GCAPPRankingsViewController.m */; };
+		CE82B70D1FAB57AD0087432F /* GCAPPRankingsViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C371FAB171C0077CD2F /* GCAPPRankingsViewControlleriPad.m */; };
+		CE82B70E1FAB57AD0087432F /* GCAPPRankingsViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C3A1FAB171C0077CD2F /* GCAPPRankingsViewControlleriPhone.m */; };
+		CE82B70F1FAB57AD0087432F /* GCAppSponsorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C3D1FAB171C0077CD2F /* GCAppSponsorsViewController.m */; };
+		CE82B7101FAB57AD0087432F /* GCAPPSubscribeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C401FAB171C0077CD2F /* GCAPPSubscribeViewController.m */; };
+		CE82B7111FAB57AD0087432F /* GCAPPSubscribeViewControlleriPad.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C431FAB171C0077CD2F /* GCAPPSubscribeViewControlleriPad.m */; };
+		CE82B7121FAB57AD0087432F /* GCAPPSubscribeViewControlleriPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C461FAB171C0077CD2F /* GCAPPSubscribeViewControlleriPhone.m */; };
+		CE82B7131FAB57AD0087432F /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C711FAB171C0077CD2F /* FXBlurView.m */; };
+		CE82B7141FAB57AD0087432F /* MatchBoxBaseCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C801FAB171C0077CD2F /* MatchBoxBaseCollectionViewCell.m */; };
+		CE82B7151FAB57AD0087432F /* MatchBoxSimpleCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C821FAB171C0077CD2F /* MatchBoxSimpleCollectionViewCell.m */; };
+		CE82B7161FAB57AD0087432F /* GCAPPExternalPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C891FAB171C0077CD2F /* GCAPPExternalPopupView.m */; };
+		CE82B7171FAB57DB0087432F /* GCAPPAnswersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BC51FAB171C0077CD2F /* GCAPPAnswersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7181FAB57DB0087432F /* GCAPPAnswersViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BC81FAB171C0077CD2F /* GCAPPAnswersViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7191FAB57DB0087432F /* GCAPPAnswersViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BCB1FAB171C0077CD2F /* GCAPPAnswersViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71A1FAB57DB0087432F /* GCAPPExternalAnswersViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BCE1FAB171C0077CD2F /* GCAPPExternalAnswersViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71B1FAB57DB0087432F /* GCAPPGameViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BD21FAB171C0077CD2F /* GCAPPGameViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71C1FAB57DB0087432F /* GCAPPGameViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BD51FAB171C0077CD2F /* GCAPPGameViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71D1FAB57DB0087432F /* GCAPPGameViewControlleriPhone+GCAPPUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BD81FAB171C0077CD2F /* GCAPPGameViewControlleriPhone+GCAPPUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71E1FAB57DB0087432F /* GCAPPGameViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BDA1FAB171C0077CD2F /* GCAPPGameViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B71F1FAB57DB0087432F /* GCAPPGameViewControlleriPhone_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BDC1FAB171C0077CD2F /* GCAPPGameViewControlleriPhone_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7201FAB57DB0087432F /* GCAPPHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BE31FAB171C0077CD2F /* GCAPPHomeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7211FAB57DB0087432F /* GCAPPHomeViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BE61FAB171C0077CD2F /* GCAPPHomeViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7221FAB57DB0087432F /* GCAPPHomeViewControlleriPhone+GCAPPUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BE91FAB171C0077CD2F /* GCAPPHomeViewControlleriPhone+GCAPPUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7231FAB57DB0087432F /* GCAPPHomeViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BEB1FAB171C0077CD2F /* GCAPPHomeViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7241FAB57DB0087432F /* GCAPPHomeViewControlleriPhone_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BED1FAB171C0077CD2F /* GCAPPHomeViewControlleriPhone_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7251FAB57DB0087432F /* GCAPPLeagueEditionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BEF1FAB171C0077CD2F /* GCAPPLeagueEditionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7261FAB57DB0087432F /* GCAPPLeagueEditionViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BF21FAB171C0077CD2F /* GCAPPLeagueEditionViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7271FAB57DB0087432F /* GCAPPLeagueEditionViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BF51FAB171C0077CD2F /* GCAPPLeagueEditionViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7281FAB57DB0087432F /* GCAPPLeaguesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BF81FAB171C0077CD2F /* GCAPPLeaguesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7291FAB57DB0087432F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BFB1FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72A1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BFD1FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72B1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C001FAB171C0077CD2F /* GCAPPLeaguesViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72C1FAB57DB0087432F /* GCAPPLoadingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C031FAB171C0077CD2F /* GCAPPLoadingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72D1FAB57DB0087432F /* GCAPPLoginViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C061FAB171C0077CD2F /* GCAPPLoginViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72E1FAB57DB0087432F /* GCAPPLoginViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C091FAB171C0077CD2F /* GCAPPLoginViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B72F1FAB57DB0087432F /* GCAPPLoginViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C0C1FAB171C0077CD2F /* GCAPPLoginViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7301FAB57DB0087432F /* GCAPPProfileViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C121FAB171C0077CD2F /* GCAPPProfileViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7311FAB57DB0087432F /* GCAPPProfileViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C151FAB171C0077CD2F /* GCAPPProfileViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7321FAB57DB0087432F /* GCAPPProfileViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C181FAB171C0077CD2F /* GCAPPProfileViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7331FAB57DB0087432F /* GCAPPProfileEditionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C1B1FAB171C0077CD2F /* GCAPPProfileEditionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7341FAB57DB0087432F /* GCAPPProfileEditionViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C1E1FAB171C0077CD2F /* GCAPPProfileEditionViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7351FAB57DB0087432F /* GCAPPProfileEditionViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C211FAB171C0077CD2F /* GCAPPProfileEditionViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7361FAB57DB0087432F /* GCAPPPushInfoViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C241FAB171C0077CD2F /* GCAPPPushInfoViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7371FAB57DB0087432F /* GCAPPPushInfoViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C271FAB171C0077CD2F /* GCAPPPushInfoViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7381FAB57DB0087432F /* GCAPPPushInfoViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C2A1FAB171C0077CD2F /* GCAPPPushInfoViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7391FAB57DB0087432F /* GCAPPLeagueRankingsViewController+GCAPPUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C2E1FAB171C0077CD2F /* GCAPPLeagueRankingsViewController+GCAPPUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73A1FAB57DB0087432F /* GCAPPLeagueRankingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C301FAB171C0077CD2F /* GCAPPLeagueRankingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73B1FAB57DB0087432F /* GCAPPRankingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C331FAB171C0077CD2F /* GCAPPRankingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73C1FAB57DB0087432F /* GCAPPRankingsViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C361FAB171C0077CD2F /* GCAPPRankingsViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73D1FAB57DB0087432F /* GCAPPRankingsViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C391FAB171C0077CD2F /* GCAPPRankingsViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73E1FAB57DB0087432F /* GCAppSponsorsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C3C1FAB171C0077CD2F /* GCAppSponsorsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B73F1FAB57DB0087432F /* GCAPPSubscribeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C3F1FAB171C0077CD2F /* GCAPPSubscribeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7401FAB57DB0087432F /* GCAPPSubscribeViewControlleriPad.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C421FAB171C0077CD2F /* GCAPPSubscribeViewControlleriPad.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7411FAB57DB0087432F /* GCAPPSubscribeViewControlleriPhone.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C451FAB171C0077CD2F /* GCAPPSubscribeViewControlleriPhone.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7421FAB57DB0087432F /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C701FAB171C0077CD2F /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7431FAB57DB0087432F /* MatchBoxBaseCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C7F1FAB171C0077CD2F /* MatchBoxBaseCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7441FAB57DB0087432F /* MatchBoxSimpleCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C811FAB171C0077CD2F /* MatchBoxSimpleCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7451FAB57DB0087432F /* GCAPPExternalPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C881FAB171C0077CD2F /* GCAPPExternalPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7461FAB57FB0087432F /* GCLoadingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CAE1FAB171C0077CD2F /* GCLoadingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7471FAB57FB0087432F /* GCLoginNSAPIViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CB11FAB171C0077CD2F /* GCLoginNSAPIViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7481FAB57FB0087432F /* GCLoginNSAPIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CB31FAB171C0077CD2F /* GCLoginNSAPIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7491FAB57FB0087432F /* GCProfileEditionViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CB61FAB171C0077CD2F /* GCProfileEditionViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74A1FAB57FB0087432F /* GCProfileEditionViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CB81FAB171C0077CD2F /* GCProfileEditionViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74B1FAB57FB0087432F /* GCRankingsEventViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CC31FAB171C0077CD2F /* GCRankingsEventViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74C1FAB57FB0087432F /* GCRankingsViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CC61FAB171C0077CD2F /* GCRankingsViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74D1FAB57FB0087432F /* GCRankingsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CC81FAB171C0077CD2F /* GCRankingsViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74E1FAB57FB0087432F /* GCSubscribeNSAPIViewController+GCUI.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CCB1FAB171C0077CD2F /* GCSubscribeNSAPIViewController+GCUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B74F1FAB57FB0087432F /* GCSubscribeNSAPIViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CCD1FAB171C0077CD2F /* GCSubscribeNSAPIViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7501FAB57FB0087432F /* GCStatsBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D901FAB171C0077CD2F /* GCStatsBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7511FAB57FB0087432F /* GCTimeCountdownView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D981FAB171C0077CD2F /* GCTimeCountdownView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7521FAB57FB0087432F /* GCMasterCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DA81FAB171C0077CD2F /* GCMasterCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7531FAB57FB0087432F /* UIView+UIView_Tool.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E221FAB171C0077CD2F /* UIView+UIView_Tool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7541FAB57FB0087432F /* UIViewController+iPhone_iPad_Xib.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E241FAB171C0077CD2F /* UIViewController+iPhone_iPad_Xib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7551FAB57FB0087432F /* OLGhostAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E321FAB171C0077CD2F /* OLGhostAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7561FAB57FB0087432F /* LoadingView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E471FAB171C0077CD2F /* LoadingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7571FAB57FB0087432F /* UINotificationView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E4E1FAB171C0077CD2F /* UINotificationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7581FAB57FB0087432F /* UIItemViewSlide.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E521FAB171C0077CD2F /* UIItemViewSlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7591FAB57FB0087432F /* UITableViewCellSlide.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E541FAB171C0077CD2F /* UITableViewCellSlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B75A1FAB57FB0087432F /* ViewSlide.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E561FAB171C0077CD2F /* ViewSlide.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B75B1FAB57FB0087432F /* FacebookComposeBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E7E1FAB171C0077CD2F /* FacebookComposeBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B75C1FAB57FB0087432F /* FacebookComposeSheetView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E801FAB171C0077CD2F /* FacebookComposeSheetView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B75D1FAB57FB0087432F /* FacebookComposeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E821FAB171C0077CD2F /* FacebookComposeViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B75E1FAB580C0087432F /* GCAPPExternalAnswersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277BD01FAB171C0077CD2F /* GCAPPExternalAnswersViewController.xib */; };
+		CE82B75F1FAB580C0087432F /* GCAPPExternalPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277C8A1FAB171C0077CD2F /* GCAPPExternalPopupView.xib */; };
+		CE82B7601FAB580C0087432F /* GCPushInfoViewLarge.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D851FAB171C0077CD2F /* GCPushInfoViewLarge.xib */; };
+		CE82B7611FAB580C0087432F /* GCPushInfoViewSmall.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D861FAB171C0077CD2F /* GCPushInfoViewSmall.xib */; };
+		CE82B7621FAB580C0087432F /* GCStatsBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D921FAB171C0077CD2F /* GCStatsBarView.xib */; };
+		CE82B7631FAB580C0087432F /* GCTimeCountdownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277D9A1FAB171C0077CD2F /* GCTimeCountdownView.xib */; };
+		CE82B7641FAB580C0087432F /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277E491FAB171C0077CD2F /* LoadingView.xib */; };
+		CE82B7651FAB580C0087432F /* UINotificationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277E501FAB171C0077CD2F /* UINotificationView.xib */; };
+		CE82B7661FAB588B0087432F /* iCarousel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277D461FAB171C0077CD2F /* iCarousel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE82B7671FAB588B0087432F /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277D471FAB171C0077CD2F /* iCarousel.m */; };
+		CE82B7681FAB5D370087432F /* GCAnswerPointsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277D711FAB171C0077CD2F /* GCAnswerPointsView.swift */; };
+		CE82B7691FAB5D370087432F /* GCAnswersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277D721FAB171C0077CD2F /* GCAnswersView.swift */; };
+		CE82B76A1FAB5D370087432F /* GCStatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277D8F1FAB171C0077CD2F /* GCStatisticsView.swift */; };
+		CE82B76B1FAB5D370087432F /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277D961FAB171C0077CD2F /* ProgressBarView.swift */; };
+		CE82B76C1FAB5D370087432F /* GCConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277DB71FAB171C0077CD2F /* GCConfigManager.swift */; };
+		CE82B76D1FAB5D370087432F /* CircularProgressBarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF31FAB171C0077CD2F /* CircularProgressBarLayer.swift */; };
+		CE82B76E1FAB5D370087432F /* CircularProgressBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF41FAB171C0077CD2F /* CircularProgressBarModel.swift */; };
+		CE82B76F1FAB5D370087432F /* CircularProgressBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF51FAB171C0077CD2F /* CircularProgressBarsView.swift */; };
+		CE82B7701FAB5D370087432F /* SingleProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF71FAB171C0077CD2F /* SingleProgressBarView.swift */; };
+		CE82B7711FAB5D370087432F /* UIGeometry+CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF81FAB171C0077CD2F /* UIGeometry+CircularProgressBar.swift */; };
+		CE82B7721FAB5D370087432F /* GCBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EF91FAB171C0077CD2F /* GCBaseView.swift */; };
+		CE82B7731FAB5D370087432F /* Updateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE277EFA1FAB171C0077CD2F /* Updateable.swift */; };
+		CE82B7741FAB68080087432F /* UIMasterApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DEE1FAB171C0077CD2F /* UIMasterApplication.h */; };
+		CE82B7751FAB68090087432F /* UIMasterApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DEF1FAB171C0077CD2F /* UIMasterApplication.m */; };
+		CE82B7761FAB68170087432F /* NsSnImportNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EB21FAB171C0077CD2F /* NsSnImportNetworkManager.h */; };
+		CE82B7771FAB68170087432F /* NsSnImportNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EB31FAB171C0077CD2F /* NsSnImportNetworkManager.m */; };
+		CE82B7781FAB68220087432F /* GCLeagueRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DA41FAB171C0077CD2F /* GCLeagueRender.h */; };
+		CE82B7791FAB68220087432F /* GCLeagueRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DA51FAB171C0077CD2F /* GCLeagueRender.m */; };
+		CE82B77A1FAB68220087432F /* GCLeagueRender.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277DA61FAB171C0077CD2F /* GCLeagueRender.xib */; };
+		CE82B77B1FAB682C0087432F /* GCQuestionRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DAB1FAB171C0077CD2F /* GCQuestionRender.h */; };
+		CE82B77C1FAB682C0087432F /* GCQuestionRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DAC1FAB171C0077CD2F /* GCQuestionRender.m */; };
+		CE82B77D1FAB682C0087432F /* GCQuestionRender.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277DAD1FAB171C0077CD2F /* GCQuestionRender.xib */; };
+		CE82B77E1FAB68350087432F /* GCSponsorsManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C5E1FAB171C0077CD2F /* GCSponsorsManager.h */; };
+		CE82B77F1FAB68350087432F /* GCSponsorsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C5F1FAB171C0077CD2F /* GCSponsorsManager.m */; };
+		CE82B7801FAB68400087432F /* GCEventManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CDC1FAB171C0077CD2F /* GCEventManager.h */; };
+		CE82B7811FAB68400087432F /* GCEventManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CDD1FAB171C0077CD2F /* GCEventManager.m */; };
+		CE82B7821FAB684D0087432F /* GCRankingRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DAF1FAB171C0077CD2F /* GCRankingRender.h */; };
+		CE82B7831FAB684D0087432F /* GCRankingRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DB01FAB171C0077CD2F /* GCRankingRender.m */; };
+		CE82B7841FAB684D0087432F /* GCRankingRender.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277DB11FAB171C0077CD2F /* GCRankingRender.xib */; };
+		CE82B7851FAB68850087432F /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277E721FAB171C0077CD2F /* Reachability.h */; };
+		CE82B7861FAB68850087432F /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277E731FAB171C0077CD2F /* Reachability.m */; };
+		CE82B7871FAB68940087432F /* GCAPPEventLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BE11FAB171C0077CD2F /* GCAPPEventLinker.h */; };
+		CE82B7881FAB68940087432F /* GCAPPEventLinker.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BE21FAB171C0077CD2F /* GCAPPEventLinker.m */; };
+		CE82B7891FAB689D0087432F /* GCCompetitionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CD91FAB171C0077CD2F /* GCCompetitionManager.h */; };
+		CE82B78A1FAB689D0087432F /* GCCompetitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CDA1FAB171C0077CD2F /* GCCompetitionManager.m */; };
+		CE82B78B1FAB68A60087432F /* GCLeagueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CDF1FAB171C0077CD2F /* GCLeagueManager.h */; };
+		CE82B78C1FAB68A60087432F /* GCLeagueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CE01FAB171C0077CD2F /* GCLeagueManager.m */; };
+		CE82B78D1FAB68B00087432F /* GCAPPDataEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277BDF1FAB171C0077CD2F /* GCAPPDataEvent.h */; };
+		CE82B78E1FAB68B00087432F /* GCAPPDataEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277BE01FAB171C0077CD2F /* GCAPPDataEvent.m */; };
+		CE82B78F1FAB68B80087432F /* GCAPPMatchManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C4D1FAB171C0077CD2F /* GCAPPMatchManager.h */; };
+		CE82B7901FAB68B80087432F /* GCAPPMatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C4E1FAB171C0077CD2F /* GCAPPMatchManager.m */; };
+		CE82B7911FAB68BF0087432F /* GCTrophyRender.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277DB31FAB171C0077CD2F /* GCTrophyRender.h */; };
+		CE82B7921FAB68BF0087432F /* GCTrophyRender.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277DB41FAB171C0077CD2F /* GCTrophyRender.m */; };
+		CE82B7931FAB68BF0087432F /* GCTrophyRender.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277DB51FAB171C0077CD2F /* GCTrophyRender.xib */; };
+		CE82B7941FAB68C90087432F /* GCAPPSoccerEventCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C791FAB171C0077CD2F /* GCAPPSoccerEventCell.h */; };
+		CE82B7951FAB68C90087432F /* GCAPPSoccerEventCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C7A1FAB171C0077CD2F /* GCAPPSoccerEventCell.m */; };
+		CE82B7961FAB68C90087432F /* GCAPPSoccerEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277C7B1FAB171C0077CD2F /* GCAPPSoccerEventCell.xib */; };
+		CE82B7971FAB68D00087432F /* GCAPPSoccerEventHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C841FAB171C0077CD2F /* GCAPPSoccerEventHeader.h */; };
+		CE82B7981FAB68D00087432F /* GCAPPSoccerEventHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C851FAB171C0077CD2F /* GCAPPSoccerEventHeader.m */; };
+		CE82B7991FAB68D00087432F /* GCAPPSoccerEventHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277C861FAB171C0077CD2F /* GCAPPSoccerEventHeader.xib */; };
+		CE82B79A1FAB68DB0087432F /* NsSnAvatarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EE31FAB171C0077CD2F /* NsSnAvatarManager.h */; };
+		CE82B79B1FAB68DB0087432F /* NsSnAvatarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EE41FAB171C0077CD2F /* NsSnAvatarManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -3274,65 +3477,107 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B73E1FAB57DB0087432F /* GCAppSponsorsViewController.h in Headers */,
+				CE82B74B1FAB57FB0087432F /* GCRankingsEventViewController.h in Headers */,
 				CE82B6381FAB2C890087432F /* NsSnPendingTagModel.h in Headers */,
 				CE82B5F71FAB2B070087432F /* GCFontManager.h in Headers */,
+				CE82B7781FAB68220087432F /* GCLeagueRender.h in Headers */,
 				CE82B6091FAB2BD80087432F /* GCGamerManager.h in Headers */,
 				CE82B6A01FAB52A80087432F /* UICollectionViewGG.h in Headers */,
 				CE82B6961FAB52730087432F /* GCMasterViewController.h in Headers */,
+				CE82B7241FAB57DB0087432F /* GCAPPHomeViewControlleriPhone_Private.h in Headers */,
 				CE82B5FF1FAB2BA90087432F /* BridgedLanguageManager.h in Headers */,
 				CE82B67F1FAB51760087432F /* GCNotificationView.h in Headers */,
+				CE82B73F1FAB57DB0087432F /* GCAPPSubscribeViewController.h in Headers */,
+				CE82B7221FAB57DB0087432F /* GCAPPHomeViewControlleriPhone+GCAPPUI.h in Headers */,
+				CE82B78F1FAB68B80087432F /* GCAPPMatchManager.h in Headers */,
 				CE82B6221FAB2C730087432F /* CJSONDeserializer.h in Headers */,
 				CE82B6321FAB2C890087432F /* NsSnMessageModel.h in Headers */,
+				CE82B73A1FAB57DB0087432F /* GCAPPLeagueRankingsViewController.h in Headers */,
 				CE82B6891FAB51940087432F /* CHDraggingCoordinator.h in Headers */,
 				CE82B5E71FAB2A910087432F /* GCPushModels.h in Headers */,
 				CE82B6691FAB4C480087432F /* GCProcessEventManager.h in Headers */,
+				CE82B75C1FAB57FB0087432F /* FacebookComposeSheetView.h in Headers */,
 				CE82B6051FAB2BCD0087432F /* NSDataManager.h in Headers */,
 				CE82B6481FAB2CA00087432F /* NsSnMediaFormat.h in Headers */,
 				CE82B6C91FAB57230087432F /* GCRankingHeaderLargeView.h in Headers */,
+				CE82B7571FAB57FB0087432F /* UINotificationView.h in Headers */,
 				CE82B6921FAB51DD0087432F /* GCAPPNavigationController.h in Headers */,
+				CE82B7391FAB57DB0087432F /* GCAPPLeagueRankingsViewController+GCAPPUI.h in Headers */,
+				CE82B7821FAB684D0087432F /* GCRankingRender.h in Headers */,
+				CE82B7251FAB57DB0087432F /* GCAPPLeagueEditionViewController.h in Headers */,
 				CE82B6A81FAB53060087432F /* GCLeagueEditionViewController.h in Headers */,
 				CE82B6A21FAB52CE0087432F /* WCDynamicFlowLayout.h in Headers */,
 				CE82B5DD1FAB2A900087432F /* GCCompetitionModel.h in Headers */,
+				CE82B7231FAB57DB0087432F /* GCAPPHomeViewControlleriPhone.h in Headers */,
 				CE82B5E91FAB2A910087432F /* GCQuestionModel.h in Headers */,
+				CE82B71E1FAB57DB0087432F /* GCAPPGameViewControlleriPhone.h in Headers */,
 				CE82B6B71FAB551E0087432F /* JWGCircleCounter.h in Headers */,
 				CE82B69F1FAB52A80087432F /* IRenderGG.h in Headers */,
+				CE82B7471FAB57FB0087432F /* GCLoginNSAPIViewController+GCUI.h in Headers */,
 				CE82B63C1FAB2C890087432F /* NsSnThirdPartyModel.h in Headers */,
+				CE82B7431FAB57DB0087432F /* MatchBoxBaseCollectionViewCell.h in Headers */,
 				CE82B6361FAB2C890087432F /* NsSnSignModel.h in Headers */,
 				CE82B6601FAB431A0087432F /* GCAPPNavigationManageriPhone.h in Headers */,
 				CE82B64C1FAB2CB20087432F /* SRWebSocket.h in Headers */,
 				CE82B6B11FAB54F20087432F /* GCAnswerView.h in Headers */,
+				CE82B77B1FAB682C0087432F /* GCQuestionRender.h in Headers */,
+				CE82B7381FAB57DB0087432F /* GCAPPPushInfoViewControlleriPhone.h in Headers */,
+				CE82B7271FAB57DB0087432F /* GCAPPLeagueEditionViewControlleriPhone.h in Headers */,
+				CE82B7331FAB57DB0087432F /* GCAPPProfileEditionViewController.h in Headers */,
 				CE82B66F1FAB4C480087432F /* GCProcessNotificationManager.h in Headers */,
 				CE82B5D71FAB29AC0087432F /* GCQuestionManager.h in Headers */,
 				CE82B6791FAB4ED60087432F /* GCAPPNavigationPriorityPushManager.h in Headers */,
+				CE82B7581FAB57FB0087432F /* UIItemViewSlide.h in Headers */,
+				CE82B73C1FAB57DB0087432F /* GCAPPRankingsViewControlleriPad.h in Headers */,
 				CE82B6641FAB49870087432F /* GCAPPNavigationManageriPad.h in Headers */,
+				CE82B72E1FAB57DB0087432F /* GCAPPLoginViewControlleriPad.h in Headers */,
 				CE82B6401FAB2C890087432F /* NsSnUserModel.h in Headers */,
 				CE82B6C21FAB56E80087432F /* GCProfileViewController+GCUI.h in Headers */,
+				CE82B7801FAB68400087432F /* GCEventManager.h in Headers */,
+				CE82B7491FAB57FB0087432F /* GCProfileEditionViewController+GCUI.h in Headers */,
+				CE82B7451FAB57DB0087432F /* GCAPPExternalPopupView.h in Headers */,
+				CE82B71B1FAB57DB0087432F /* GCAPPGameViewController.h in Headers */,
 				CE82B6BE1FAB56A60087432F /* GCView.h in Headers */,
 				CE82B66B1FAB4C480087432F /* GCProcessLeagueManager.h in Headers */,
 				CE82B6841FAB51940087432F /* CHDraggableView+Avatar.h in Headers */,
 				CE82B6281FAB2C890087432F /* NsSnCommentModel.h in Headers */,
+				CE82B7291FAB57DB0087432F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.h in Headers */,
 				CE82B5FD1FAB2B9F0087432F /* NsSnAvatarModel.h in Headers */,
 				CE82B6861FAB51940087432F /* CHDraggableView+Match.h in Headers */,
 				CE82B5E51FAB2A910087432F /* GCModel.h in Headers */,
+				CE82B72C1FAB57DB0087432F /* GCAPPLoadingViewController.h in Headers */,
 				CE82B5DF1FAB2A900087432F /* GCEventModel.h in Headers */,
 				CE82B5EF1FAB2A910087432F /* GCTrophyModel.h in Headers */,
+				CE82B7311FAB57DB0087432F /* GCAPPProfileViewControlleriPad.h in Headers */,
+				CE82B7891FAB689D0087432F /* GCCompetitionManager.h in Headers */,
+				CE82B74A1FAB57FB0087432F /* GCProfileEditionViewController.h in Headers */,
+				CE82B71A1FAB57DB0087432F /* GCAPPExternalAnswersViewController.h in Headers */,
+				CE82B7281FAB57DB0087432F /* GCAPPLeaguesViewController.h in Headers */,
 				CE82B6421FAB2C890087432F /* NsSnSubscribeModel.h in Headers */,
 				CE82B61C1FAB2C350087432F /* GCFayeWorker.h in Headers */,
 				CE82B5EB1FAB2A910087432F /* GCRankingModel.h in Headers */,
+				CE82B7761FAB68170087432F /* NsSnImportNetworkManager.h in Headers */,
 				CE82B6A41FAB52E70087432F /* GCAPPMasterViewController.h in Headers */,
 				CE82B6031FAB2BC00087432F /* NsSnModel.h in Headers */,
+				CE82B73B1FAB57DB0087432F /* GCAPPRankingsViewController.h in Headers */,
 				CE82B6141FAB2C350087432F /* FayeMessage.h in Headers */,
 				CE82B6121FAB2C350087432F /* FayeClient.h in Headers */,
 				CE82B5E11FAB2A900087432F /* GCGamerModel.h in Headers */,
 				CE82B5FA1FAB2B120087432F /* GCColorManager.h in Headers */,
+				CE82B7911FAB68BF0087432F /* GCTrophyRender.h in Headers */,
+				CE82B7511FAB57FB0087432F /* GCTimeCountdownView.h in Headers */,
 				CE82B66D1FAB4C480087432F /* GCProcessLoadingManager.h in Headers */,
 				CE82B69A1FAB52A80087432F /* DefaultCellRenderGG.h in Headers */,
 				CE82B6671FAB4C480087432F /* GCProcessAuthentificationManager.h in Headers */,
 				CE82B6821FAB51940087432F /* CHAvatarView.h in Headers */,
 				CE82B6AE1FAB54690087432F /* GCAnswersViewController.h in Headers */,
+				CE82B7341FAB57DB0087432F /* GCAPPProfileEditionViewControlleriPad.h in Headers */,
 				CE82B62E1FAB2C890087432F /* NsSnLikeModel.h in Headers */,
 				CE82B5F31FAB2AD90087432F /* GCConfManager.h in Headers */,
 				CE82B6AF1FAB546F0087432F /* GCAnswersViewController+GCUI.h in Headers */,
+				CE82B75B1FAB57FB0087432F /* FacebookComposeBackgroundView.h in Headers */,
+				CE82B7851FAB68850087432F /* Reachability.h in Headers */,
 				CE82B6241FAB2C730087432F /* CJSONScanner.h in Headers */,
 				CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */,
 				CE82B6771FAB4D0F0087432F /* GCNotificationManager.h in Headers */,
@@ -3340,53 +3585,100 @@
 				CE82B6261FAB2C730087432F /* CJSONSerializer.h in Headers */,
 				CE82B62C1FAB2C890087432F /* NsSnFriendModel.h in Headers */,
 				CE82B5E31FAB2A910087432F /* GCLeagueModel.h in Headers */,
+				CE82B7521FAB57FB0087432F /* GCMasterCollectionViewCell.h in Headers */,
+				CE82B7401FAB57DB0087432F /* GCAPPSubscribeViewControlleriPad.h in Headers */,
 				CE82B6101FAB2C2D0087432F /* NsSnUserManager.h in Headers */,
+				CE82B7941FAB68C90087432F /* GCAPPSoccerEventCell.h in Headers */,
+				CE82B7301FAB57DB0087432F /* GCAPPProfileViewController.h in Headers */,
+				CE82B74D1FAB57FB0087432F /* GCRankingsViewController.h in Headers */,
 				CE82B6B41FAB55040087432F /* GCStatsView.h in Headers */,
+				CE82B7591FAB57FB0087432F /* UITableViewCellSlide.h in Headers */,
+				CE82B7191FAB57DB0087432F /* GCAPPAnswersViewControlleriPhone.h in Headers */,
+				CE82B7531FAB57FB0087432F /* UIView+UIView_Tool.h in Headers */,
+				CE82B7361FAB57DB0087432F /* GCAPPPushInfoViewController.h in Headers */,
+				CE82B7871FAB68940087432F /* GCAPPEventLinker.h in Headers */,
+				CE82B71C1FAB57DB0087432F /* GCAPPGameViewControlleriPad.h in Headers */,
+				CE82B7551FAB57FB0087432F /* OLGhostAlertView.h in Headers */,
 				CE82B6161FAB2C350087432F /* NSObject+PropertySupport.h in Headers */,
+				CE82B7971FAB68D00087432F /* GCAPPSoccerEventHeader.h in Headers */,
 				CE82B6301FAB2C890087432F /* NsSnMediaModel.h in Headers */,
 				CE82B6AA1FAB54580087432F /* GCInGameViewController.h in Headers */,
 				CE82B6731FAB4C480087432F /* GCProcessQuestionManager.h in Headers */,
 				CE82B63A1FAB2C890087432F /* NsSnTagModel.h in Headers */,
 				CE82B5FB1FAB2B970087432F /* NsSnConfManager.h in Headers */,
+				CE82B7741FAB68080087432F /* UIMasterApplication.h in Headers */,
 				CE82B60D1FAB2C0D0087432F /* NSNetcoRequest.h in Headers */,
 				CE82B6071FAB2BCD0087432F /* NSData+NSData_Tool.h in Headers */,
 				CE82B6C61FAB57160087432F /* GCProfileHeader.h in Headers */,
 				CE82B6201FAB2C730087432F /* CJSONSerializedData.h in Headers */,
+				CE82B77E1FAB68350087432F /* GCSponsorsManager.h in Headers */,
 				CE82B60E1FAB2C2D0087432F /* NsSnSignManager.h in Headers */,
 				CE82B6A61FAB52F10087432F /* GCLeaguesViewController.h in Headers */,
 				CE82B62A1FAB2C890087432F /* NsSnFeedModel.h in Headers */,
+				CE82B7411FAB57DB0087432F /* GCAPPSubscribeViewControlleriPhone.h in Headers */,
 				CE82B69E1FAB52A80087432F /* ILinkerGG.h in Headers */,
 				CE82B5F51FAB2AEC0087432F /* GCPlatformConnection.h in Headers */,
+				CE82B78B1FAB68A60087432F /* GCLeagueManager.h in Headers */,
 				CE82B6D01FAB57550087432F /* GCPushInfoView.h in Headers */,
+				CE82B7501FAB57FB0087432F /* GCStatsBarView.h in Headers */,
+				CE82B74C1FAB57FB0087432F /* GCRankingsViewController+GCUI.h in Headers */,
+				CE82B7421FAB57DB0087432F /* FXBlurView.h in Headers */,
+				CE82B7371FAB57DB0087432F /* GCAPPPushInfoViewControlleriPad.h in Headers */,
 				CE82B6011FAB2BB10087432F /* GCRequester.h in Headers */,
+				CE82B73D1FAB57DB0087432F /* GCAPPRankingsViewControlleriPhone.h in Headers */,
+				CE82B75D1FAB57FB0087432F /* FacebookComposeViewController.h in Headers */,
+				CE82B7481FAB57FB0087432F /* GCLoginNSAPIViewController.h in Headers */,
+				CE82B7441FAB57DB0087432F /* MatchBoxSimpleCollectionViewCell.h in Headers */,
 				CE82B61E1FAB2C730087432F /* CJSONSerialization.h in Headers */,
 				CE82B6751FAB4C480087432F /* GCProcessRankingManager.h in Headers */,
 				CE82B6CC1FAB57360087432F /* UIImageViewJA.h in Headers */,
 				CE82B64E1FAB2CC40087432F /* GCProcessPushManager.h in Headers */,
 				CE82B6341FAB2C890087432F /* NsSnTicketModel.h in Headers */,
+				CE82B7561FAB57FB0087432F /* LoadingView.h in Headers */,
 				CE82B5ED1FAB2A910087432F /* GCTeamModel.h in Headers */,
+				CE82B75A1FAB57FB0087432F /* ViewSlide.h in Headers */,
 				CE82B61A1FAB2C350087432F /* NSString+InflectionSupport.h in Headers */,
+				CE82B72A1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPad.h in Headers */,
+				CE82B72B1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPhone.h in Headers */,
+				CE82B72F1FAB57DB0087432F /* GCAPPLoginViewControlleriPhone.h in Headers */,
 				CE82B6981FAB52860087432F /* GCEventsViewController.h in Headers */,
+				CE82B7201FAB57DB0087432F /* GCAPPHomeViewController.h in Headers */,
 				CE82B68B1FAB51940087432F /* CHMatchView.h in Headers */,
 				CE82B6711FAB4C480087432F /* GCProcessProfileManager.h in Headers */,
 				CE82B6181FAB2C350087432F /* NSObject+Serialize.h in Headers */,
+				CE82B7461FAB57FB0087432F /* GCLoadingViewController.h in Headers */,
+				CE82B7181FAB57DB0087432F /* GCAPPAnswersViewControlleriPad.h in Headers */,
+				CE82B7661FAB588B0087432F /* iCarousel.h in Headers */,
+				CE82B7261FAB57DB0087432F /* GCAPPLeagueEditionViewControlleriPad.h in Headers */,
 				CE82B5F11FAB2AA80087432F /* GCExternalContent.h in Headers */,
 				CE82B63E1FAB2C890087432F /* NsSnMetadataModel.h in Headers */,
 				CE82B6B91FAB55280087432F /* OBShapedButton.h in Headers */,
 				CE82B6AC1FAB54660087432F /* GCAnswersViewController_Private.h in Headers */,
 				CE82B69D1FAB52A80087432F /* IDataGG.h in Headers */,
+				CE82B7211FAB57DB0087432F /* GCAPPHomeViewControlleriPad.h in Headers */,
+				CE82B71F1FAB57DB0087432F /* GCAPPGameViewControlleriPhone_Private.h in Headers */,
+				CE82B72D1FAB57DB0087432F /* GCAPPLoginViewController.h in Headers */,
+				CE82B7321FAB57DB0087432F /* GCAPPProfileViewControlleriPhone.h in Headers */,
 				CE82B6BB1FAB55320087432F /* GCPointsView.h in Headers */,
 				CE82B6561FAB410F0087432F /* GCContainerViewController.h in Headers */,
 				CE82B6941FAB526B0087432F /* GCConnectViewController.h in Headers */,
+				CE82B71D1FAB57DB0087432F /* GCAPPGameViewControlleriPhone+GCAPPUI.h in Headers */,
 				CE82B6C01FAB56DB0087432F /* GCPushInfoViewController.h in Headers */,
 				CE82B6901FAB519E0087432F /* CAAnimation+Blocks.h in Headers */,
+				CE82B74F1FAB57FB0087432F /* GCSubscribeNSAPIViewController.h in Headers */,
+				CE82B7351FAB57DB0087432F /* GCAPPProfileEditionViewControlleriPhone.h in Headers */,
 				CE82B64A1FAB2CAB0087432F /* NsSnRequester.h in Headers */,
 				CE82B5DB1FAB2A900087432F /* GCAnswerModel.h in Headers */,
 				CE82B6621FAB49730087432F /* GCAPPNavigationManager.h in Headers */,
+				CE82B78D1FAB68B00087432F /* GCAPPDataEvent.h in Headers */,
 				CE82B67E1FAB51520087432F /* CHDraggableView.h in Headers */,
+				CE82B74E1FAB57FB0087432F /* GCSubscribeNSAPIViewController+GCUI.h in Headers */,
 				CE82B6461FAB2C950087432F /* CDataScanner_Extensions.h in Headers */,
 				CE82B6C41FAB56ED0087432F /* GCProfileViewController.h in Headers */,
 				CE277BB11FAB16570077CD2F /* GameConnect.h in Headers */,
+				CE82B7171FAB57DB0087432F /* GCAPPAnswersViewController.h in Headers */,
+				CE82B7541FAB57FB0087432F /* UIViewController+iPhone_iPad_Xib.h in Headers */,
+				CE82B79A1FAB68DB0087432F /* NsSnAvatarManager.h in Headers */,
 				CE82B6521FAB2D100087432F /* SingletonManager.h in Headers */,
 				CE82B6441FAB2C950087432F /* CDataScanner.h in Headers */,
 				CE82B6CE1FAB57440087432F /* GCRankingHeaderView.h in Headers */,
@@ -3482,13 +3774,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B7961FAB68C90087432F /* GCAPPSoccerEventCell.xib in Resources */,
+				CE82B7601FAB580C0087432F /* GCPushInfoViewLarge.xib in Resources */,
+				CE82B77A1FAB68220087432F /* GCLeagueRender.xib in Resources */,
 				CE82B6CB1FAB572B0087432F /* GCRankingHeaderLargeView.xib in Resources */,
+				CE82B7611FAB580C0087432F /* GCPushInfoViewSmall.xib in Resources */,
 				CE82B69C1FAB52A80087432F /* DefaultCellRenderGG.xib in Resources */,
+				CE82B7841FAB684D0087432F /* GCRankingRender.xib in Resources */,
 				CE82B6C81FAB571E0087432F /* GCProfileHeader.xib in Resources */,
+				CE82B7621FAB580C0087432F /* GCStatsBarView.xib in Resources */,
 				CE82B6811FAB51760087432F /* GCNotificationView.xib in Resources */,
+				CE82B7651FAB580C0087432F /* UINotificationView.xib in Resources */,
 				CE82B6B61FAB55040087432F /* GCStatsView.xib in Resources */,
 				CE82B6BD1FAB55360087432F /* GCPointsView.xib in Resources */,
+				CE82B7641FAB580C0087432F /* LoadingView.xib in Resources */,
+				CE82B7631FAB580C0087432F /* GCTimeCountdownView.xib in Resources */,
+				CE82B77D1FAB682C0087432F /* GCQuestionRender.xib in Resources */,
+				CE82B7991FAB68D00087432F /* GCAPPSoccerEventHeader.xib in Resources */,
+				CE82B7931FAB68BF0087432F /* GCTrophyRender.xib in Resources */,
+				CE82B75F1FAB580C0087432F /* GCAPPExternalPopupView.xib in Resources */,
 				CE82B6B31FAB54F20087432F /* GCAnswerView.xib in Resources */,
+				CE82B75E1FAB580C0087432F /* GCAPPExternalAnswersViewController.xib in Resources */,
 				CE82B68D1FAB51940087432F /* CHMatchView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3546,30 +3852,57 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE82B6EF1FAB57AD0087432F /* GCAPPGameViewControlleriPad.m in Sources */,
 				CE82B6A51FAB52EA0087432F /* GCAPPMasterViewController.m in Sources */,
 				CE82B6971FAB52770087432F /* GCMasterViewController.m in Sources */,
+				CE82B6D51FAB57900087432F /* GCProfileEditionViewController.m in Sources */,
+				CE82B6FF1FAB57AD0087432F /* GCAPPLoginViewControlleriPad.m in Sources */,
+				CE82B7671FAB588B0087432F /* iCarousel.m in Sources */,
+				CE82B6E31FAB57900087432F /* UINotificationView.m in Sources */,
 				CE82B6881FAB51940087432F /* CHDraggableView.m in Sources */,
+				CE82B7031FAB57AD0087432F /* GCAPPProfileViewControlleriPhone.m in Sources */,
+				CE82B7951FAB68C90087432F /* GCAPPSoccerEventCell.m in Sources */,
 				CE82B6371FAB2C890087432F /* NsSnSignModel.m in Sources */,
 				CE82B5E21FAB2A910087432F /* GCGamerModel.m in Sources */,
 				CE82B6CA1FAB57270087432F /* GCRankingHeaderLargeView.m in Sources */,
+				CE82B7131FAB57AD0087432F /* FXBlurView.m in Sources */,
+				CE82B6EE1FAB57AD0087432F /* GCAPPGameViewController.m in Sources */,
 				CE82B6231FAB2C730087432F /* CJSONDeserializer.m in Sources */,
 				CE82B6251FAB2C730087432F /* CJSONScanner.m in Sources */,
+				CE82B6FB1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPad.m in Sources */,
+				CE82B7081FAB57AD0087432F /* GCAPPPushInfoViewControlleriPad.m in Sources */,
 				CE82B6391FAB2C890087432F /* NsSnPendingTagModel.m in Sources */,
 				CE82B6061FAB2BCD0087432F /* NSDataManager.m in Sources */,
 				CE82B6991FAB52890087432F /* GCEventsViewController.m in Sources */,
+				CE82B76D1FAB5D370087432F /* CircularProgressBarLayer.swift in Sources */,
+				CE82B6F21FAB57AD0087432F /* GCAPPHomeViewController.m in Sources */,
+				CE82B7011FAB57AD0087432F /* GCAPPProfileViewController.m in Sources */,
 				CE82B6571FAB41130087432F /* GCContainerViewController.m in Sources */,
+				CE82B78A1FAB689D0087432F /* GCCompetitionManager.m in Sources */,
 				CE82B5EA1FAB2A910087432F /* GCQuestionModel.m in Sources */,
+				CE82B7091FAB57AD0087432F /* GCAPPPushInfoViewControlleriPhone.m in Sources */,
+				CE82B6F11FAB57AD0087432F /* GCAPPGameViewControlleriPhone.m in Sources */,
 				CE82B6491FAB2CA00087432F /* NsSnMediaFormat.m in Sources */,
 				CE82B5D81FAB29AC0087432F /* GCQuestionManager.m in Sources */,
 				CE82B6781FAB4D0F0087432F /* GCNotificationManager.m in Sources */,
+				CE82B7161FAB57AD0087432F /* GCAPPExternalPopupView.m in Sources */,
 				CE82B61F1FAB2C730087432F /* CJSONSerialization.m in Sources */,
+				CE82B70A1FAB57AD0087432F /* GCAPPLeagueRankingsViewController+GCAPPUI.m in Sources */,
 				CE82B6111FAB2C2D0087432F /* NsSnUserManager.m in Sources */,
+				CE82B7771FAB68170087432F /* NsSnImportNetworkManager.m in Sources */,
 				CE82B5F41FAB2AD90087432F /* GCConfManager.m in Sources */,
 				CE82B6171FAB2C350087432F /* NSObject+PropertySupport.m in Sources */,
 				CE82B6AD1FAB54680087432F /* GCAnswersViewController.m in Sources */,
+				CE82B6E51FAB57900087432F /* UITableViewCellSlide.m in Sources */,
 				CE82B6761FAB4C480087432F /* GCProcessRankingManager.m in Sources */,
+				CE82B6F31FAB57AD0087432F /* GCAPPHomeViewControlleriPad.m in Sources */,
+				CE82B6F71FAB57AD0087432F /* GCAPPLeagueEditionViewControlleriPad.m in Sources */,
 				CE82B6311FAB2C890087432F /* NsSnMediaModel.m in Sources */,
+				CE82B7981FAB68D00087432F /* GCAPPSoccerEventHeader.m in Sources */,
+				CE82B6F01FAB57AD0087432F /* GCAPPGameViewControlleriPhone+GCAPPUI.m in Sources */,
+				CE82B76F1FAB5D370087432F /* CircularProgressBarsView.swift in Sources */,
 				CE82B5DC1FAB2A900087432F /* GCAnswerModel.m in Sources */,
+				CE82B6D91FAB57900087432F /* GCSubscribeNSAPIViewController+GCUI.m in Sources */,
 				CE82B64B1FAB2CAB0087432F /* NsSnRequester.m in Sources */,
 				CE82B68F1FAB519A0087432F /* SKBounceAnimation.m in Sources */,
 				CE82B6741FAB4C480087432F /* GCProcessQuestionManager.m in Sources */,
@@ -3582,77 +3915,150 @@
 				CE82B64F1FAB2CC40087432F /* GCProcessPushManager.m in Sources */,
 				CE82B6801FAB51760087432F /* GCNotificationView.m in Sources */,
 				CE82B6B01FAB546F0087432F /* GCAnswersViewController+GCUI.m in Sources */,
+				CE82B6E81FAB57900087432F /* FacebookComposeSheetView.m in Sources */,
+				CE82B6EA1FAB57AD0087432F /* GCAPPAnswersViewController.m in Sources */,
+				CE82B7831FAB684D0087432F /* GCRankingRender.m in Sources */,
 				CE82B67A1FAB4ED90087432F /* GCAPPNavigationPriorityPushManager.m in Sources */,
+				CE82B6FE1FAB57AD0087432F /* GCAPPLoginViewController.m in Sources */,
+				CE82B70C1FAB57AD0087432F /* GCAPPRankingsViewController.m in Sources */,
+				CE82B70B1FAB57AD0087432F /* GCAPPLeagueRankingsViewController.m in Sources */,
 				CE82B6021FAB2BB10087432F /* GCRequester.m in Sources */,
+				CE82B6FA1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPad+GCAPPUI.m in Sources */,
 				CE82B5F81FAB2B0B0087432F /* GCFontManager.m in Sources */,
 				CE82B68C1FAB51940087432F /* CHMatchView.m in Sources */,
+				CE82B7681FAB5D370087432F /* GCAnswerPointsView.swift in Sources */,
+				CE82B6D41FAB57900087432F /* GCProfileEditionViewController+GCUI.m in Sources */,
+				CE82B7141FAB57AD0087432F /* MatchBoxBaseCollectionViewCell.m in Sources */,
+				CE82B7921FAB68BF0087432F /* GCTrophyRender.m in Sources */,
 				CE82B6431FAB2C890087432F /* NsSnSubscribeModel.m in Sources */,
 				CE82B6651FAB498A0087432F /* GCAPPNavigationManageriPad.m in Sources */,
+				CE82B6D21FAB57900087432F /* GCLoginNSAPIViewController+GCUI.m in Sources */,
 				CE82B6A11FAB52A80087432F /* UICollectionViewGG.m in Sources */,
 				CE82B61B1FAB2C350087432F /* NSString+InflectionSupport.m in Sources */,
+				CE82B78E1FAB68B00087432F /* GCAPPDataEvent.m in Sources */,
 				CE82B5F61FAB2AEF0087432F /* GCPlatformConnection.m in Sources */,
+				CE82B77C1FAB682C0087432F /* GCQuestionRender.m in Sources */,
 				CE82B6331FAB2C890087432F /* NsSnMessageModel.m in Sources */,
+				CE82B7861FAB68850087432F /* Reachability.m in Sources */,
+				CE82B6F61FAB57AD0087432F /* GCAPPLeagueEditionViewController.m in Sources */,
+				CE82B7071FAB57AD0087432F /* GCAPPPushInfoViewController.m in Sources */,
 				CE82B60A1FAB2BD80087432F /* GCGamerManager.m in Sources */,
+				CE82B7001FAB57AD0087432F /* GCAPPLoginViewControlleriPhone.m in Sources */,
+				CE82B6F91FAB57AD0087432F /* GCAPPLeaguesViewController.m in Sources */,
+				CE82B6E61FAB57900087432F /* ViewSlide.m in Sources */,
 				CE82B6CF1FAB57490087432F /* GCRankingHeaderView.m in Sources */,
+				CE82B70D1FAB57AD0087432F /* GCAPPRankingsViewControlleriPad.m in Sources */,
 				CE82B62D1FAB2C890087432F /* NsSnFriendModel.m in Sources */,
 				CE82B6C51FAB56EF0087432F /* GCProfileViewController.m in Sources */,
+				CE82B7061FAB57AD0087432F /* GCAPPProfileEditionViewControlleriPhone.m in Sources */,
 				CE82B6AB1FAB545B0087432F /* GCInGameViewController.m in Sources */,
+				CE82B6DF1FAB57900087432F /* UIView+UIView_Tool.m in Sources */,
+				CE82B78C1FAB68A60087432F /* GCLeagueManager.m in Sources */,
 				CE82B6931FAB51E10087432F /* GCAPPNavigationController.m in Sources */,
 				CE82B5F21FAB2AAD0087432F /* GCExternalContent.m in Sources */,
+				CE82B7051FAB57AD0087432F /* GCAPPProfileEditionViewControlleriPad.m in Sources */,
 				CE82B5E41FAB2A910087432F /* GCLeagueModel.m in Sources */,
+				CE82B7021FAB57AD0087432F /* GCAPPProfileViewControlleriPad.m in Sources */,
 				CE82B63B1FAB2C890087432F /* NsSnTagModel.m in Sources */,
 				CE82B6151FAB2C350087432F /* FayeMessage.m in Sources */,
+				CE82B6E91FAB57900087432F /* FacebookComposeViewController.m in Sources */,
 				CE82B6081FAB2BCD0087432F /* NSData+NSData_Tool.m in Sources */,
 				CE82B6A71FAB52F40087432F /* GCLeaguesViewController.m in Sources */,
 				CE82B6BC1FAB55360087432F /* GCPointsView.m in Sources */,
+				CE82B6F51FAB57AD0087432F /* GCAPPHomeViewControlleriPhone.m in Sources */,
 				CE82B6611FAB431A0087432F /* GCAPPNavigationManageriPhone.m in Sources */,
+				CE82B7881FAB68940087432F /* GCAPPEventLinker.m in Sources */,
+				CE82B76B1FAB5D370087432F /* ProgressBarView.swift in Sources */,
 				CE82B61D1FAB2C350087432F /* GCFayeWorker.m in Sources */,
 				CE82B66A1FAB4C480087432F /* GCProcessEventManager.m in Sources */,
 				CE82B6951FAB526E0087432F /* GCConnectViewController.m in Sources */,
+				CE82B6E41FAB57900087432F /* UIItemViewSlide.m in Sources */,
+				CE82B6D31FAB57900087432F /* GCLoginNSAPIViewController.m in Sources */,
+				CE82B79B1FAB68DB0087432F /* NsSnAvatarManager.m in Sources */,
 				CE82B5F91FAB2B100087432F /* GCColorManager.m in Sources */,
 				CE82B6211FAB2C730087432F /* CJSONSerializedData.m in Sources */,
+				CE82B6DB1FAB57900087432F /* GCPushInfoView.m in Sources */,
+				CE82B7101FAB57AD0087432F /* GCAPPSubscribeViewController.m in Sources */,
 				CE82B6831FAB51940087432F /* CHAvatarView.m in Sources */,
 				CE82B6C71FAB571A0087432F /* GCProfileHeader.m in Sources */,
+				CE82B6D71FAB57900087432F /* GCRankingsViewController+GCUI.m in Sources */,
+				CE82B70E1FAB57AD0087432F /* GCAPPRankingsViewControlleriPhone.m in Sources */,
 				CE82B6A31FAB52CF0087432F /* WCDynamicFlowLayout.m in Sources */,
+				CE82B7731FAB5D370087432F /* Updateable.swift in Sources */,
+				CE82B70F1FAB57AD0087432F /* GCAppSponsorsViewController.m in Sources */,
+				CE82B77F1FAB68350087432F /* GCSponsorsManager.m in Sources */,
 				CE82B6BF1FAB56A90087432F /* GCView.m in Sources */,
+				CE82B6DE1FAB57900087432F /* GCMasterCollectionViewCell.m in Sources */,
 				CE82B6631FAB49780087432F /* GCAPPNavigationManager.m in Sources */,
 				CE82B66C1FAB4C480087432F /* GCProcessLeagueManager.m in Sources */,
+				CE82B6ED1FAB57AD0087432F /* GCAPPExternalAnswersViewController.m in Sources */,
+				CE82B6DC1FAB57900087432F /* GCStatsBarView.m in Sources */,
 				CE82B68A1FAB51940087432F /* CHDraggingCoordinator.m in Sources */,
 				CE82B6351FAB2C890087432F /* NsSnTicketModel.m in Sources */,
 				CE82B62B1FAB2C890087432F /* NsSnFeedModel.m in Sources */,
+				CE82B7151FAB57AD0087432F /* MatchBoxSimpleCollectionViewCell.m in Sources */,
 				CE82B60F1FAB2C2D0087432F /* NsSnSignManager.m in Sources */,
+				CE82B6EC1FAB57AD0087432F /* GCAPPAnswersViewControlleriPhone.m in Sources */,
 				CE82B66E1FAB4C480087432F /* GCProcessLoadingManager.m in Sources */,
 				CE82B6851FAB51940087432F /* CHDraggableView+Avatar.m in Sources */,
 				CE82B62F1FAB2C890087432F /* NsSnLikeModel.m in Sources */,
+				CE82B6E21FAB57900087432F /* LoadingView.m in Sources */,
+				CE82B7751FAB68090087432F /* UIMasterApplication.m in Sources */,
 				CE82B6871FAB51940087432F /* CHDraggableView+Match.m in Sources */,
+				CE82B7701FAB5D370087432F /* SingleProgressBarView.swift in Sources */,
 				CE82B6701FAB4C480087432F /* GCProcessNotificationManager.m in Sources */,
 				CE82B6C31FAB56EB0087432F /* GCProfileViewController+GCUI.m in Sources */,
+				CE82B7111FAB57AD0087432F /* GCAPPSubscribeViewControlleriPad.m in Sources */,
+				CE82B7791FAB68220087432F /* GCLeagueRender.m in Sources */,
+				CE82B76C1FAB5D370087432F /* GCConfigManager.swift in Sources */,
+				CE82B6DD1FAB57900087432F /* GCTimeCountdownView.m in Sources */,
+				CE82B7721FAB5D370087432F /* GCBaseView.swift in Sources */,
+				CE82B7901FAB68B80087432F /* GCAPPMatchManager.m in Sources */,
 				CE82B6661FAB4B020087432F /* GCWebViewController.swift in Sources */,
 				CE82B6471FAB2C950087432F /* CDataScanner_Extensions.m in Sources */,
+				CE82B76A1FAB5D370087432F /* GCStatisticsView.swift in Sources */,
+				CE82B6E71FAB57900087432F /* FacebookComposeBackgroundView.m in Sources */,
 				CE82B6291FAB2C890087432F /* NsSnCommentModel.m in Sources */,
 				CE82B5EE1FAB2A910087432F /* GCTeamModel.m in Sources */,
+				CE82B6E11FAB57900087432F /* OLGhostAlertView.m in Sources */,
+				CE82B7121FAB57AD0087432F /* GCAPPSubscribeViewControlleriPhone.m in Sources */,
+				CE82B6D81FAB57900087432F /* GCRankingsViewController.m in Sources */,
 				CE82B6B81FAB551E0087432F /* JWGCircleCounter.m in Sources */,
 				CE82B5FE1FAB2B9F0087432F /* NsSnAvatarModel.m in Sources */,
 				CE82B5F01FAB2A910087432F /* GCTrophyModel.m in Sources */,
+				CE82B6EB1FAB57AD0087432F /* GCAPPAnswersViewControlleriPad.m in Sources */,
+				CE82B6E01FAB57900087432F /* UIViewController+iPhone_iPad_Xib.m in Sources */,
+				CE82B6DA1FAB57900087432F /* GCSubscribeNSAPIViewController.m in Sources */,
 				CE82B6B21FAB54F20087432F /* GCAnswerView.m in Sources */,
 				CE82B6721FAB4C480087432F /* GCProcessProfileManager.m in Sources */,
 				CE82B5E61FAB2A910087432F /* GCModel.m in Sources */,
 				CE82B5DE1FAB2A900087432F /* GCCompetitionModel.m in Sources */,
+				CE82B7811FAB68400087432F /* GCEventManager.m in Sources */,
+				CE82B7711FAB5D370087432F /* UIGeometry+CircularProgressBar.swift in Sources */,
 				CE82B63F1FAB2C890087432F /* NsSnMetadataModel.m in Sources */,
 				CE82B6681FAB4C480087432F /* GCProcessAuthentificationManager.m in Sources */,
 				CE82B6191FAB2C350087432F /* NSObject+Serialize.m in Sources */,
 				CE82B5FC1FAB2B970087432F /* NsSnConfManager.m in Sources */,
+				CE82B6D61FAB57900087432F /* GCRankingsEventViewController.m in Sources */,
 				CE82B6911FAB519E0087432F /* CAAnimation+Blocks.m in Sources */,
 				CE82B5EC1FAB2A910087432F /* GCRankingModel.m in Sources */,
+				CE82B6FC1FAB57AD0087432F /* GCAPPLeaguesViewControlleriPhone.m in Sources */,
+				CE82B6FD1FAB57AD0087432F /* GCAPPLoadingViewController.m in Sources */,
+				CE82B76E1FAB5D370087432F /* CircularProgressBarModel.swift in Sources */,
+				CE82B7041FAB57AD0087432F /* GCAPPProfileEditionViewController.m in Sources */,
+				CE82B6F41FAB57AD0087432F /* GCAPPHomeViewControlleriPhone+GCAPPUI.m in Sources */,
 				CE82B5E81FAB2A910087432F /* GCPushModels.m in Sources */,
 				CE82B6411FAB2C890087432F /* NsSnUserModel.m in Sources */,
+				CE82B6F81FAB57AD0087432F /* GCAPPLeagueEditionViewControlleriPhone.m in Sources */,
 				CE82B6B51FAB55040087432F /* GCStatsView.m in Sources */,
 				CE82B6531FAB2D100087432F /* SingletonManager.m in Sources */,
 				CE82B64D1FAB2CB20087432F /* SRWebSocket.m in Sources */,
+				CE82B7691FAB5D370087432F /* GCAnswersView.swift in Sources */,
 				CE82B6A91FAB53090087432F /* GCLeagueEditionViewController.m in Sources */,
 				CE82B6BA1FAB552B0087432F /* OBShapedButton.m in Sources */,
 				CE82B6271FAB2C730087432F /* CJSONSerializer.m in Sources */,
 				CE82B6CD1FAB573A0087432F /* UIImageViewJA.m in Sources */,
+				CE82B6D11FAB57900087432F /* GCLoadingViewController.m in Sources */,
 				CE82B69B1FAB52A80087432F /* DefaultCellRenderGG.m in Sources */,
 				CE82B6131FAB2C350087432F /* FayeClient.m in Sources */,
 				CE82B6C11FAB56DD0087432F /* GCPushInfoViewController.m in Sources */,

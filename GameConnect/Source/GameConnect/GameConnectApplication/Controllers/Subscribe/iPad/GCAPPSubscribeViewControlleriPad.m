@@ -8,6 +8,7 @@
 
 #import "GCAPPSubscribeViewControlleriPad.h"
 #import "GCBluredImageSingleton.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPSubscribeViewControlleriPad ()
 {

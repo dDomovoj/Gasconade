@@ -9,22 +9,22 @@
 import UIKit
 import UICountingLabel
 
-@objc protocol GCStatisticsViewDelegate: class {
+@objc public protocol GCStatisticsViewDelegate: class {
   func statisticsView(_ statisticsView: GCStatisticsView, didRequestShare shareModel: GCQuestionModel)
   func statisticsViewDidTapSponsors(_ statisticsView: GCStatisticsView)
 }
 
 @objcMembers
-class GCStatisticsView: GCBaseView {
+public class GCStatisticsView: GCBaseView {
 
-  weak var delegate: GCStatisticsViewDelegate?
+  public weak var delegate: GCStatisticsViewDelegate?
 
   fileprivate var contentView: UIView!
   fileprivate var stackView = UIStackView()
   fileprivate var answerBars = [StatisticsBarView]()
   fileprivate var sponsorsButton: UIButton!
 
-  var isAnswerBarsHidden: Bool {
+  public var isAnswerBarsHidden: Bool {
     get {
       return stackView.isHidden
     }
@@ -33,7 +33,7 @@ class GCStatisticsView: GCBaseView {
     }
   }
 
-  var questionModel: GCQuestionModel? { didSet { update() } }
+  public var questionModel: GCQuestionModel? { didSet { update() } }
 
   fileprivate var answers: [GCAnswerModel] {
     guard let questionModel = questionModel else { return [] }
@@ -62,13 +62,13 @@ class GCStatisticsView: GCBaseView {
     return result
   }
 
-  override func update() {
+  override public func update() {
     guard nil != questionModel else { return }
 
     setupStackView()
   }
 
-  func animateView() {
+  public func animateView() {
     isAnswerBarsHidden = false
     let answerPercentages = percentages
     for i in 0..<answerBars.count {
@@ -76,7 +76,7 @@ class GCStatisticsView: GCBaseView {
     }
   }
 
-  override func setup() {
+  override public func setup() {
     super.setup()
 
     setupContentView()
@@ -103,7 +103,7 @@ private extension GCStatisticsView {
     addSubview(contentView)
 
     contentView.snp.makeConstraints {
-      let inset = UI.value(18)
+      let inset = 18.0// UI.value(18)
       $0.edges.equalToSuperview().inset(inset)
     }
 
@@ -115,8 +115,8 @@ private extension GCStatisticsView {
     sponsorsButton.layer.borderWidth = 1
     sponsorsButton.layer.cornerRadius = 3
     sponsorsButton.layer.borderColor = UIColor.white.cgColor
-    sponsorsButton.setTitle(l10N("gc_logo_pmu").uppercased(), for: .normal)
-    sponsorsButton.titleLabel?.font = Fonts.Unica.regular.withSize(13)
+    sponsorsButton.setTitle("gc_logo_pmu".uppercased(), for: .normal)
+    sponsorsButton.titleLabel?.font = UIFont.systemFont(ofSize: 13.0)// Fonts.Unica.regular.withSize(13)
     let logoImageView = UIImageView()
     logoImageView.image = UIImage(named: "gc_pmu_logo_white")
     sponsorsButton.addSubview(logoImageView)
@@ -153,13 +153,13 @@ private extension GCStatisticsView {
     stackView = UIStackView(arrangedSubviews: arrangedSubviews)
     stackView.distribution = .equalCentering
     stackView.axis = .horizontal
-    stackView.spacing = UI.value(14)
+    stackView.spacing = 14.0// UI.value(14)
 
     contentView.addSubview(stackView)
 
     stackView.snp.makeConstraints {
       $0.top.equalToSuperview()
-      $0.bottom.equalTo(sponsorsButton.snp.top).offset(-UI.value(40))
+      $0.bottom.equalTo(sponsorsButton.snp.top).offset(-40.0)// -UI.value(40))
       $0.left.lessThanOrEqualToSuperview()
       $0.right.lessThanOrEqualToSuperview()
       $0.width.lessThanOrEqualTo(600)
@@ -168,7 +168,7 @@ private extension GCStatisticsView {
 
     answerBars.forEach {
       $0.snp.remakeConstraints {
-        $0.width.equalTo(UI.value(isIPad() ? 85 : 60))
+        $0.width.equalTo(60.0)// (UI.value(isIPad() ? 85 : 60))
         $0.height.equalTo(stackView)
       }
     }
@@ -185,7 +185,7 @@ private extension GCStatisticsView {
       let isMyAnswer = (questionModel.getMyAnswersModel() as? [GCAnswerModel] ?? [])
         .contains(where: { $0._id == answer._id })
 
-      answerBar.primaryColor = UIColor(hexString: isMyAnswer ? "e2001a" : "4f5e68")
+      answerBar.primaryColor = isMyAnswer ? UIColor.red : UIColor.green// UIColor(hexString: isMyAnswer ? "e2001a" : "4f5e68")
       answerBar.secondaryColor = isMyAnswer ? .white : UIColor.white.endarkenColor(0.5)
       answerBar.loadWith(percentage, answerModel: answer)
 
@@ -212,7 +212,7 @@ private class StatisticsBarView: BaseView {
     let paragraphStyle = NSMutableParagraphStyle()
     paragraphStyle.hyphenationFactor = 1
     paragraphStyle.alignment = .center
-    let font: UIFont = Fonts.Unica.regular.withSize(14) ?? UIFont.systemFont(ofSize: 14)
+    let font: UIFont = UIFont.systemFont(ofSize: 14.0)// Fonts.Unica.regular.withSize(14) ?? UIFont.systemFont(ofSize: 14)
     let attributedString =
       NSAttributedString(string: answerModel.answer,
                          attributes: [NSAttributedStringKey.paragraphStyle: paragraphStyle,
@@ -243,7 +243,7 @@ private class StatisticsBarView: BaseView {
     progressView.snp.makeConstraints {
       $0.width.equalTo(self).multipliedBy(0.6)
       $0.top.centerX.equalToSuperview()
-      $0.bottom.equalToSuperview().offset(-UI.value(66))
+      $0.bottom.equalToSuperview().offset(-66.0)//-UI.value(66))
     }
   }
 
@@ -251,29 +251,29 @@ private class StatisticsBarView: BaseView {
     valueLabel = UICountingLabel()
     valueLabel.format = "%d %%"
     valueLabel.animationDuration = 0.5
-    valueLabel.font = Fonts.Unica.regular.withSize(14)
+    valueLabel.font = UIFont.systemFont(ofSize: 14.0)// Fonts.Unica.regular.withSize(14)
     valueLabel.textAlignment = .center
 
     addSubview(valueLabel)
 
     valueLabel.snp.makeConstraints {
-      $0.bottom.equalTo(progressView.progressBarView.snp.top).offset(UI.value(-5))
-      $0.left.equalTo(UI.value(5))
-      $0.right.equalTo(UI.value(-5))
+      $0.bottom.equalTo(progressView.progressBarView.snp.top).offset(-5.0)//UI.value(-5))
+      $0.left.equalTo(5.0)//UI.value(5))
+      $0.right.equalTo(-5.0)//UI.value(-5))
     }
   }
 
   func setupAnswerLabel() {
     answerLabel = UILabel()
     answerLabel.numberOfLines = 3
-    answerLabel.textColor = Colors.GameConnect.midGray.color
+    answerLabel.textColor = UIColor.gray// Colors.GameConnect.midGray.color
     answerLabel.setContentHuggingPriority(UILayoutPriority.defaultLow, for: .vertical)
 
     addSubview(answerLabel)
 
     answerLabel.snp.makeConstraints {
-      $0.left.equalTo(UI.value(-8))
-      $0.right.equalTo(UI.value(8))
+      $0.left.equalTo(-8.0)//UI.value(-8))
+      $0.right.equalTo(8.0)//UI.value(8))
       $0.bottom.equalToSuperview()
     }
   }

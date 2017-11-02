@@ -17,19 +17,19 @@
       cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
        cache:(BOOL)cache;
 
-//+(id)requestPOST:(NSString *)url
-//    post:(NSDictionary*)post
-//    cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
-//     cache:(BOOL)cache;
-//
-//+(id)requestPUT:(NSString *)url
-//            post:(NSDictionary*)post
-//          cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
-//           cache:(BOOL)cache;
-//
-//+(id)requestDELETE:(NSString *)url
-//            cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
-//             cache:(BOOL)cache;
++(id)requestPOST:(NSString *)url
+    post:(NSDictionary*)post
+    cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
+     cache:(BOOL)cache;
+
++(id)requestPUT:(NSString *)url
+            post:(NSDictionary*)post
+          cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
+           cache:(BOOL)cache;
+
++(id)requestDELETE:(NSString *)url
+            cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
+             cache:(BOOL)cache;
 
 /*
  

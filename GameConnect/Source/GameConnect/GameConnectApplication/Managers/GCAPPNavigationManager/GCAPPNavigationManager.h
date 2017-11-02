@@ -38,6 +38,15 @@ UIImagePickerControllerDelegate,
 UIPopoverControllerDelegate,
 UINavigationControllerDelegate>
 {
+  __weak GCProfileEditionViewController *temporaryProfileEdition;
+
+  GCAPPLoadingViewController *loadingViewController;
+  GCAPPNavigationController *navigationControllerAuthentification;
+
+  GCAPPNavigationPriorityPushManager *priorityPushManager;
+
+  UIPopoverController *popover;
+
 }
 
 @property (nonatomic) GCNotificationManager *notificationManager;

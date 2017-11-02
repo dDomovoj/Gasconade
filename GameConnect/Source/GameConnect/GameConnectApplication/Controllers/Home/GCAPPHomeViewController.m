@@ -13,6 +13,8 @@
 #import "GCCompetitionManager.h"
 #import "GCGamerManager.h"
 #import "GCAPPMatchManager.h"
+#import "GCConfManager.h"
+#import "GCAppDefines.h"
 
 @interface GCAPPHomeViewController ()
 @end

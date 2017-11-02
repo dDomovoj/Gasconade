@@ -9,7 +9,7 @@
 import UIKit
 import UICountingLabel
 
-class SingleProgressBarView: CircularProgressBarsView {
+public class SingleProgressBarView: CircularProgressBarsView {
 
   private var progressModel: CircularProgressBarModel { return bars[0] }
   private var emptyModel: CircularProgressBarModel { return bars[1] }
@@ -46,7 +46,9 @@ class SingleProgressBarView: CircularProgressBarsView {
 
   var isValueLabelHidden = true { didSet { updateValueLabel() } }
   var valueLabelColor: UIColor? { didSet { updateValueLabel() } }
-  var valueLabelFont = Fonts.Unica.regular.withSize(14) { didSet { updateValueLabel() } }
+  var valueLabelFont = UIFont.systemFont(ofSize: 14)/* Fonts.Unica.regular.withSize(14)*/ {
+    didSet { updateValueLabel() }
+  }
 
   func loadWithValue(value: CGFloat?, maxValue: CGFloat?, animated: Bool = false) {
     let value = value ?? 0
@@ -82,7 +84,7 @@ class SingleProgressBarView: CircularProgressBarsView {
     self.init(frame: .zero)
   }
 
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 

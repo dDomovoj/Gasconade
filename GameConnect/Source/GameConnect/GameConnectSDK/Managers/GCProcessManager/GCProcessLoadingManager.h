@@ -7,6 +7,7 @@
 //
 
 #import "GCProcessManager.h"
+#import "GCMasterViewController.h"
 
 @protocol GCProcessLoadingManagerDelegate <GCProcessManagerDelegate>
 @optional

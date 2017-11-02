@@ -16,36 +16,36 @@
 
 @implementation GCQuestionManager
 
-//+(void) postAnswersQuestion:(NSString *)questionID forEvent:(NSString *)evendID inCompetition:(NSString *)competitionID withAnswers:(NSArray *)answersIDs cb_response:(void (^)(BOOL ok))cb_response
-//{
-//    NSString *url = SWF([GCConfManager getURL:GCURLPOSTAnswers], competitionID, evendID, questionID);
-//
-//    NSDictionary *postAnswerModel = [GCPostAnswerModel createPostAnswerModel:answersIDs];
-//    NSLog(@"POST ANSWER => %@", postAnswerModel);
-//    [GCRequester requestPOST:url post:postAnswerModel cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
-//     {
-//         if (httpcode == 201)
-//             cb_response(YES);
-//         else
-//         {
++(void) postAnswersQuestion:(NSString *)questionID forEvent:(NSString *)evendID inCompetition:(NSString *)competitionID withAnswers:(NSArray *)answersIDs cb_response:(void (^)(BOOL ok))cb_response
+{
+    NSString *url = SWF([GCConfManager getURL:GCURLPOSTAnswers], competitionID, evendID, questionID);
+
+    NSDictionary *postAnswerModel = [GCPostAnswerModel createPostAnswerModel:answersIDs];
+    NSLog(@"POST ANSWER => %@", postAnswerModel);
+    [GCRequester requestPOST:url post:postAnswerModel cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
+     {
+         if (httpcode == 201)
+             cb_response(YES);
+         else
+         {
 //             GCLog(GCHTTPResponseLog, (long)httpcode, url);
-//             cb_response(NO);
-//         }
-//    } cache:NO];
-//}
-//
-//+(void) getQuestionsForEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(NSArray *questions))cb_response
-//{
-//    NSString *url = SWF([GCConfManager getURL:GCURLGETAllEventQuestions], competitionID, eventID);
-//    [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
-//    {
+             cb_response(NO);
+         }
+    } cache:NO];
+}
+
++(void) getQuestionsForEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(NSArray *questions))cb_response
+{
+    NSString *url = SWF([GCConfManager getURL:GCURLGETAllEventQuestions], competitionID, eventID);
+    [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
+    {
 //        GCLog(GCHTTPResponseLog, (long)httpcode, url);
-//        if (rep)
-//            cb_response([GCQuestionModel fromJSONArray:[rep getXpathNilArray:@"questions"]]);
-//        else
-//            cb_response(@[]);
-//    } cache:NO];
-//}
+        if (rep)
+            cb_response([GCQuestionModel fromJSONArray:[rep getXpathNilArray:@"questions"]]);
+        else
+            cb_response(@[]);
+    } cache:NO];
+}
 
 +(void) getQuestion:(NSString *)questionID forEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(GCQuestionModel *question))cb_response
 {

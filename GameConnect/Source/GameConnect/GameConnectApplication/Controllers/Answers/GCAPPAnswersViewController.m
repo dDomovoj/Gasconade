@@ -9,7 +9,11 @@
 #import "Extends+Libs.h"
 #import "GCAPPAnswersViewController.h"
 #import "GCBluredImageSingleton.h"
+#import "GCConfManager.h"
+
 #import <Masonry/Masonry.h>
+
+#import "GCAPPDefines.h"
 
 @interface GCAPPAnswersViewController ()
 @end

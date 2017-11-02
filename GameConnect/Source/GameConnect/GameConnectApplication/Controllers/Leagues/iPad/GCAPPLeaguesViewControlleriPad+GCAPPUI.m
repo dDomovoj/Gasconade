@@ -9,6 +9,7 @@
 #import "GCAPPLeaguesViewControlleriPad+GCAPPUI.h"
 #import "Extends+Libs.h"
 #import "GCConfManager.h"
+#import "GCAPPDefines.h"
 
 @implementation GCAPPLeaguesViewControlleriPad (GCAPPUI)
 

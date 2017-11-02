@@ -15,7 +15,7 @@
 #import "Extends+Libs.h"
 
 #import <Masonry/Masonry.h>
-//#import "PSGOneApp-Swift.h"
+#import "GCAPPDefines.h"
 
 @interface GCAppSponsorsViewController ()
 
@@ -132,13 +132,14 @@
 - (void)openParnersLink:(id)sender
 {
     if (self.openParnersLink) {
-        GCConfigModel *configModel = [ConfigManager instance].config.gameConnect;
+      GCConfManager *config = [GCConfManager getInstance];
+//        GCConfigModel *configModel = [ConfigManager instance].config.gameConnect;
         NSString *linkURLString;
-        if ([WifiManager isInPSGStadium]) {
-            linkURLString = configModel.pmuPSGWiFiWebsiteURLString;
-        } else {
-            linkURLString = configModel.pmuPartnershipURLString;
-        }
+//        if ([WifiManager isInPSGStadium]) {
+            linkURLString = config.pmuPSGWiFiWebsiteURLString;
+//        } else {
+//            linkURLString = configModel.pmuPartnershipURLString;
+//        }
         self.openParnersLink(linkURLString);
         [self close];
     }

@@ -64,43 +64,43 @@
     } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
 }
 
-//+(id)requestPOST:(NSString *)url
-//    post:(NSDictionary*)post
-//    cb_rep:(void (^)(NSDictionary*rep, BOOL cache, NSData* data, NSInteger httpcode))cb_rep
-//     cache:(BOOL)cache
-//{
-//    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:post];
-//    return [NSDataManager request:url headers:headers autovarspost:NO post:post cb_send:^(long long total, long long current) {
-//
-//    } cb_rcv:^(long long total, long long current) {
-//
-//    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
-//}
-//
-//+(id)requestPUT:(NSString *)url
-//           post:(NSDictionary*)post
-//         cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
-//          cache:(BOOL)cache
-//{
-//    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:post];
-//    return [[NSDataManager getInstance] requestPut:url headers:headers autovarspost:NO post:post cb_send:^(long long total, long long current) {
-//
-//    } cb_rcv:^(long long total, long long current) {
-//
-//    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
-//}
-//
-//+(id)requestDELETE:(NSString *)url
-//            cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
-//             cache:(BOOL)cache
-//{
-//    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:nil];
-//    return [[NSDataManager getInstance] requestDelete:url headers:headers cb_send:^(long long total, long long current) {
-//
-//    } cb_rcv:^(long long total, long long current) {
-//
-//    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
-//}
++(id)requestPOST:(NSString *)url
+    post:(NSDictionary*)post
+    cb_rep:(void (^)(NSDictionary*rep, BOOL cache, NSData* data, NSInteger httpcode))cb_rep
+     cache:(BOOL)cache
+{
+    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:post];
+    return [NSDataManager request:url headers:headers autovarspost:NO post:post cb_send:^(long long total, long long current) {
+
+    } cb_rcv:^(long long total, long long current) {
+
+    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
+}
+
++(id)requestPUT:(NSString *)url
+           post:(NSDictionary*)post
+         cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
+          cache:(BOOL)cache
+{
+    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:post];
+    return [[NSDataManager getInstance] requestPut:url headers:headers autovarspost:NO post:post cb_send:^(long long total, long long current) {
+
+    } cb_rcv:^(long long total, long long current) {
+
+    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
+}
+
++(id)requestDELETE:(NSString *)url
+            cb_rep:(void (^)(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode))cb_rep
+             cache:(BOOL)cache
+{
+    NSArray *headers = [GCRequester httpHeadersForGameConnectOnUrl:url ansPostParams:nil];
+    return [[NSDataManager getInstance] requestDelete:url headers:headers cb_send:^(long long total, long long current) {
+
+    } cb_rcv:^(long long total, long long current) {
+
+    } cb_rep:[GCRequester hookResponse:cb_rep] credential:nil cache:cache];
+}
 
 
 /*

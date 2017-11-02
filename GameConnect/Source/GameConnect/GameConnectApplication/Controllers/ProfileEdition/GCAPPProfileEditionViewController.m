@@ -8,6 +8,8 @@
 
 #import "GCAPPProfileEditionViewController.h"
 #import "Extends+Libs.h"
+#import "GCLoadingViewController.h"
+#import "GCLoginNSAPIViewController.h"
 //#import "PSGOneApp-Swift.h"
 @import Masonry;
 
@@ -27,14 +29,15 @@
         make.top.equalTo(self.view).offset(70);
     }];
 
-    [loginViewController.gcLogoImageView setHidden:YES];
-    [loginViewController.gcTitleLabel setHidden:YES];
-    [loginViewController.gcSubtitleLabel setHidden:YES];
-
-    __weak typeof(self) weakSelf = self;
-    loginViewController.logoutSuccessAction = ^{
-        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
-    };
+#warning UARENA
+//    [loginViewController.gcLogoImageView setHidden:YES];
+//    [loginViewController.gcTitleLabel setHidden:YES];
+//    [loginViewController.gcSubtitleLabel setHidden:YES];
+//
+//    __weak typeof(self) weakSelf = self;
+//    loginViewController.logoutSuccessAction = ^{
+//        [weakSelf.navigationController popToRootViewControllerAnimated:YES];
+//    };
 }
 
 @end

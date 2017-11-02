@@ -8,6 +8,8 @@
 
 #import "GCProfileViewController+GCUI.h"
 #import "Extends+Libs.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @implementation GCProfileViewController (GCUI)
 

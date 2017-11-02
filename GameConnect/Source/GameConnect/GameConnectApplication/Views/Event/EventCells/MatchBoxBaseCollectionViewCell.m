@@ -8,13 +8,21 @@
 
 #import "MatchBoxBaseCollectionViewCell.h"
 #import "GCFontManager.h"
-@import SDWebImage;
+
+//#import <SDW>
+//@import SDWebImage;
 
 @implementation MatchBoxBaseCollectionViewCell
 
+- (instancetype)initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  [self constructUI];
+  return self;
+}
+
 - (void)constructUI
 {
-  [super constructUI];
+//  [super constructUI];
 
   self.backgroundColor = [UIColor clearColor];
 
@@ -92,11 +100,11 @@
 {
   [super prepareForReuse];
 
-  
-  [self.teamHomeImage sd_cancelCurrentAnimationImagesLoad];
+#warning UARENA
+//  [self.teamHomeImage sd_cancelCurrentAnimationImagesLoad];
   self.teamHomeImage.image = nil;
 
-  [self.teamAwayImage sd_cancelCurrentAnimationImagesLoad];
+//  [self.teamAwayImage sd_cancelCurrentAnimationImagesLoad];
   self.teamAwayImage.image = nil;
 }
 

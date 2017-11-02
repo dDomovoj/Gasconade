@@ -15,17 +15,18 @@ protocol WebView {
   func openWebViewController(with url: URL, presenter: UIViewController)
 }
 
-class GCWebViewController: WebViewController {
-  override func viewDidLoad() {
+public class GCWebViewController: WebViewController {
+  
+  override public func viewDidLoad() {
     super.viewDidLoad()
-    closeButton.isHidden = true
+//    closeButton.isHidden = true
     setupNavigationBar()
   }
 
   private func setupNavigationBar() {
     let closeButton = UIButton()
     closeButton.setImage(UIImage(named: "close_button_icon_large"), for: .normal)
-    closeButton.addTarget(self, action: #selector(close(_:)), for: .normal)
+    closeButton.addTarget(self, action: #selector(close(_:)), for: .touchUpInside)
     closeButton.frame = CGRect(x: 0, y: 0, width: 32, height: 32)
     let barButton = UIBarButtonItem(customView: closeButton)
     navigationItem.rightBarButtonItems = [barButton]
@@ -46,12 +47,12 @@ extension WebView {
 /*
  This controller is designed to be presented modally
  */
-class WebViewController: UIViewController {
+public class WebViewController: UIViewController {
 
-  let activityIndicator = LoaderView(style: .black)
+  let activityIndicator = UIView()// LoaderView(style: .black)
   var isNavigationBarHidden = false
 
-  @objc var urlString: String? {
+  @objc public var urlString: String? {
     didSet {
       if let urlString = urlString, let URL = URL(string: urlString) {
         webView.load(URLRequest(url: URL))
@@ -64,63 +65,63 @@ class WebViewController: UIViewController {
 
   let webView = WKWebView()
 
-  override func updateConstraints() {
-    super.updateConstraints()
+  override public func updateViewConstraints() {
+    super.updateViewConstraints()
     webView.snp.remakeConstraints {
-      if isNavigationBarHidden {
+//      if isNavigationBarHidden {
         $0.top.equalToSuperview()
-      } else {
-        $0.top.equalTo(navigationBarView.snp.bottom).offset(10)
-      }
+//      } else {
+//        $0.top.equalTo(navigationBarView.snp.bottom).offset(10)
+//      }
       $0.leading.trailing.bottom.equalToSuperview()
     }
-    if isNavigationBarHidden {
-      closeButton.snp.remakeConstraints { (make) in
-        make.top.equalToSuperview().offset(7.0)
-        make.trailing.equalToSuperview().offset(-5.0)
-        make.width.height.equalTo(44)
-      }
-    }
-    activityIndicator.snp.remakeConstraints { (make) in
-      make.center.equalToSuperview()
-      make.width.height.equalTo(Dimens.Sizes.indicator)
-    }
+//    if isNavigationBarHidden {
+//      closeButton.snp.remakeConstraints { (make) in
+//        make.top.equalToSuperview().offset(7.0)
+//        make.trailing.equalToSuperview().offset(-5.0)
+//        make.width.height.equalTo(44)
+//      }
+//    }
+//    activityIndicator.snp.remakeConstraints { (make) in
+//      make.center.equalToSuperview()
+//      make.width.height.equalTo(Dimens.Sizes.indicator)
+//    }
   }
 
-  override func loadView() {
+  override public func loadView() {
     super.loadView()
-    view.rBackgroundColor = Colors.Application.blue
+    view.backgroundColor = UIColor.blue// Colors.Application.blue
     webView.navigationDelegate = self
-    navigationBarView.isHidden = isNavigationBarHidden
-    navigationBarView.backButton.isHidden = true
-
-    closeButton.isHidden = false
-    view.addSubviews(webView, activityIndicator)
+//    navigationBarView.isHidden = isNavigationBarHidden
+//    navigationBarView.backButton.isHidden = true
+//
+//    closeButton.isHidden = false
+//    view.addSubviews(webView, activityIndicator)
   }
 
-  override func viewDidLoad() {
+  override public func viewDidLoad() {
     super.viewDidLoad()
     if let urlString = urlString, let URL = URL(string: urlString) {
-      activityIndicator.startAnimating()
+//      activityIndicator.startAnimating()
       webView.load(URLRequest(url: URL))
     }
 
-    if let barTitle = barTitle {
-      navigationBarView.titleLabel.text = barTitle
-      navigationBarView.type = .singleTitle
-      if let barSubtitle = barSubtitle {
-        navigationBarView.subtitleLabel.text = barSubtitle
-        navigationBarView.type = .withSubtitle
-      }
-    }
+//    if let barTitle = barTitle {
+//      navigationBarView.titleLabel.text = barTitle
+//      navigationBarView.type = .singleTitle
+//      if let barSubtitle = barSubtitle {
+//        navigationBarView.subtitleLabel.text = barSubtitle
+//        navigationBarView.type = .withSubtitle
+//      }
+//    }
   }
 }
 
 extension WebViewController: WKNavigationDelegate {
 
-  func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) { }
+  public func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) { }
 
-  func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-    activityIndicator.stopAnimating()
+  public func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+//    activityIndicator.stopAnimating()
   }
 }

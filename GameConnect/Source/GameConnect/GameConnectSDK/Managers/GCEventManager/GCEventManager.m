@@ -21,7 +21,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETLiveUpComingEvents], competitionID);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (rep)
         {
             cb_response([GCEventModel fromJSONArray:[rep getXpathNilArray:@"events"]]);
@@ -36,7 +36,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETEventRankings], competitionID, eventID, [NSNumber numberWithUnsignedInteger:page], [NSNumber numberWithUnsignedInteger:limit]);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
      {
-         GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//         GCLog(GCHTTPResponseLog, (long)httpcode, url);
          if (rep)
              cb_response([GCRankingModel fromJSONArray:[rep getXpathNilArray:@"ranks"]]);
          else
@@ -49,7 +49,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETMyEventRanking], competitionID, eventID);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
      {
-         GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//         GCLog(GCHTTPResponseLog, (long)httpcode, url);
          GCRankingUserModel *userRankingModel = [GCRankingUserModel fromJSON:rep];
 
          cb_response(userRankingModel);

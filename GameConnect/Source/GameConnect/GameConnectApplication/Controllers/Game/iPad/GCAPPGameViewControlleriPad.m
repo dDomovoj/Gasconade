@@ -8,6 +8,7 @@
 
 #import "GCAPPGameViewControlleriPad.h"
 #import "GCBluredImageSingleton.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPGameViewControlleriPad ()
 @end

@@ -14,6 +14,7 @@
 #import "GCAPPSoccerEventCell.h"
 #import "GCAPPEventLinker.h"
 #import "GCCompetitionManager.h"
+#import "GCConfManager.h"
 #import <Masonry/Masonry.h>
 
 @interface GCAPPHomeViewControlleriPhone()

@@ -11,6 +11,10 @@
 #import "UIImageViewJA.h"
 #import "NsSnSignManager.h"
 
+#warning UARENA
+@interface GCLoginViewController: UIViewController { }
+@end
+
 @interface GCLoginNSAPIViewController : GCMasterViewController
     <UITextFieldDelegate, FBLoginViewDelegate/*, ProfileViewControllerDelegate_iPhone*/>
 

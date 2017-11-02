@@ -7,7 +7,9 @@
 //
 
 #import "GCAPPLeaguesViewController.h"
+#import "GCAPPDefines.h"
 #import "Extends+Libs.h"
+#import "GCConfManager.h"
 
 @interface GCAPPLeaguesViewController ()
 @end

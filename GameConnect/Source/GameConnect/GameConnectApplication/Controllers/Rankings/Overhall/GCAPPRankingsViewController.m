@@ -13,6 +13,8 @@
 #import "GCBluredImageSingleton.h"
 #import "GCCompetitionManager.h"
 #import "GCProcessProfileManager.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @interface GCAPPRankingsViewController ()
 @end

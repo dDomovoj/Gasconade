@@ -10,6 +10,7 @@
 #warning GC TEST POST
 //#import "PSGOneApp-Swift.h"
 //#import <NSTRestAPIManager/NSTRestAPIManager.h>
+#import "GCConfManager.h"
 
 @implementation GCSponsorsManager
 
@@ -17,7 +18,7 @@ CREATE_INSTANCE
 
 - (void)postPixelRequest
 {
-    NSString *URLString = [ConfigManager instance].config.gameConnect.pixelURLString;
+  NSString *URLString = [GCConfManager getInstance].pixelURLString;
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:URLString]];
 
     NSURLSessionConfiguration *defaultSessionConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];

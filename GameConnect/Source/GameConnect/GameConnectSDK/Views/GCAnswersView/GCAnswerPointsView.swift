@@ -8,17 +8,17 @@
 
 import UIKit
 
-class GCAnswerPointsView: BaseView {
+public class GCAnswerPointsView: BaseView {
   fileprivate var pointsLabel: UILabel!
 
-  @objc func loadWith(_ value: Int) {
+  @objc public func loadWith(_ value: Int) {
     pointsLabel.text = "+\(value)"
   }
 
-  override func setup() {
+  override public func setup() {
     super.setup()
 
-    backgroundColor = UIColor(hexString: "e2001a")
+    backgroundColor = UIColor.green// (hexString: "e2001a")
     layer.cornerRadius = 5
 
     setupPointsLabel()
@@ -35,7 +35,7 @@ private extension GCAnswerPointsView {
     addSubview(pointsLabel)
 
     pointsLabel.textColor = .white
-    pointsLabel.font = Fonts.Unica.regular.withSize(14)
+    pointsLabel.font = UIFont.systemFont(ofSize: 14)// Fonts.Unica.regular.withSize(14)
     pointsLabel.adjustsFontSizeToFitWidth = true
     pointsLabel.minimumScaleFactor = 0.4
     pointsLabel.textAlignment = .center

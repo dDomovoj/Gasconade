@@ -9,6 +9,9 @@
 #import "GCAPPGameViewController.h"
 #import "GCAPPMatchManager.h"
 #import "Extends+Libs.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
+
 #import <Masonry/Masonry.h>
 
 @interface GCAPPGameViewController ()

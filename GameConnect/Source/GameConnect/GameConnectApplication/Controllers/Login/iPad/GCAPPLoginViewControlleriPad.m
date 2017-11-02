@@ -8,6 +8,7 @@
 
 #import "GCAPPLoginViewControlleriPad.h"
 #import "GCBluredImageSingleton.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPLoginViewControlleriPad ()
 

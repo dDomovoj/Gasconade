@@ -8,6 +8,7 @@
 
 #import "GCAPPProfileViewControlleriPad.h"
 #import "GCBluredImageSingleton.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPProfileViewControlleriPad ()
 @end

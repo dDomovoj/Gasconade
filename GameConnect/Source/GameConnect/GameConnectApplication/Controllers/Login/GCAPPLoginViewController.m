@@ -11,6 +11,7 @@
 #import "GCBluredImageSingleton.h"
 
 #import "GCAPPNavigationManager.h"
+#import "GCConfManager.h"
 
 @interface GCAPPLoginViewController ()
 {

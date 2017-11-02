@@ -8,6 +8,8 @@
 
 #import "GCAPPSubscribeViewController.h"
 #import "Extends+Libs.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @interface GCAPPSubscribeViewController ()
 

@@ -6,9 +6,10 @@
 //  Copyright © 2017 Netcosports. All rights reserved.
 //
 
-#import "BaseCollectionViewCell.h"
+#import <UIKit/UIKit.h>
+//#import "BaseCollectionViewCell.h"
 
-@interface MatchBoxBaseCollectionViewCell : BaseCollectionViewCell
+@interface MatchBoxBaseCollectionViewCell : UICollectionViewCell// BaseCollectionViewCell
 
 @property (nonatomic) UIView *contentContainer;
 @property (nonatomic) UIView *matchDateContainer;

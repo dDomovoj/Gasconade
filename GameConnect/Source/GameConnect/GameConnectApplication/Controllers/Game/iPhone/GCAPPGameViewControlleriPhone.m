@@ -18,6 +18,7 @@
 //#import "WebViewController_iPhone.h"
 //#import "PSGOneApp-Swift.h"
 
+#import <GameConnect/GameConnect-Swift.h>
 #import <Masonry/Masonry.h>
 
 @interface GCAPPGameViewControlleriPhone()

@@ -17,6 +17,7 @@
 #import "GCPushInfoView.h"
 #import "GCFayeWorker.h"
 #import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @interface GCAPPExternalAnswersViewController()
 {

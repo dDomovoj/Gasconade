@@ -13,6 +13,8 @@
 #import "GCLeagueManager.h"
 //#import "GCLoggerManager.h"
 #import "GCGamerManager.h"
+#import "GCAPPDefines.h"
+#import "GCConfManager.h"
 
 @interface GCAPPLeagueRankingsViewController ()
 @end
@@ -21,82 +23,83 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    { }
-    return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self)
+  { }
+  return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    self.title = NSLocalizedString(@"gc_league_rankings", nil);
-    isLeagueOwner = [self.leagueModel.gamer._id isEqualToString:[GCGamerManager getInstance].gamer._id];
-    
-    [self setUpLeagueRanking];
-    [self setUpNavbarButton];
+  [super viewDidLoad];
+  self.title = NSLocalizedString(@"gc_league_rankings", nil);
+  isLeagueOwner = [self.leagueModel.gamer._id isEqualToString:[GCGamerManager getInstance].gamer._id];
+
+  [self setUpLeagueRanking];
+  [self setUpNavbarButton];
 }
 
 -(void)setUpLeagueRanking
 {
-    rankingsLeague = [GCSTORYBOARD instantiateViewControllerWithIdentifier:GCRankingsVCIdentifier];
-    
-    rankingsLeague.firstTabRanking = eRankingLeagueOverall;
-    rankingsLeague.secondTabRanking = eRankingLeagueLastMatch;
-    rankingsLeague.leagueModel = self.leagueModel;
+  rankingsLeague = [GCSTORYBOARD instantiateViewControllerWithIdentifier:GCRankingsVCIdentifier];
 
-    [self.v_containerLeagueRanking addSubviewToBonce:rankingsLeague.view autoSizing:YES];
-    [self addChildViewController:rankingsLeague];
+  rankingsLeague.firstTabRanking = eRankingLeagueOverall;
+  rankingsLeague.secondTabRanking = eRankingLeagueLastMatch;
+  rankingsLeague.leagueModel = self.leagueModel;
 
-    // Remove it to make the segmented control appearing
-    [rankingsLeague.sc_overallLeague setAlpha:0];
-    [rankingsLeague.cv_overallRanking setFrame:CGRectMake(0, 0, rankingsLeague.cv_overallRanking.frame.size.width, self.v_containerLeagueRanking.frame.size.height)];
-    //
+  [self.v_containerLeagueRanking addSubviewToBonce:rankingsLeague.view autoSizing:YES];
+  [self addChildViewController:rankingsLeague];
 
-    [rankingsLeague.cv_overallRanking setDynamicFlowLayoutEnable:NO];
-    [rankingsLeague.cv_secondaryRanking setDynamicFlowLayoutEnable:NO];
+  // Remove it to make the segmented control appearing
+  [rankingsLeague.sc_overallLeague setAlpha:0];
+  [rankingsLeague.cv_overallRanking setFrame:CGRectMake(0, 0, rankingsLeague.cv_overallRanking.frame.size.width, self.v_containerLeagueRanking.frame.size.height)];
+  //
+
+  [rankingsLeague.cv_overallRanking setDynamicFlowLayoutEnable:NO];
+  [rankingsLeague.cv_secondaryRanking setDynamicFlowLayoutEnable:NO];
 }
 
 -(void)deleteLeague
 {
-    if (self.leagueModel)
-    {
-        [GCLeagueManager deleteLeague:self.leagueModel._id cb_response:^(BOOL success)
-         {
-             if (success)
-             {
-                 [self setFlashMessage:NSLocalizedString(@"gc_msg_sucess_league_deletion", nil)];
-                 [[GCProcessLeagueManager sharedManager] leagueDeleted:self.leagueModel fromViewController:self];
-             }
-         }];
-    }
+  if (self.leagueModel)
+  {
+    [GCLeagueManager deleteLeague:self.leagueModel._id cb_response:^(BOOL success)
+     {
+       if (success)
+       {
+         [self setFlashMessage:NSLocalizedString(@"gc_msg_sucess_league_deletion", nil)];
+         [[GCProcessLeagueManager sharedManager] leagueDeleted:self.leagueModel fromViewController:self];
+       }
+     }];
+  }
 }
 
 -(void)quitLeague
 {
-    if (self.leagueModel)
-    {
-        //TODO: Quit League
-        [self setFlashMessage:NSLocalizedString(@"gc_msg_sucess_league_quit", nil)];
-        [[GCProcessLeagueManager sharedManager] leagueQuit:self.leagueModel fromViewController:self];
-    }
-    else
-        //GCLog(@"Selected league doesn't exist");
+  if (self.leagueModel)
+  {
+    //TODO: Quit League
+    [self setFlashMessage:NSLocalizedString(@"gc_msg_sucess_league_quit", nil)];
+    [[GCProcessLeagueManager sharedManager] leagueQuit:self.leagueModel fromViewController:self];
+  }
+  else {
+    //GCLog(@"Selected league doesn't exist");
+  }
 }
 
 -(void)goToLeagueEdition
 {
-    [[GCProcessLeagueManager sharedManager] requestLeagueEdition:self.leagueModel fromViewController:self];
+  [[GCProcessLeagueManager sharedManager] requestLeagueEdition:self.leagueModel fromViewController:self];
 }
 
 -(void)goToLeagueInvitation
 {
-    [[GCProcessLeagueManager sharedManager] requestLeagueInvitation:self.leagueModel fromViewController:self];
+  [[GCProcessLeagueManager sharedManager] requestLeagueInvitation:self.leagueModel fromViewController:self];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
+  [super didReceiveMemoryWarning];
 }
 
 @end

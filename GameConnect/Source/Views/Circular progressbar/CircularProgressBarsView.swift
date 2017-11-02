@@ -28,7 +28,7 @@ private func >= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
   }
 }
 
-class CircularProgressBarsView: UIView {
+public class CircularProgressBarsView: UIView {
 
   var bars: [CircularProgressBarModel] = [] {
     didSet {
@@ -37,7 +37,7 @@ class CircularProgressBarsView: UIView {
     }
   }
 
-  override var backgroundColor: UIColor? {
+  override public var backgroundColor: UIColor? {
     set { backgroundView.backgroundColor = newValue }
     get { return backgroundView.backgroundColor }
   }
@@ -51,11 +51,11 @@ class CircularProgressBarsView: UIView {
     setupView()
   }
 
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  override func layoutSubviews() {
+  override public func layoutSubviews() {
     super.layoutSubviews()
 
     let size = min(bounds.width, bounds.height) - 0.5

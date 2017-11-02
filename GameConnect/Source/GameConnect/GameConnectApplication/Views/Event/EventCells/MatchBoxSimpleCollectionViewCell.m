@@ -8,6 +8,8 @@
 
 #import "MatchBoxSimpleCollectionViewCell.h"
 
+#import <Masonry/Masonry.h>
+
 static const CGFloat MatchBoxSimpleCollectionViewCellScoreWidth = 70.f;
 
 static const CGFloat MatchBoxSimpleCollectionViewCellLogoIphoneWidth = 25.f;
@@ -26,14 +28,15 @@ static const CGFloat MatchBoxSimpleCollectionViewCellHeight = 145.f;
 
 @implementation MatchBoxSimpleCollectionViewCell
 
-- (void)constructUI
-{
-  [super constructUI];
-
+- (instancetype)initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  [self constructUI];
+  return self;
 }
 
-- (void)updateConstraints
-{
+- (void)constructUI { }
+
+- (void)updateConstraints {
 
   [self.contentContainer mas_remakeConstraints:^(MASConstraintMaker *make) {
     make.edges.insets(UIEdgeInsetsMake(0, 0, 0, 0));

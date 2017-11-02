@@ -9,6 +9,7 @@
 #import "GCBluredImageSingleton.h"
 #import "GCAPPLeaguesViewControlleriPhone.h"
 #import "GCProcessLeagueManager.h"
+#import "GCAPPDefines.h"
 
 @interface GCAPPLeaguesViewControlleriPhone ()
 

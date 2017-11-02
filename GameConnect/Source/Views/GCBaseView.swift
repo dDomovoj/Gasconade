@@ -7,21 +7,21 @@
 
 import UIKit
 
-class BaseView: UIView {
+open class BaseView: UIView {
 
   override init(frame: CGRect) {
     super.init(frame: frame)
     setup()
   }
 
-  required init?(coder aDecoder: NSCoder) {
+  required public init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
 
-  func setup() { }
+  open func setup() { }
 }
 
-class GCBaseView: BaseView, Updateable {
+open class GCBaseView: BaseView, Updateable {
 
-  func update() { }
+  open func update() { }
 }

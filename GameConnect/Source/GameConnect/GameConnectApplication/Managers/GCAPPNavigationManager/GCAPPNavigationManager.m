@@ -15,18 +15,11 @@
 #import "GCAPPNavigationPriorityPushManager.h"
 
 #import "Extends+Libs.h"
+#import <GameConnect/GameConnect-Swift.h>
 //#import "PSGOneApp-Swift.h"
 
 @interface GCAPPNavigationManager()
 {
-  __weak GCProfileEditionViewController *temporaryProfileEdition;
-
-  GCAPPLoadingViewController *loadingViewController;
-  GCAPPNavigationController *navigationControllerAuthentification;
-
-  GCAPPNavigationPriorityPushManager *priorityPushManager;
-
-  UIPopoverController *popover;
 }
 @end
 

@@ -11,6 +11,7 @@
 #import "GCAPPSoccerEventHeader.h"
 #import "GCAPPTeamMediaManager.h"
 #import "GSMMatchModel.h"
+#import "GCConfManager.h"
 
 #define SCORE_LB [UIColor colorWithRGBString:@"ffffffff" alpha:1]
 #define TEAMS_LB [UIColor colorWithRGBString:@"ffffffff" alpha:1]

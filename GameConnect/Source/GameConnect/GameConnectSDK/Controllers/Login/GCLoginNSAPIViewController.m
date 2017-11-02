@@ -6,18 +6,26 @@
 //  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
 //
 
+#import <Masonry/Masonry.h>
+
 #import "NSObject+NSObject_Tool.h"
+#import "GCLoginNSAPIViewController+GCUI.h"
+#import "Extends+Libs.h"
+#import "NSLocale+ISO639_2.h"
+
 #import "GCLoginNSAPIViewController.h"
 #import "NsSnSignManager.h"
 #import "GCSubscribeNSAPIViewController.h"
 #import "GCProcessAuthentificationManager.h"
-#import "GCLoginNSAPIViewController+GCUI.h"
-#import "NSLocale+ISO639_2.h"
 #import "GCGamerManager.h"
 #import "NsSnImportNetworkManager.h"
-#import "Extends+Libs.h"
-//#import "PSGOneApp-Swift.h"
-#import <Masonry/Masonry.h>
+#import "GCConfManager.h"
+
+#warning UARENA
+
+@implementation GCLoginViewController
+
+@end
 
 @interface GCLoginNSAPIViewController ()
 {
@@ -55,18 +63,19 @@
     
     self.loginViewController = [GCLoginViewController new];
 
+  #warning UARENA
     __weak typeof(self) weakSelf = self;
-    self.loginViewController.loginSuccessAction = ^{
-        [weakSelf launchConnection];
-        [weakSelf.loginViewController.view removeFromSuperview];
-        [weakSelf.loginViewController removeFromParentViewController];
-        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-        [weakSelf.view addSubview:indicatorView];
-        [indicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.center.equalTo(@0);
-        }];
-        [indicatorView startAnimating];
-    };
+//    self.loginViewController.loginSuccessAction = ^{
+//        [weakSelf launchConnection];
+//        [weakSelf.loginViewController.view removeFromSuperview];
+//        [weakSelf.loginViewController removeFromParentViewController];
+//        UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+//        [weakSelf.view addSubview:indicatorView];
+//        [indicatorView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.center.equalTo(@0);
+//        }];
+//        [indicatorView startAnimating];
+//    };
     [self addChildViewController:self.loginViewController];
     [self.view addSubview:self.loginViewController.view];
 
@@ -99,12 +108,12 @@
 
 - (void)launchConnection
 {
-    ProfileModel *user = [ProfileModel currentUser];
-    if (user) {
-        NSString *login = user.email;
-        NSString *password = user.password;
-        [self launchConnectionWith:login password:password];
-    }
+//    ProfileModel *user = [ProfileModel currentUser];
+//    if (user) {
+//        NSString *login = user.email;
+//        NSString *password = user.password;
+//        [self launchConnectionWith:login password:password];
+//    }
 }
 
 #pragma mark - 

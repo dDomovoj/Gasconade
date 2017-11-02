@@ -11,9 +11,9 @@
 
 @interface GCQuestionManager : NSObject
 
-//+(void) postAnswersQuestion:(NSString *)questionID forEvent:(NSString *)evendID inCompetition:(NSString *)competitionID withAnswers:(NSArray *)answersIDs cb_response:(void (^)(BOOL ok))cb_response;
-//
-//+(void) getQuestionsForEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(NSArray *questions))cb_response;
++(void) postAnswersQuestion:(NSString *)questionID forEvent:(NSString *)evendID inCompetition:(NSString *)competitionID withAnswers:(NSArray *)answersIDs cb_response:(void (^)(BOOL ok))cb_response;
+
++(void) getQuestionsForEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(NSArray *questions))cb_response;
 
 +(void) getQuestion:(NSString *)questionID forEvent:(NSString *)eventID inCompetition:(NSString *)competitionID cb_response:(void (^)(GCQuestionModel *question))cb_response;
 

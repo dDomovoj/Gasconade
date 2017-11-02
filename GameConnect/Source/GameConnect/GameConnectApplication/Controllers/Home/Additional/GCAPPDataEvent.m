@@ -9,6 +9,7 @@
 #import "GCAPPDataEvent.h"
 #import "Extends+Libs.h"
 #import "GCEventModel.h"
+#import "GCConfManager.h"
 
 @interface GCAPPDataEvent ()
 {

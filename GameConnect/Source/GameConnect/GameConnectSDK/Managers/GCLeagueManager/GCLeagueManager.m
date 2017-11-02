@@ -24,8 +24,8 @@
     NSString *url = [GCConfManager getURL:GCURLPOSTAddLeague];
     [GCRequester requestPOST:url post:@{@"private_league[name]" : leagueName} cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
-        
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+
         if (rep && [[rep getXpathEmptyString:@"id"] length] > 0 && httpcode == 201)
         {
             GCLeagueModel *leagueModel = [GCLeagueModel new];
@@ -43,7 +43,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLDELETELeague], leagueID);
     [GCRequester requestDELETE:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (httpcode == 204)
             cb_response(YES);
         else
@@ -56,7 +56,7 @@
     NSString *url = [GCConfManager getURL:GCURLGETMyLeagues];
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (rep)
         {
             NSArray *arrayLeagues = [GCLeagueModel fromJSONArray:[rep getXpathNilArray:@"private_leagues"]];
@@ -92,7 +92,7 @@
     
     [GCRequester requestPUT:url post:[mutableDictionaryPost ToUnMutable] cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (httpcode == 204)
             cb_response(YES);
         else
@@ -105,7 +105,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETLeagueRankings], leagueID, [NSNumber numberWithInteger:page], [NSNumber numberWithInteger:limit]);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (rep)
             cb_response([GCRankingModel fromJSONArray:[rep getXpathNilArray:@"ranks"]]);
         else
@@ -118,7 +118,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETLeagueRankings], leagueID, page, limit);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
      {
-         GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//         GCLog(GCHTTPResponseLog, (long)httpcode, url);
          if (rep)
              cb_response([GCRankingModel fromJSONArray:[rep getXpathNilArray:@"ranks"]]);
          else

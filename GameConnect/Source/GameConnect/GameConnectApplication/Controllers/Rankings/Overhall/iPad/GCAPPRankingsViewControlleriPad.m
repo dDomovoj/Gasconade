@@ -11,6 +11,7 @@
 #import "GCProfileHeader.h"
 #import "GCGamerManager.h"
 #import "GCBluredImageSingleton.H"
+#import "GCAPPDefines.h"
 
 @interface GCAPPRankingsViewControlleriPad ()
 @end

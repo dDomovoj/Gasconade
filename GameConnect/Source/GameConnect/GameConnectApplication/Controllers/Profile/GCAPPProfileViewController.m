@@ -11,6 +11,7 @@
 #import "GCAPPSoccerPlayedEventCell.h"
 #import "GCCompetitionManager.h"
 #import "GCAPPMatchManager.h"
+#import "GCConfManager.h"
 
 @interface GCAPPProfileViewController ()
 

@@ -11,6 +11,7 @@
 #import "GCRequester.h"
 #import "GCCompetitionModel.h"
 //#import "GCLoggerManager.h"
+#import "GCConfManager.h"
 
 @interface GCCompetitionManager()
 {
@@ -50,7 +51,7 @@
     NSString *url = [GCConfManager getURL:GCURLGETCompetitions];
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (rep)
         {
             NSArray *arrayCompetitions = [GCCompetitionModel fromJSONArray:[rep getXpathNilArray:@"competitions"]];
@@ -72,7 +73,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETCompetitionRankings], competitionID, [NSNumber numberWithUnsignedInteger:page], [NSNumber numberWithUnsignedInteger:limit]);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         if (rep)
             cb_response([GCRankingModel fromJSONArray:[rep getXpathNilArray:@"ranks"]]);
         else
@@ -85,7 +86,7 @@
     NSString *url = SWF([GCConfManager getURL:GCURLGETMyCompetitionRanking], competitionID);
     [GCRequester requestGET:url cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode)
     {
-        GCLog(GCHTTPResponseLog, (long)httpcode, url);
+//        GCLog(GCHTTPResponseLog, (long)httpcode, url);
         cb_response([GCRankingUserModel fromJSON:rep]);
     } cache:NO];
 }

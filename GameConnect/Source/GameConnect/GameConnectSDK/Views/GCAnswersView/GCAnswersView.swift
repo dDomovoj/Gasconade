@@ -12,7 +12,7 @@ import SwiftyTimer
 // swiftlint:disable file_length line_length
 
 // MARK: - GCAnswersViewDelegate
-@objc open protocol GCAnswersViewDelegate: class {
+@objc public protocol GCAnswersViewDelegate: class {
 
   var questionProgressView: QuestionProgressView? { get }
 
@@ -22,9 +22,9 @@ import SwiftyTimer
 
 // MARK: - GCAnswersView
 @objcMembers
-open class GCAnswersView: GCBaseView {
+public class GCAnswersView: GCBaseView {
 
-  fileprivate let answerOffset = UI.value(20)
+  fileprivate let answerOffset = 20.0// UI.value(20)
 
   fileprivate enum QuestionType: Int {
     case two = 2
@@ -32,10 +32,10 @@ open class GCAnswersView: GCBaseView {
     case four = 4
   }
 
-  weak var delegate: GCAnswersViewDelegate?
+  weak public var delegate: GCAnswersViewDelegate?
 
-  var selectedAnswers: [GCAnswerModel] = []
-  var questionModel: GCQuestionModel! { didSet { loadWithQuestionModel() } }
+  public var selectedAnswers: [GCAnswerModel] = []
+  public var questionModel: GCQuestionModel! { didSet { loadWithQuestionModel() } }
 
   fileprivate var answers: [GCAnswerModel] { return (questionModel.answers as? [GCAnswerModel]) ?? [] }//{ return Array((questionModel.answers as! [GCAnswerModel])[0...3]) }
 
@@ -153,13 +153,13 @@ open class GCAnswersView: GCBaseView {
     return answerView
   }
 
-  override func setup() {
+  override public func setup() {
     super.setup()
 
     setupAnswersContainerView()
   }
 
-  override func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
+  override open func hitTest(_ point: CGPoint, with event: UIEvent?) -> UIView? {
     guard let type = QuestionType(rawValue: answers.count), type == .three  else { return super.hitTest(point, with: event) }
 
     for answerView in answersViews {
@@ -227,7 +227,7 @@ private class AnswerView: BaseView {
     answerLabel.text = answerModel.answer
 
     if questionType == eGCQuestionTypePrediction {
-      pointsLabel.text = l10N("gc_pts").replacingOccurrences(of: "%s", with: "\(answerModel.score)")
+      pointsLabel.text = "\(answerModel.score)"// l10N("gc_pts").replacingOccurrences(of: "%s", with: "\(answerModel.score)")
       pointsLabel.snp.makeConstraints {
         $0.height.greaterThanOrEqualTo(0)
       }
@@ -243,7 +243,8 @@ private class AnswerView: BaseView {
     UIView.animate(
       withDuration: 0.4,
       animations: {
-        self.backgroundColor = selected ? Colors.GameConnect.gray.color.enlightenColor() : .white
+//        self.backgroundColor = selected ? Colors.GameConnect.gray.color.enlightenColor() : .white
+        self.backgroundColor = selected ? UIColor.gray : .white
     })
   }
 
@@ -318,7 +319,7 @@ private class AnswerView: BaseView {
   func setupAnswerLabel() {
     answerLabel = UILabel()
 
-    answerLabel.font = Fonts.Unica.bold.withSize(18)
+    answerLabel.font = UIFont.systemFont(ofSize: 18.0)// Fonts.Unica.bold.withSize(18)
     answerLabel.textColor = .black
     answerLabel.textAlignment = .center
     answerLabel.adjustsFontSizeToFitWidth = true
@@ -329,7 +330,7 @@ private class AnswerView: BaseView {
     containerView.addSubview(answerLabel)
 
     answerLabel.snp.makeConstraints {
-      let offset = UI.value(10)
+      let offset = 10.0// UI.value(10)
       $0.top.greaterThanOrEqualToSuperview().offset(offset)
       $0.left.equalToSuperview().offset(offset)
       $0.right.equalToSuperview().offset(-offset)
@@ -339,14 +340,14 @@ private class AnswerView: BaseView {
   func setupPointsLabel() {
     pointsLabel = UILabel()
 
-    pointsLabel.font = Fonts.Unica.regular.withSize(12)
-    pointsLabel.textColor = Colors.GameConnect.red.color
+    pointsLabel.font = UIFont.systemFont(ofSize: 12.0)//Fonts.Unica.regular.withSize(12)
+    pointsLabel.textColor = UIColor.red// Colors.GameConnect.red.color
     pointsLabel.textAlignment = .center
     containerView.addSubview(pointsLabel)
 
     pointsLabel.snp.makeConstraints {
       $0.left.right.equalToSuperview()
-      $0.bottom.equalToSuperview().offset(UI.value(-10))
+      $0.bottom.equalToSuperview().offset(-10.0)// UI.value(-10))
       $0.top.equalTo(answerLabel.snp.bottom)
     }
   }
@@ -356,7 +357,7 @@ private extension AnswerView {
   var velocity: CGFloat { return 0.7 }
   var damping: CGFloat { return 0.8 }
 
-  func animateStart(_ duration: Double = 0.3, completion: VoidClosure? = nil) {
+  func animateStart(_ duration: Double = 0.3, completion: (() -> ())? = nil) {
 
     UIView.animate(
       withDuration: duration,
@@ -372,7 +373,7 @@ private extension AnswerView {
     })
   }
 
-  func animateEnd(_ duration: Double = 0.3, completion: VoidClosure? = nil) {
+  func animateEnd(_ duration: Double = 0.3, completion: (() -> ())? = nil) {
     UIView.animate(
       withDuration: duration,
       delay: 0,
@@ -388,7 +389,7 @@ private extension AnswerView {
 }
 
 // MARK: - QuestionProgressView
-class QuestionProgressView: BaseView {
+public class QuestionProgressView: BaseView {
   let primaryColor = UIColor.white
   var innerProgressView: SingleProgressBarView!
   var outerProgressView: SingleProgressBarView!
@@ -401,7 +402,7 @@ class QuestionProgressView: BaseView {
     outerProgressView.loadWithValue(value: value, maxValue: maxValue, animated: animated)
   }
 
-  override func setup() {
+  override public func setup() {
     super.setup()
 
     setupInnerProgressView()
@@ -414,7 +415,7 @@ class QuestionProgressView: BaseView {
     innerProgressView.isValueLabelHidden = false
     innerProgressView.valueLabelColor = primaryColor
 
-    innerProgressView.progressColor = Colors.GameConnect.red.color
+    innerProgressView.progressColor = UIColor.red// Colors.GameConnect.red.color
     innerProgressView.emptyColor = primaryColor
 
     let width: CGFloat = 2
@@ -435,7 +436,7 @@ class QuestionProgressView: BaseView {
     outerProgressView.backgroundColor = .clear
     outerProgressView.isValueLabelHidden = true
 
-    outerProgressView.progressColor = Colors.GameConnect.gray.color
+    outerProgressView.progressColor = UIColor.gray// Colors.GameConnect.gray.color
     outerProgressView.emptyColor = .clear
 
     let width: CGFloat = 1
