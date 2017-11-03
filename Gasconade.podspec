@@ -21,6 +21,7 @@ Netcosports Gasconade. TBD
   s.dependency 'SwiftyTimer'
   s.dependency 'Masonry'
   s.dependency 'UICountingLabel'
+  s.dependency 'SDWebImage'
 
   s.framework = "UIKit"
   s.framework = "Foundation"
