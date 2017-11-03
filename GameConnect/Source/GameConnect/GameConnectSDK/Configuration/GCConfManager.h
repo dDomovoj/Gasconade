@@ -116,6 +116,9 @@ typedef enum
 @property (nonatomic, copy) NSString *pixelURLString;
 @property (nonatomic, copy) NSString *pmuPartnershipURLString;
 
+@property (nonatomic, copy) NSString *basePipelineURLString;
+@property (nonatomic, copy) NSString *clubLogosURLString;
+
 #pragma mark - Singleton & Init
 +(GCConfManager *) getInstance;
 -(void)initialize;

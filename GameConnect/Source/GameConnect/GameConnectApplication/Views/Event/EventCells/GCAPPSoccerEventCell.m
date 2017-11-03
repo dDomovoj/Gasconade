@@ -6,16 +6,21 @@
 //  Copyright (c) 2014 Guillaume Derivery. All rights reserved.
 //
 
+#import <Masonry/Masonry.h>
+
 #import "GCAPPSoccerEventCell.h"
 #import "Extends+Libs.h"
 #import "GCAPPTeamMediaManager.h"
 #import "NSTimeManager.h"
 #import "GSMMatchModel.h"
 #import "GCFontManager.h"
-#import "NSDate+NSDate_Tool.h"
+//#import "NSDate+NSDate_Tool.h"
 //#import "PSGOneApp-Swift.h"
 //@import SDWebImage;
 //#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "GCAPPDefines.h"
+
+@import SDWebImage;
 
 // Live Event
 #define STATUS_EVENT_LIVE_LB [UIColor colorWithRGBString:@"ffffffff" alpha:1]
@@ -87,16 +92,16 @@
     self.timerLabel.hidden = YES;
 }
 
-- (NSString *)formattedTeamNameForTeam:(GSMTeamModel *)team
-{
-    if ([team.team_id isPSGTeamId]) {
-        NSArray<NSString *> *teamNameComponents = [team.team_name componentsSeparatedByString:@" "];
-        if (teamNameComponents.count <= 1) {
-            return team.team_name;
-        }
-
-        return [teamNameComponents componentsJoinedByString:@"\n"];
-    }
+- (NSString *)formattedTeamNameForTeam:(GSMTeamModel *)team {
+#warning UARENA
+//    if ([team.team_id isPSGTeamId]) {
+//        NSArray<NSString *> *teamNameComponents = [team.team_name componentsSeparatedByString:@" "];
+//        if (teamNameComponents.count <= 1) {
+//            return team.team_name;
+//        }
+//
+//        return [teamNameComponents componentsJoinedByString:@"\n"];
+//    }
     return team.team_name;
 }
 

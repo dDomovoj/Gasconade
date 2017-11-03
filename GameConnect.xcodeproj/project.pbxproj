@@ -14,6 +14,13 @@
 		CE277F071FAB1A090077CD2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE277F051FAB1A090077CD2F /* Main.storyboard */; };
 		CE277F091FAB1A090077CD2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE277F081FAB1A090077CD2F /* Assets.xcassets */; };
 		CE277F0C1FAB1A090077CD2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE277F0A1FAB1A090077CD2F /* LaunchScreen.storyboard */; };
+		CE358E051FACA250002996E0 /* GCAPPButtonCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C751FAB171C0077CD2F /* GCAPPButtonCell.h */; };
+		CE358E061FACA250002996E0 /* GCAPPButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C761FAB171C0077CD2F /* GCAPPButtonCell.m */; };
+		CE358E071FACA250002996E0 /* GCAPPButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277C771FAB171C0077CD2F /* GCAPPButtonCell.xib */; };
+		CE358E081FACA262002996E0 /* GSMMatchModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C631FAB171C0077CD2F /* GSMMatchModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE358E091FACA262002996E0 /* GSMMatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C641FAB171C0077CD2F /* GSMMatchModel.m */; };
+		CE358E0A1FACA262002996E0 /* GSMTeamModel.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277C661FAB171C0077CD2F /* GSMTeamModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE358E0B1FACA262002996E0 /* GSMTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277C671FAB171C0077CD2F /* GSMTeamModel.m */; };
 		CE82B5D41FAB28A10087432F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE82B5D31FAB28A10087432F /* Question.swift */; };
 		CE82B5D71FAB29AC0087432F /* GCQuestionManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277CFD1FAB171C0077CD2F /* GCQuestionManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CE82B5D81FAB29AC0087432F /* GCQuestionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277CFE1FAB171C0077CD2F /* GCQuestionManager.m */; };
@@ -454,6 +461,7 @@
 		CE82B7991FAB68D00087432F /* GCAPPSoccerEventHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE277C861FAB171C0077CD2F /* GCAPPSoccerEventHeader.xib */; };
 		CE82B79A1FAB68DB0087432F /* NsSnAvatarManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CE277EE31FAB171C0077CD2F /* NsSnAvatarManager.h */; };
 		CE82B79B1FAB68DB0087432F /* NsSnAvatarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE277EE41FAB171C0077CD2F /* NsSnAvatarManager.m */; };
+		CEE5543F1FACC39D005C31A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEE5543A1FACC359005C31A6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1109,6 +1117,7 @@
 		CE277F0D1FAB1A090077CD2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE82B5D31FAB28A10087432F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		CE82B6541FAB3E3D0087432F /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		CEE5543A1FACC359005C31A6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D42BD31A36C885C5B135853D /* Pods-GameConnect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameConnect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GameConnect/Pods-GameConnect.debug.xcconfig"; sourceTree = "<group>"; };
 		F1326BB556DE2F309DDBA95D /* Pods_GameConnect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameConnect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -1128,6 +1137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE5543F1FACC39D005C31A6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1146,6 +1156,7 @@
 		698DA40E57B978500691D54B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CEE5543A1FACC359005C31A6 /* Foundation.framework */,
 				CE82B6541FAB3E3D0087432F /* libicucore.tbd */,
 				F1326BB556DE2F309DDBA95D /* Pods_GameConnect.framework */,
 			);
@@ -3577,6 +3588,7 @@
 				CE82B5F31FAB2AD90087432F /* GCConfManager.h in Headers */,
 				CE82B6AF1FAB546F0087432F /* GCAnswersViewController+GCUI.h in Headers */,
 				CE82B75B1FAB57FB0087432F /* FacebookComposeBackgroundView.h in Headers */,
+				CE358E051FACA250002996E0 /* GCAPPButtonCell.h in Headers */,
 				CE82B7851FAB68850087432F /* Reachability.h in Headers */,
 				CE82B6241FAB2C730087432F /* CJSONScanner.h in Headers */,
 				CE82B6501FAB2D000087432F /* GCProcessManager.h in Headers */,
@@ -3590,6 +3602,7 @@
 				CE82B6101FAB2C2D0087432F /* NsSnUserManager.h in Headers */,
 				CE82B7941FAB68C90087432F /* GCAPPSoccerEventCell.h in Headers */,
 				CE82B7301FAB57DB0087432F /* GCAPPProfileViewController.h in Headers */,
+				CE358E081FACA262002996E0 /* GSMMatchModel.h in Headers */,
 				CE82B74D1FAB57FB0087432F /* GCRankingsViewController.h in Headers */,
 				CE82B6B41FAB55040087432F /* GCStatsView.h in Headers */,
 				CE82B7591FAB57FB0087432F /* UITableViewCellSlide.h in Headers */,
@@ -3638,6 +3651,7 @@
 				CE82B5ED1FAB2A910087432F /* GCTeamModel.h in Headers */,
 				CE82B75A1FAB57FB0087432F /* ViewSlide.h in Headers */,
 				CE82B61A1FAB2C350087432F /* NSString+InflectionSupport.h in Headers */,
+				CE358E0A1FACA262002996E0 /* GSMTeamModel.h in Headers */,
 				CE82B72A1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPad.h in Headers */,
 				CE82B72B1FAB57DB0087432F /* GCAPPLeaguesViewControlleriPhone.h in Headers */,
 				CE82B72F1FAB57DB0087432F /* GCAPPLoginViewControlleriPhone.h in Headers */,
@@ -3781,6 +3795,7 @@
 				CE82B7611FAB580C0087432F /* GCPushInfoViewSmall.xib in Resources */,
 				CE82B69C1FAB52A80087432F /* DefaultCellRenderGG.xib in Resources */,
 				CE82B7841FAB684D0087432F /* GCRankingRender.xib in Resources */,
+				CE358E071FACA250002996E0 /* GCAPPButtonCell.xib in Resources */,
 				CE82B6C81FAB571E0087432F /* GCProfileHeader.xib in Resources */,
 				CE82B7621FAB580C0087432F /* GCStatsBarView.xib in Resources */,
 				CE82B6811FAB51760087432F /* GCNotificationView.xib in Resources */,
@@ -3894,6 +3909,7 @@
 				CE82B6171FAB2C350087432F /* NSObject+PropertySupport.m in Sources */,
 				CE82B6AD1FAB54680087432F /* GCAnswersViewController.m in Sources */,
 				CE82B6E51FAB57900087432F /* UITableViewCellSlide.m in Sources */,
+				CE358E0B1FACA262002996E0 /* GSMTeamModel.m in Sources */,
 				CE82B6761FAB4C480087432F /* GCProcessRankingManager.m in Sources */,
 				CE82B6F31FAB57AD0087432F /* GCAPPHomeViewControlleriPad.m in Sources */,
 				CE82B6F71FAB57AD0087432F /* GCAPPLeagueEditionViewControlleriPad.m in Sources */,
@@ -3951,6 +3967,7 @@
 				CE82B62D1FAB2C890087432F /* NsSnFriendModel.m in Sources */,
 				CE82B6C51FAB56EF0087432F /* GCProfileViewController.m in Sources */,
 				CE82B7061FAB57AD0087432F /* GCAPPProfileEditionViewControlleriPhone.m in Sources */,
+				CE358E091FACA262002996E0 /* GSMMatchModel.m in Sources */,
 				CE82B6AB1FAB545B0087432F /* GCInGameViewController.m in Sources */,
 				CE82B6DF1FAB57900087432F /* UIView+UIView_Tool.m in Sources */,
 				CE82B78C1FAB68A60087432F /* GCLeagueManager.m in Sources */,
@@ -4031,6 +4048,7 @@
 				CE82B6DA1FAB57900087432F /* GCSubscribeNSAPIViewController.m in Sources */,
 				CE82B6B21FAB54F20087432F /* GCAnswerView.m in Sources */,
 				CE82B6721FAB4C480087432F /* GCProcessProfileManager.m in Sources */,
+				CE358E061FACA250002996E0 /* GCAPPButtonCell.m in Sources */,
 				CE82B5E61FAB2A910087432F /* GCModel.m in Sources */,
 				CE82B5DE1FAB2A900087432F /* GCCompetitionModel.m in Sources */,
 				CE82B7811FAB68400087432F /* GCEventManager.m in Sources */,
@@ -4121,6 +4139,7 @@
 		CE277BB21FAB16570077CD2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -4151,6 +4170,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -4181,6 +4201,7 @@
 		CE277BB31FAB16570077CD2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -4211,6 +4232,7 @@
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -4235,12 +4257,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D42BD31A36C885C5B135853D /* Pods-GameConnect.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GameConnect/Source/Libs/Framework/FacebookSDK",
@@ -4262,12 +4286,14 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B5081E1539D53CA90ABC0310 /* Pods-GameConnect.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/GameConnect/Source/Libs/Framework/FacebookSDK",
@@ -4290,6 +4316,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -4305,6 +4332,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Test/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -8,6 +8,7 @@
 
 #import "GSMMatchModel.h"
 #import "Extends+Libs.h"
+#import "GCConfManager.h"
 
 @implementation GSMMatchModel
 

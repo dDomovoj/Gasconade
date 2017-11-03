@@ -8,6 +8,8 @@
 
 #import "GCAPPButtonCell.h"
 #import "Extends+Libs.h"
+#import "GCFontManager.h"
+#import "GCAPPDefines.h"
 
 /*
  ** Item ButtonCell

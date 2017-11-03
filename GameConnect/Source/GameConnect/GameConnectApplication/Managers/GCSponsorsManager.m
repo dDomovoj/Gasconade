@@ -8,8 +8,6 @@
 
 #import "GCSponsorsManager.h"
 #warning GC TEST POST
-//#import "PSGOneApp-Swift.h"
-//#import <NSTRestAPIManager/NSTRestAPIManager.h>
 #import "GCConfManager.h"
 
 @implementation GCSponsorsManager

@@ -12,7 +12,7 @@
 //#import <SDW>
 //@import SDWebImage;
 
-@implementation MatchBoxBaseCollectionViewCell
+@implementation BaseCollectionViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame {
   self = [super initWithFrame:frame];
@@ -20,9 +20,15 @@
   return self;
 }
 
+- (void)constructUI { }
+
+@end
+
+@implementation MatchBoxBaseCollectionViewCell
+
 - (void)constructUI
 {
-//  [super constructUI];
+  [super constructUI];
 
   self.backgroundColor = [UIColor clearColor];
 

@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 //#import "BaseCollectionViewCell.h"
 
-@interface MatchBoxBaseCollectionViewCell : UICollectionViewCell// BaseCollectionViewCell
+@interface BaseCollectionViewCell: UICollectionViewCell
+
+- (void)constructUI;
+
+@end
+
+@interface MatchBoxBaseCollectionViewCell : BaseCollectionViewCell
 
 @property (nonatomic) UIView *contentContainer;
 @property (nonatomic) UIView *matchDateContainer;

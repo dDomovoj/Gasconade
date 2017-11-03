@@ -9,6 +9,7 @@
 #import "GSMTeamModel.h"
 #import "Extends+Libs.h"
 //#import "PSGOneApp-Swift.h"
+#import "GCConfManager.h"
 
 @implementation GSMTeamModel
 
@@ -42,7 +43,7 @@
         model.team_image_big_url = [NSString stringWithFormat:@"http://cdn.thefanclub.com/data_externe_iphone/FIFA/teams/big_team/%@.png", [model.team_short_name lowercaseString]];
         model.team_federation_image_url = [NSString stringWithFormat:@"http://cdn.thefanclub.com/data_externe_iphone/FIFA/teams/fed/%@.png", [model.team_short_name lowercaseString]];
         ;
-        model.team_image_url = [NSString stringWithFormat:@"%@%@.png", [ConfigManager instance].config.opta.clubLogosURLString, model.team_id];
+        model.team_image_url = [NSString stringWithFormat:@"%@%@.png", [GCConfManager getInstance].clubLogosURLString, model.team_id];
     }
     return model;
 }

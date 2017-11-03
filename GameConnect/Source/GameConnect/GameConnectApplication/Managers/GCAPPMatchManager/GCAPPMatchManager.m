@@ -12,101 +12,78 @@
 #import "NSDataManager.h"
 #import "NsSnConfManager.h"
 #import "NsSnRequester.h"
-#import <NSTRestAPIManager/NSTRestAPIManager.h>
+#import "GCConfManager.h"
 
-//#import "PSGOneApp-Swift.h"
-
-#define URL_MATCH_SHEET @"http://cdn.thefanclub.com/gsmsoccerexp/get_matchs_sheet_heads/%@.ijson"
+//#define URL_MATCH_SHEET @"http://cdn.thefanclub.com/gsmsoccerexp/get_matchs_sheet_heads/%@.ijson"
 
 @implementation GCAPPMatchManager
 
 +(GCAPPMatchManager *)getInstance{
-    static GCAPPMatchManager *sharedMyManager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        sharedMyManager = [GCAPPMatchManager new];
-    });
-    return sharedMyManager;
+  static GCAPPMatchManager *sharedMyManager = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedMyManager = [GCAPPMatchManager new];
+  });
+  return sharedMyManager;
 }
 
 #pragma mark -
 #pragma mark Game Connect
 
-+(void)getGCListMatchsHeads:(NSString *)matchIDs rep:(void (^)(GCAPPMatchManager *rep, BOOL cache, NSData *data))cb_rep
-{
-    NSTRestAPIPlainRequest *request = [self matchRequestFor:matchIDs];
-    [NSTRestAPIManager modelsForRequest:request].then((AnyPromise *)^(NSTRestAPIResponse *response, AnyPromise *fetch, NSArray *responses) {
-        [NSObject backGroundBlock:^{
-            GCAPPMatchManager *match_manager = [GCAPPMatchManager getInstance];
+#warning UARENA
++(void)getGCListMatchsHeads:(NSString *)matchIDs rep:(void (^)(GCAPPMatchManager *rep, BOOL cache, NSData *data))cb_rep {
+  NSString *urlString = [self matchRequestUrlStringFor:matchIDs];
+  [NsSnRequester request:urlString cb_rep:^(NSDictionary *rep, BOOL cache, NSData *data, NSInteger httpcode, NsSnUserErrorValue error) {
+    [NSObject backGroundBlock:^{
+      GCAPPMatchManager *match_manager = [GCAPPMatchManager getInstance];
+      NSArray *matchs = [GSMMatchModel fromJSONArray:[rep getXpathNilArray:@"flux"]];
 
-            NSArray *matchs = [GSMMatchModel fromJSONArray:[response.model getXpathNilArray:@"matches"]];
+      if (!match_manager.match_event_gc){
+        match_manager.match_event_gc = [[NSMutableDictionary alloc] init];
+      }
 
-            if (!match_manager.match_event_gc){
-                match_manager.match_event_gc = [[NSMutableDictionary alloc] init];
-            }
-
-            for (GSMMatchModel *matchMod in matchs)
-            {
-                [match_manager.match_event_gc setObject:matchMod forKey:matchMod.match_id];
-            }
-
-            [NSObject mainThreadBlock:^{
-                if (cb_rep)
-                    cb_rep(match_manager, NO, nil);
-            }];
-        }];
-    }).catch(^(id error) {
-        [NSObject mainThreadBlock:^{
-            if (cb_rep)
-                cb_rep([GCAPPMatchManager getInstance], NO, nil);
-        }];
-    });
-
+      for (GSMMatchModel *matchMod in matchs) {
+        [match_manager.match_event_gc setObject:matchMod forKey:matchMod.match_id];
+      }
+      [NSObject mainThreadBlock:^{
+        if (cb_rep)
+          cb_rep(match_manager, cache, data);
+      }];
+    }];
+  } cache:NO];
 }
 
-+ (NSTRestAPIPlainRequest *)matchRequestFor:(NSString *)matchIds
-{
-    NSString *baseURL = ConfigManager.instance.config.opta.basePipelineURLString;
-    NSString *url = [NSString stringWithFormat:@"%@matches/_/by_opta_id?match_ids=%@", baseURL, matchIds];
-
-    NSTRestAPIPlainRequest *request = [[[[NSTRestAPIPlainRequest builder] setURLString:url] setResponseDataType:NSTResponseDataTypeJSON] build];
-
-    return request;
++ (NSString *)matchRequestUrlStringFor:(NSString *)matchIds {
+  NSString *baseURL = [GCConfManager getInstance].basePipelineURLString;
+  NSString *url = [NSString stringWithFormat:@"%@matches/_/by_opta_id?match_ids=%@", baseURL, matchIds];
+  return url;
 }
 
 +(GSMMatchModel *)getGCEventMatchFromId:(NSString *)matchId{
-    GCAPPMatchManager *match_manager = [GCAPPMatchManager getInstance];
-    return [match_manager.match_event_gc getXpath:matchId type:[GSMMatchModel class] def:nil];
+  GCAPPMatchManager *match_manager = [GCAPPMatchManager getInstance];
+  return [match_manager.match_event_gc getXpath:matchId type:[GSMMatchModel class] def:nil];
 }
 
-+(NSArray *)getFakePokJSONArray
-{
-    NSArray *matches = nil;
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"GSM_fake_matches" ofType:@"json"];
-    NSError *fileError = nil;
-    NSData *data = [NSData dataWithContentsOfFile:filePath options:(NSDataReadingMappedIfSafe) error:&fileError];
-    
-    if (!fileError)
-    {
-        NSError *jsonError;
-        NSDictionary *gsmMatches = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
-        
-        if (gsmMatches)
-        {
-            matches = [gsmMatches getXpathNilArray:@"flux"];
-            return matches;
-        }
-        else
-        {
-            NSLog(@"%@", [jsonError localizedDescription]);
-        }
++(NSArray *)getFakePokJSONArray {
+  NSArray *matches = nil;
+  NSString *filePath = [[NSBundle mainBundle] pathForResource:@"GSM_fake_matches" ofType:@"json"];
+  NSError *fileError = nil;
+  NSData *data = [NSData dataWithContentsOfFile:filePath options:(NSDataReadingMappedIfSafe) error:&fileError];
+  if (!fileError) {
+    NSError *jsonError;
+    NSDictionary *gsmMatches = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&jsonError];
+    if (gsmMatches) {
+      matches = [gsmMatches getXpathNilArray:@"flux"];
+      return matches;
     }
-    else
-    {
-        NSLog(@"%@", [fileError localizedDescription]);
+    else {
+      NSLog(@"%@", [jsonError localizedDescription]);
     }
-    return nil;
+  }
+  else {
+    NSLog(@"%@", [fileError localizedDescription]);
+  }
+  return nil;
 }
-
 
 @end

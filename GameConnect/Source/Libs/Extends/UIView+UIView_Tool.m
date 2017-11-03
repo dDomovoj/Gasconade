@@ -618,7 +618,7 @@ static const char * const kTagObjectiveKey = "kTagObjectiveKey";
     }];
 //    [NSObject ba]
     void (^__weak  r_recustion)() = nil;
-    void (^__block  recustion)() = ^(){
+  void (^__block  recustion)(void) = ^(){
         if ([sup count]) {
             UIView *elt = sup[0];
             [sup removeObject:elt];

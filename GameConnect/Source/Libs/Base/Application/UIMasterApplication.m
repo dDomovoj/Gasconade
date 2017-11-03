@@ -18,7 +18,7 @@
 #import "NSString+NSString_Tool.h"
 #import "NSDictionary+NSDictionary_File.h"
 #import "UIDevice+UIDevice_Tool.h"
-
+#import "GCPlatformConnection.h"
 
 #define AUTO_REFRESH_GET_VERSION 60
 
@@ -35,22 +35,6 @@
 
 #ifndef USE_NEW_NSAPI_SERVICES
 #define USE_NEW_NSAPI_SERVICES NO
-#endif
-
-#ifndef NSSN_API_URL
-#define NSSN_API_URL @"https://nsapi-integration.netcodev.com" // Dev
-#endif
-
-#ifndef NSSN_API_CLIENT_ID
-#define NSSN_API_CLIENT_ID @"a366c46b-ccf5-4583-a681-8c819ede64fc"
-#endif
-
-#ifndef NSSN_API_CLIENT_SECRET
-#define NSSN_API_CLIENT_SECRET @"29113a661772583261db287788522d796cd908c4"
-#endif
-
-#ifndef NSSN_API_VERSION
-#define NSSN_API_VERSION @"1"
 #endif
 
 // --
